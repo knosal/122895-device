@@ -9,19 +9,22 @@
 <!--ШАПКА-->
 		<header class="main-header">
 			<a class="logo"><img src="img/logo.jpg" width="200" height="200" alt="Логотип"></a>	
-			<span class="search">Поиск по сайту</span>
+			<div class="search">
+				<input type="text" name="search" placeholder="Поиск по сайту">
+			</div>
 			<nav class="main-nav">
-				<span class="popular">
-					Каталог товаров
-				</span>
-				<ul class="popular-dropdown">
-					<li class="dropdown-item"><a href="#">Виртуальная реальность</a></li>
-					<li class="dropdown-item"><a href="#">Моноподы для селфи</a></li>
-					<li class="dropdown-item"><a href="#">Экшн-камеры</a></li>
-					<li class="dropdown-item"><a href="#">Фитнес-браслеты</a></li>
-					<li class="dropdown-item"><a href="#">Умные часы</a></li>
-					<li class="dropdown-item"><a href="#">Квадрокоптеры</a></li>
-				</ul>	
+				<ul class="main-menu">
+					<li><a class="main-menu-goods">Каталог товаров</a>
+						<ul class="sub-menu">
+							<li class="sub-menu-item"><a href="#1">Виртуальная реальность</a></li>
+							<li class="sub-menu-item"><a href="#2">Моноподы для селфи</a></li>
+							<li class="sub-menu-item"><a href="#3">Экшн-камеры</a></li>
+							<li class="sub-menu-item"><a href="#4">Фитнес-браслеты</a></li>
+							<li class="sub-menu-item"><a href="#5">Умные часы</a></li>
+							<li class="sub-menu-item"><a href="#6">Квадрокоптеры</a></li>
+						</ul>	
+					</li>
+				</ul>
 				<ul class="site-nav">
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Гарантии</a></li>
@@ -87,47 +90,47 @@
 <!--КАТАЛОГ ТОВАРОВ-->			
 			<section class="catalog-items">	
 				<h2 class="visually-hidden">Товары</h2>
-				<div>
+				<div class="item">
 					<img src="img/amateur.jpg" width="200" height="200" alt="Любительская">
 					<a class="visually-hidden line-feature" href="#">В корзину</a>
-					<span class="visually-hidden compare">Добавить к сравнению</span>
-					<p>
+					<button class="visually-hidden compare">Добавить к сравнению</button>
+					<p class="item-name">
 						Любительская селфи-палка
 					</p>
-					<p>
+					<p class="item-price">
 						500 руб.
 					</p>
 				</div>
-				<div>
+				<div class="item">
 					<img src="img/unsinkable.jpg" width="200" height="200" alt="Непотопляемая">
 					<a class="visually-hidden line-feature" href="#">В корзину</a>
-					<span class="visually-hidden compare">Добавить к сравнению</span>
-					<p>
+					<button class="visually-hidden compare">Добавить к сравнению</button>
+					<p class="item-name">
 						Непотопляемая селфи-палка
 					</p>
-					<p>
+					<p class="item-price">
 						2500 руб.
 					</p>
 				</div>
-				<div>
+				<div class="item">
 					<img src="img/professional.jpg" width="200" height="200" alt="Профессиональная">
 					<a class="visually-hidden line-feature" href="#">В корзину</a>
-					<span class="visually-hidden compare">Добавить к сравнению</span>
-					<p>
+					<button class="visually-hidden compare">Добавить к сравнению</button>
+					<p class="item-name">
 						Профессиональная селфи-палка
 					</p>
-					<p>
+					<p class="item-price">
 						1500 руб.
 					</p>
 				</div>
-				<div>
+				<div class="item">
 					<img src="img/followme.jpg" width="200" height="200" alt="Следуй за мной">
 					<a class="visually-hidden line-feature" href="#">В корзину</a>
-					<span class="visually-hidden compare">Добавить к сравнению</span>
-					<p>
+					<button class="visually-hidden compare">Добавить к сравнению</button>
+					<p class="item-name">
 						Селфи-палка "Следуй за мной"
 					</p>
-					<p>
+					<p class="item-price">
 						4900 руб.
 					</p>
 				</div>

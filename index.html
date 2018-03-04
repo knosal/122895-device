@@ -9,8 +9,9 @@
 	
 <!--ШАПКА-->
 		<header class="main-header">
-			<a class="logo"><img src="img/logo.jpg" width="200" height="200" alt="Логотип"></a>	
-			
+			<a href="#" class="logo"><img src="img/logo.jpg" width="200" height="200" alt="Логотип"></a>	
+
+<!--ПОИСК_ВХОД-->			
 			<section class="user-nav-section">
 				<div class="search">
 					<input type="text" name="search" placeholder="Поиск по сайту">
@@ -51,11 +52,11 @@
 					</div>
 					<div class="main-nav-wrapper">
 						<div class="nav-delivery-safeguard">
-							<a href="#">Доставка</a>
-							<a href="#">Гарантии</a>
+							<a href="#delivery">Доставка</a>
+							<a href="#safeguard">Гарантии</a>
 						</div>
 						<div class="nav-contacts">
-							<a href="#">Контакты</a>
+							<a href="#contacts">Контакты</a>
 						</div>
 					</div>
 				</nav>
@@ -67,107 +68,107 @@
 			<h1 class="visually-hidden">Магазин "Девайс"</h1>
 			
 <!--ВЕРХНИЙ СЛАЙДЕР-->			
-			<section class="slider">
+			<section class="main-slider-wrapper">
 				<h2 class="visually-hidden">Популярные товары</h2>
-				<div class="slider-item">	
-					<div class="slider-image">
-						<img src="img/mon.jpg" width="200" height="200" alt="Монопод">	
-					</div>
-					<div class="slider-description">
-						<p class="lead">
-						Делай селфи,<br> 
-						как Бен Стиллер! 
-						</p>
-						<p>
-							Самая длинная палка для селфи доступна в нашем магазине.
-							Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-						</p>
-						<span class="line-feature">Подробнее</span>
-						<div class="slider-radio-btn">
-							<input class="slider-nav-btn" type="radio">
-							<input class="slider-nav-btn" type="radio">
-							<input class="slider-nav-btn" type="radio">
-						</div>
-						<div class="slider-table-description"><span class="slider-nav-btn"></span>
-							<table>
-								<tr class="product">
-									<td>8,5 м</td>
-									<td>5 кг</td>
-									<td>Карбон</td>
-								</tr>
-								<tr class="description">
-									<td>Длина палки</td>
-									<td>Вес палки</td>
-									<td>Материал</td>
-								</tr>
-							</table>
-						</div>
-					</div>
+				<div class="main-slider-radio">
+					<input type="radio" name="point" id="slider-item1" checked>
+					<input type="radio" name="point" id="slider-item2">
+					<input type="radio" name="point" id="slider-item3">
 				</div>
-				<div class="slider-item">	
-					<div class="slider-image">
-						<img src="img/fitbr.jpg" width="200" height="200" alt="Фитнес-браслет">
-					</div>
-					<div class="slider-description">
-						<p class="lead">
-						Худеем<br>
-						правильно! 
-						</p>
-						<p>
-							Мотивирующие фитнес-браслеты помогут найти в себе силы 
-							не пропускать занятия и соблюдать диету.
-						</p>
-						<span class="line-feature">Подробнее</span>
-						<div class="slider-radio-btn">
-							<input class="slider-nav-btn" type="radio">
-							<input class="slider-nav-btn" type="radio">
-							<input class="slider-nav-btn" type="radio">
+				
+				<div class="main-slider-items">
+					<div class="slides slider-item1">	
+						<div class="slider-image">
+							<img src="img/mon.jpg" width="200" height="200" alt="Монопод">
 						</div>
-						<div class="slider-table-description">
-							<table>
-								<tr class="product">
-									<td>48 часов</td>
-								</tr>
-								<tr class="description">
-									<td>Без подзарядки</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</div>				
-				<div class="slider-item">	
-					<div class="slider-image">
-						<img src="img/kvadr.jpg" width="200" height="200" alt="Квадрокоптер">
-					</div>
-					<div class="slider-description">
-						<p class="lead">
-							Порхает как бабочка,<br>
-							жалит как пчела!
-						</p>
-						<p>
-							Этот обычный, на первый взгляд, квадрокоптер оснащен 
-							мощным лазером, замаскированным под стандартную камеру.
-						</p>
-						<span class="line-feature">Подробнее</span>
-						<div class="slider-radio-btn">
-							<label><input class="slider-nav-btn" type="radio"></label>
-							<label><input class="slider-nav-btn" type="radio"></label>
-							<label><input class="slider-nav-btn" type="radio"></label>
-						</div>
-						<div class="slider-table-description">
-							<table>
-								<tr class="product">
-									<td>800 м</td>
-									<td>50 м</td>
-								</tr>
-								<tr class="description">
-									<td>Дальность полета</td>
-									<td>Радиус поражения</td>
-								</tr>
-							</table>
+						<div class="slider-description">
+							<p class="lead">
+							Делай селфи,<br> 
+							как Бен Стиллер! 
+							</p>
+							<p>
+								Самая длинная палка для селфи доступна в нашем магазине.
+								Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+							</p>
+							<a href="#" class="line-feature">Подробнее</a>
+							<div class="slider-table-description">
+								<table>
+									<tr class="product">
+										<td>8,5 м</td>
+										<td>5 кг</td>
+										<td>Карбон</td>
+									</tr>
+									<tr class="description">
+										<td>Длина палки</td>
+										<td>Вес палки</td>
+										<td>Материал</td>
+									</tr>
+								</table>
+							</div>
 						</div>
 					</div>
-				</div>			
+					
+					<div class="slides slider-item2">	
+						<div class="slider-image">
+								<img src="img/fitbr.jpg" width="200" height="200" alt="Фитнес-браслет">
+							</div>
+							<div class="slider-description">
+								<p class="lead">
+								Худеем<br>
+								правильно! 
+								</p>
+								<p>
+									Мотивирующие фитнес-браслеты помогут найти в себе силы 
+									не пропускать занятия и соблюдать диету.
+								</p>
+								<a href="#" class="line-feature">Подробнее</a>
+								<div class="slider-table-description">
+									<table>
+										<tr class="product">
+											<td>48 часов</td>
+										</tr>
+										<tr class="description">
+											<td>Без подзарядки</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>				
+						
+						<div class="slides slider-item3">	
+							<div class="slider-image">
+								<img src="img/kvadr.jpg" width="200" height="200" alt="Квадрокоптер">
+							</div>
+							<div class="slider-description">
+								<p class="lead">
+									Порхает как бабочка,<br>
+									жалит как пчела!
+								</p>
+								<p>
+									Этот обычный, на первый взгляд, квадрокоптер оснащен 
+									мощным лазером, замаскированным под стандартную камеру.
+								</p>
+								<a href="#" class="line-feature">Подробнее</a>
+								<div class="slider-table-description">
+									<table>
+										<tr class="product">
+											<td>800 м</td>
+											<td>50 м</td>
+										</tr>
+										<tr class="description">
+											<td>Дальность полета</td>
+											<td>Радиус поражения</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>	
+				</div>
+				<div class="main-slider-controls">
+					<label for="slider-item1"></label>
+					<label for="slider-item2"></label>
+					<label for="slider-item3"></label>
+				</div>
 			</section>
 			
 <!--АССОРТИМЕНТ-->			
@@ -187,20 +188,20 @@
 			<section class="services">
 				<h2 class="visually-hidden">Сервисы</h2>
 				<div class="services-list">
-					<div class="slider-controls">
+					<div class="services-slider-controls">
 						<label for="slide-1"><input class="services-item line-feature" type="radio" name="point" id="slide-1" value="Кредит" checked>Доставка</label>
-						<label for="slide-2"><input class="services-item line-feature" type="radio" name="point" id="slide-2" value="Кредит" checked>Гарантия</label>
-						<label for="slide-3"><input class="services-item line-feature" type="radio" name="point" id="slide-3" value="Кредит" checked>Кредит</label>
+						<label for="slide-2"><input class="services-item line-feature" type="radio" name="point" id="slide-2" value="Кредит">Гарантия</label>
+						<label for="slide-3"><input class="services-item line-feature" type="radio" name="point" id="slide-3" value="Кредит">Кредит</label>
 					</div>
 					<div class="slider-services-description">
 						<div class="slides slide-1">
-							<h3>Доставка</h3>
+							<h3 id="delivery">Доставка</h3>
 							<p>
 								Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
 							</p>
 						</div>
 						<div class="slides slide-2">
-							<h3>Гарантия</h3>
+							<h3 id="safeguard">Гарантия</h3>
 							<p>
 								Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
 								Товар, не дом, конечно же.
@@ -208,10 +209,10 @@
 						</div>
 						<div class="slides slide-3">
 							<h3>Кредит</h3>
-						<p>
-							Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
-							условия кредита. Выгодные для нашего банка, разумеется.
-						</p>
+							<p>
+								Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
+								условия кредита. Выгодные для нашего банка, разумеется.
+							</p>
 						</div>
 					</div>	
 				</div>
@@ -244,7 +245,7 @@
 			
 <!--КОНТАКТЫ-->			
 			<section class="contact">
-				<h2>Контакты</h2>
+				<h2 id="contacts">Контакты</h2>
 				<p>
 					Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 				</p>

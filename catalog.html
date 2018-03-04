@@ -8,37 +8,61 @@
 	<body>
 <!--ШАПКА-->
 		<header class="main-header">
-			<a class="logo"><img src="img/logo.jpg" width="200" height="200" alt="Логотип"></a>	
-			<div class="search">
-				<input type="text" name="search" placeholder="Поиск по сайту">
-				<button class="btn-search-hidden">Найти</button>
-			</div>
-			<nav class="main-nav">
-				<ul class="main-menu">
-					<li><a class="main-menu-goods">Каталог товаров</a>
-						<ul class="sub-menu">
-							<li class="sub-menu-item"><a href="#1">Виртуальная реальность</a></li>
-							<li class="sub-menu-item"><a href="#2">Моноподы для селфи</a></li>
-							<li class="sub-menu-item"><a href="#3">Экшн-камеры</a></li>
-							<li class="sub-menu-item"><a href="#4">Фитнес-браслеты</a></li>
-							<li class="sub-menu-item"><a href="#5">Умные часы</a></li>
-							<li class="sub-menu-item"><a href="#6">Квадрокоптеры</a></li>
-						</ul>	
-					</li>
-				</ul>
-				<ul class="site-nav">
-					<li><a href="#">Доставка</a></li> 
-					<li><a href="#">Гарантии</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>	
-				<ul class="user-nav">
-					<li class="login-link"><a class="visually-hidden" href="#">Вход</a></li>
-					<li class="login-link"><a class="visually-hidden" href="#">Выход</a></li>
-					<li class="login-link"><a href="#">Сравнить</a></li>
-					<li class="login-link"><a href="#">Корзина</a></li>
-				</ul>
-			</nav>
+			<a href="#" class="logo"><img src="img/logo.jpg" width="200" height="200" alt="Логотип"></a>	
+
+<!--ПОИСК_ВХОД-->			
+			<section class="user-nav-section">
+				<div class="search">
+					<input type="text" name="search" placeholder="Поиск по сайту">
+					<button class="btn-search-hidden">Найти</button>
+				</div>
+				<div class="user-nav">
+					<div class="user-nav-login">
+						<a class="visually-hidden" href="#">Войти</a>
+						<a class="visually-hidden" href="#">Выйти</a>
+					</div>
+					<div class="user-nav-basket-compare">
+						<a href="#">Сравнить</a>
+						<a href="#">Корзина</a>
+					</div>	
+				</div>	
+			</section>
+			
+<!--НАВИГАЦИЯ-->			
+			<section class="main-nav-section">			
+				<nav class="main-nav">
+					<div class="main-nav-holder">
+						<ul class="main-nav-menu">
+							<li><a class="menu-goods">Каталог товаров</a>
+								<ul class="sub-menu">
+									<li class="sub-menu-item"><a href="#1">Виртуальная реальность</a></li>
+									<li class="sub-menu-item"><a href="#2">Моноподы для селфи</a></li>
+									<li class="sub-menu-item"><a href="#3">Экшн-камеры</a></li>
+								</ul>	
+								<ul class="sub-menu">
+									<li class="sub-menu-item"><a href="#4">Фитнес-браслеты</a></li>
+									<li class="sub-menu-item"><a href="#5">Умные часы</a></li>
+								</ul>
+								<ul class="sub-menu">
+									<li class="sub-menu-item"><a href="#6">Квадрокоптеры</a></li>
+								</ul>	
+							</li>
+						</ul>
+					</div>
+					<div class="main-nav-wrapper">
+						<div class="nav-delivery-safeguard">
+							<a href="#">Доставка</a>
+							<a href="#">Гарантии</a>
+						</div>
+						<div class="nav-contacts">
+							<a href="#">Контакты</a>
+						</div>
+					</div>
+				</nav>
+			</section>
 		</header>
+		
+		
 <!--КОНТЕНТ-->		
 		<main class="container">
 			<h1 class="visually-hidden">Моноподы для селфи</h1>
@@ -148,37 +172,56 @@
 				</ul>
 			</section>			
 		</main>
+		
 <!--ПОДВАЛ-->		
 		<footer class="maim-footer">
 			<h2 class="visually-hidden">Контактная информация</h2>
-			<a class="footer-logo"><img src="img/logo.jpg" width="200" height="200" alt="Логотип"></a>
-			<p>
-				г. Москва, ул. Строителей, 15
-			</p>	
-			<div class="footer-socials">
-				<ul>
-					<li class="footer-site-nav"><a href="#">Доставка</a></li>
-					<li class="footer-site-nav"><a href="#">Гарантии</a></li>
-					<li class="footer-site-nav"><a href="#">Контакты</a></li>
-				</ul>	
-				<ul>
-					<li><a class="social-button" href="#">Вконтакте</a></li>
-					<li><a class="social-button" href="#">Фейсбук</a></li>
-					<li><a class="social-button" href="#">Инстаграм</a></li>
-				</ul>
-    		</div>
-    		<ul class="footer-user-nav">
-					<li class="login-link"><a class="visually-hidden" href="#">Вход</a></li>
-					<li class="login-link"><a class="visually-hidden" href="#">Выход</a></li>
-					<li class="login-link"><a href="#">Сравнить</a></li>
-					<li class="login-link"><a href="#">Корзина</a></li>
-			</ul>
-    		<p>Тел: +7(495)495-95-95</p>
-			<p class="footer-copyright">
-				<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-   					<span class="logo-html">HTML Academy</span>
-    			</a>
-			</p>
+			
+			<section class="footer-user-section">
+				<div class="footer-logotype">
+					<a class="footer-logo" href="#"><img src="img/logo.jpg" width="200" height="200" alt="Логотип"></a>
+				</div>
+				<div class="">
+					<ul class="footer-user-nav">
+						<li class="login-link"><a class="visually-hidden" href="#">Войти</a></li>
+						<li class="login-link"><a class="visually-hidden" href="#">Выйти</a></li>
+						<li class="login-link"><a href="#">Сравнить</a></li>
+						<li class="login-link"><a href="#">Корзина</a></li>
+					</ul>	
+				</div>
+			</section >
+			
+			<section class="footer-nav-section">
+				<div class="footer-address">
+					<p>г. Москва, ул. Строителей, 15</p>	
+				</div>
+				<div class="footer-site-nav">
+					<ul>
+						<li class="footer-nav"><a href="#">Доставка</a></li>
+						<li class="footer-nav"><a href="#">Гарантии</a></li>
+						<li class="footer-nav"><a href="#">Контакты</a></li>
+					</ul>	
+				</div>
+				<div class="footer-phone">
+					<p>Тел: +7(495)495-95-95</p>
+				</div>
+			</section>
+			
+			<section class="footer-socials-section">
+				<div></div>
+				<div class="footer-socials">
+					<ul>
+						<li><a class="social-button" href="#">Вконтакте</a></li>
+						<li><a class="social-button" href="#">Фейсбук</a></li>
+						<li><a class="social-button" href="#">Инстаграм</a></li>
+					</ul>
+				</div>
+				<div class="footer-copyright">
+					<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+							<span class="logo-html">HTML Academy</span>
+					</a>
+				</div>
+			</section>	
 		</footer>
 	</body>
 </html>

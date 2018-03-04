@@ -150,9 +150,9 @@
 						</p>
 						<span class="line-feature">Подробнее</span>
 						<div class="slider-radio-btn">
-							<input class="slider-nav-btn" type="radio">
-							<input class="slider-nav-btn" type="radio">
-							<input class="slider-nav-btn" type="radio">
+							<label><input class="slider-nav-btn" type="radio"></label>
+							<label><input class="slider-nav-btn" type="radio"></label>
+							<label><input class="slider-nav-btn" type="radio"></label>
 						</div>
 						<div class="slider-table-description">
 							<table>
@@ -187,33 +187,33 @@
 			<section class="services">
 				<h2 class="visually-hidden">Сервисы</h2>
 				<div class="services-list">
-					<ul>
-						<li class="services-item line-feature">Доставка</li>
-						<li class="services-item line-feature">Гарантия</li>
-						<li class="services-item line-feature">Кредит</li>
-					</ul>
-				</div>
-				<div class="services-description">
-					<div class="description-wrapper">
-						<h3>Доставка</h3>
-						<p>
-							Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-						</p>
+					<div class="slider-controls">
+						<label for="slide-1"><input class="services-item line-feature" type="radio" name="point" id="slide-1" value="Кредит" checked>Доставка</label>
+						<label for="slide-2"><input class="services-item line-feature" type="radio" name="point" id="slide-2" value="Кредит" checked>Гарантия</label>
+						<label for="slide-3"><input class="services-item line-feature" type="radio" name="point" id="slide-3" value="Кредит" checked>Кредит</label>
 					</div>
-					<div class="description-wrapper">
-						<h3>Гарантия</h3>
-						<p>
-							Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-							Товар, не дом, конечно же.
-						</p>
-					</div>
-					<div class="description-wrapper">
-						<h3>Кредит</h3>
+					<div class="slider-services-description">
+						<div class="slides slide-1">
+							<h3>Доставка</h3>
+							<p>
+								Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+							</p>
+						</div>
+						<div class="slides slide-2">
+							<h3>Гарантия</h3>
+							<p>
+								Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+								Товар, не дом, конечно же.
+							</p>
+						</div>
+						<div class="slides slide-3">
+							<h3>Кредит</h3>
 						<p>
 							Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
 							условия кредита. Выгодные для нашего банка, разумеется.
 						</p>
-					</div>
+						</div>
+					</div>	
 				</div>
 			</section>
 			
@@ -273,8 +273,8 @@
 				</ul>
     		</div>
     		<ul class="footer-user-nav">
-					<li class="login-link"><a class="visually-hidden" href="#">Вход</a></li>
-					<li class="login-link"><a class="visually-hidden" href="#">Выход</a></li>
+					<li class="login-link"><a class="visually-hidden" href="#">Войти</a></li>
+					<li class="login-link"><a class="visually-hidden" href="#">Выйти</a></li>
 					<li class="login-link"><a href="#">Сравнить</a></li>
 					<li class="login-link"><a href="#">Корзина</a></li>
 			</ul>

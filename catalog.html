@@ -62,14 +62,13 @@
 			</section>
 		</header>
 		
-		
 <!--КОНТЕНТ-->		
 		<main class="container">
 			<h1 class="visually-hidden">Моноподы для селфи</h1>
 			
 <!--НАВИГАЦИЯ-->				
-			<section class="catalog-nav">
-				<h2 class="visually-hidden">Навигация по страницам</h2>
+			<section class="catalog-nav-section">
+				<h2 class="visually-hidden">Навигация</h2>
 				<ul class="breadcrumbs">
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="#">Каталог товаров</a></li>
@@ -78,12 +77,12 @@
 			</section>
 			
 <!--ФИЛЬТР-->	
-			<section class="filter">
+			<section class="filter-section">
 				<h2>Фильтр:</h2>
-				<form class="filter-form" method="post">
+				<form class="filter-form" action="#" method="post">
 					<div class="filter-price">
 						<h3>Стоимость</h3>
-						<label><input type="range" min="от 0" max="до 8000" step="1" value="до 5000"></label>
+						<label><input type="range" min="0" max="8000" step="1" value="5000" name="11"></label>
 					</div>
 					<div class="filter-color">
 						<h3>Цвет</h3>
@@ -112,12 +111,12 @@
 							<input type="radio" value="Нет">Нет
 						</label>
 					</div>
-					<input class="line-feature" type="button" value="Показать">
+					<input class="line-feature" type="submit" value="Показать">
 				</form>
 			</section>
 						
 <!--СОРТИРОВКА-->	
-			<section class="sort">
+			<section class="sort-section">
 				<h2>Сортировка:</h2>
 				<ul>
 					<li class="sort-item">По цене</li>
@@ -129,51 +128,62 @@
 			</section>
 			
 <!--КАТАЛОГ ТОВАРОВ-->			
-			<section class="catalog">	
+			<section class="catalog-section">	
 				<h2 class="visually-hidden">Список товаров</h2>
 				<div class="item">
-					<img src="img/amateur.jpg" width="200" height="200" alt="Любительская">
-					<b>Любительская селфи-палка</b>
-					<p class="product-price">
-						500 руб.
-					</p>
-					<a class="visually-hidden line-feature" href="#">В корзину</a>
-					<button class="visually-hidden compare">Добавить к сравнению</button>
+					<div>
+						<img src="img/amateur.jpg" width="200" height="200" alt="Любительская">	
+						<a class="visually-hidden line-feature" href="#">В корзину</a>
+						<button class="visually-hidden compare">Добавить к сравнению</button>	
+					</div>
+					<div>
+						<b>Любительская селфи-палка</b>
+						<p class="item-price">500 руб.</p>
+					</div>
 				</div>
 				<div class="item">
-					<img src="img/unsinkable.jpg" width="200" height="200" alt="Непотопляемая">		
-					<b>Непотопляемая селфи-палка</b>
-					<p class="item-price">
-						2500 руб.
-					</p>
-					<a class="visually-hidden line-feature" href="#">В корзину</a>
-					<button class="visually-hidden compare">Добавить к сравнению</button>
-				</div>
+					<div>
+						<img src="img/unsinkable.jpg" width="200" height="200" alt="Непотопляемая">	
+						<a class="visually-hidden line-feature" href="#">В корзину</a>
+						<button class="visually-hidden compare">Добавить к сравнению</button>	
+					</div>
+					<div>
+						<b>Непотопляемая селфи-палка</b>
+						<p class="item-price">2500 руб.</p>
+					</div>
+				</div>		
 				<div class="item">
-					<img src="img/professional.jpg" width="200" height="200" alt="Профессиональная">
-					<b>Профессиональная селфи-палка</b>
-					<p class="item-price">
-						1500 руб.
-					</p>
-					<a class="visually-hidden line-feature" href="#">В корзину</a>
-					<button class="visually-hidden compare">Добавить к сравнению</button>
-				</div>
+					<div>
+						<img src="img/professional.jpg" width="200" height="200" alt="Профессиональная">	
+						<a class="visually-hidden line-feature" href="#">В корзину</a>
+						<button class="visually-hidden compare">Добавить к сравнению</button>	
+					</div>
+					<div>
+						<b>Профессиональная селфи-палка</b>
+						<p class="item-price">1500 руб.</p>
+					</div>
+				</div>			
 				<div class="item">
-					<img src="img/followme.jpg" width="200" height="200" alt="Следуй за мной">
-					<b>Селфи-палка "Следуй за мной"</b>
-					<p class="item-price">
-						4900 руб.
-					</p>
-					<a class="visually-hidden line-feature" href="#">В корзину</a>
-					<button class="visually-hidden compare">Добавить к сравнению</button>
+					<div>
+						<img src="img/self-parks.jpg" width="200" height="200" alt="Следуй за мной">	
+						<span class="item-new">NEW</span>
+						<a class="visually-hidden line-feature" href="#">В корзину</a>
+						<button class="visually-hidden compare">Добавить к сравнению</button>	
+					</div>
+					<div>
+						<b>Селфи-палка "Следуй за мной"</b>
+						<p class="item-price">4900 руб.</p>
+					</div>
+				</div>					
+				<div class="catalog-navigation">
+					<button class="nav-control-prev" type="submit">Назад</button>
+					<ul class="pagination-list">
+						<li class="pagination-item-current"><a href="#">1</a>
+						<li class="pagination-item"><a href="#">2</a>
+						<li class="pagination-item"><a href="#">3</a>
+					</ul>
+					<button class="nav-control-next"  type="submit">Вперед</button>
 				</div>
-				<button class="nav-control-prev" type="submit">Назад</button>
-				<ul class="pagination-list">
-					<li class="pagination-item-current"><a href="#">1</a>
-					<li class="pagination-item"><a href="#">2</a>
-					<li class="pagination-item"><a href="#">3</a>
-				</ul>
-				<button class="nav-control-next"  type="submit">Вперед</button>
 			</section>			
 		</main>
 		

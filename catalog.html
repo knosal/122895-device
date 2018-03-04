@@ -66,45 +66,47 @@
 <!--КОНТЕНТ-->		
 		<main class="container">
 			<h1 class="visually-hidden">Моноподы для селфи</h1>
+			
 <!--НАВИГАЦИЯ-->				
 			<section class="catalog-nav">
 				<h2 class="visually-hidden">Навигация по страницам</h2>
 				<ul class="breadcrumbs">
 					<li><a href="index.html">Главная</a></li>
-					<li><a href="index.html">Каталог товаров</a></li>
-					<li><a href="#">Моноподы для селфи</a></li>
+					<li><a href="#">Каталог товаров</a></li>
+					<li>Моноподы для селфи</li>
 				</ul>
 			</section>
+			
 <!--ФИЛЬТР-->	
 			<section class="filter">
 				<h2>Фильтр:</h2>
 				<form class="filter-form" method="post">
-					<hr><h3>Стоимость</h3>
 					<div class="filter-price">
-						<!--????-->
+						<h3>Стоимость</h3>
+						<label><input type="range" min="от 0" max="до 8000" step="1" value="до 5000"></label>
 					</div>
-					<hr><h3>Цвет</h3>
-					<div class="filter-check">
+					<div class="filter-color">
+						<h3>Цвет</h3>
 						<label>
-							<input type="checkbox" value="Черный" checked>Черный<br>
+							<input type="checkbox" value="Черный" checked>Черный
 						</label>
 						<label>
-							<input type="checkbox" value="Белый">Белый<br>
+							<input type="checkbox" value="Белый">Белый
 						</label>
 						<label>
-							<input type="checkbox" value="Синий" checked>Синий<br>
+							<input type="checkbox" value="Синий" checked>Синий
 						</label>
 						<label>
-							<input type="checkbox" value="Красный" checked>Красный<br>
+							<input type="checkbox" value="Красный" checked>Красный
 						</label>
 						<label>
 							<input type="checkbox" value="Розовый">Розовый
 						</label>
 					</div>
-					<hr><h3>Bluetooth</h3>
-					<div class="filter-rad">
+					<div class="filter-bluetooth">
+						<h3>Bluetooth</h3>
 						<label>
-							<input type="radio" value="Есть" checked>Есть<br>
+							<input type="radio" value="Есть" checked>Есть
 						</label>
 						<label>
 							<input type="radio" value="Нет">Нет
@@ -112,7 +114,8 @@
 					</div>
 					<input class="line-feature" type="button" value="Показать">
 				</form>
-			</section>			
+			</section>
+						
 <!--СОРТИРОВКА-->	
 			<section class="sort">
 				<h2>Сортировка:</h2>
@@ -124,6 +127,7 @@
 				<button>Вверх</button>
 				<button>Вниз</button>
 			</section>
+			
 <!--КАТАЛОГ ТОВАРОВ-->			
 			<section class="catalog">	
 				<h2 class="visually-hidden">Список товаров</h2>
@@ -163,13 +167,13 @@
 					<a class="visually-hidden line-feature" href="#">В корзину</a>
 					<button class="visually-hidden compare">Добавить к сравнению</button>
 				</div>
+				<button class="nav-control-prev" type="submit">Назад</button>
 				<ul class="pagination-list">
-					<button class="nav-control-prev" type="submit">Назад</button>
 					<li class="pagination-item-current"><a href="#">1</a>
 					<li class="pagination-item"><a href="#">2</a>
 					<li class="pagination-item"><a href="#">3</a>
-					<button class="nav-control-next"  type="submit">Вперед</button>
 				</ul>
+				<button class="nav-control-next"  type="submit">Вперед</button>
 			</section>			
 		</main>
 		

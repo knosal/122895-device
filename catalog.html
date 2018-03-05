@@ -77,125 +77,128 @@
 			</section>
 			
 <!--ФИЛЬТР-->	
-			<section class="filter-section">
-				<h2>Фильтр:</h2>
-				<form class="filter-form" action="#" method="post">
-					<div class="filter-price">
-						<h3>Стоимость</h3>
-						<label><input type="range" min="0" max="8000" step="1" value="5000" name="11"></label>
-					</div>
-					<div class="filter-color">
-						<h3>Цвет</h3>
-						<label>
-							<input type="checkbox" value="Черный" checked>Черный
-						</label>
-						<label>
-							<input type="checkbox" value="Белый">Белый
-						</label>
-						<label>
-							<input type="checkbox" value="Синий" checked>Синий
-						</label>
-						<label>
-							<input type="checkbox" value="Красный" checked>Красный
-						</label>
-						<label>
-							<input type="checkbox" value="Розовый">Розовый
-						</label>
-					</div>
-					<div class="filter-bluetooth">
-						<h3>Bluetooth</h3>
-						<label>
-							<input type="radio" value="Есть" checked>Есть
-						</label>
-						<label>
-							<input type="radio" value="Нет">Нет
-						</label>
-					</div>
-					<input class="line-feature" type="submit" value="Показать">
-				</form>
-			</section>
-						
-<!--СОРТИРОВКА-->	
-			<section class="sort-section">
-				<h2>Сортировка:</h2>
-				<div class="sort-item-holder">
-					<ul>
-						<li class="sort-item">По цене</li>
-						<li class="sort-item">По типу</li>
-						<li class="sort-item">По популярности</li>
-					</ul>
-				</div>
-				<div class="sort-btn-holder">
-					<button>Вверх</button>
-					<button>Вниз</button>
+			<section class="main-filter-section">
+				<div class="filter-forma">
+					<h2>Фильтр:</h2>
+					<form class="filter-form" action="#" method="post">
+						<div class="filter-price">
+							<h3>Стоимость</h3>
+							<input type="range" min="0" max="8000" step="1" value="5000" name="11">
+						</div>
+						<div class="filter-color">
+							<h3>Цвет</h3>
+							<label>
+								<input type="checkbox" value="Черный" checked>Черный
+							</label>
+							<label>
+								<input type="checkbox" value="Белый">Белый
+							</label>
+							<label>
+								<input type="checkbox" value="Синий" checked>Синий
+							</label>
+							<label>
+								<input type="checkbox" value="Красный" checked>Красный
+							</label>
+							<label>
+								<input type="checkbox" value="Розовый">Розовый
+							</label>
+						</div>
+						<div class="filter-bluetooth">
+							<h3>Bluetooth</h3>
+							<label>
+								<input type="radio" value="Есть" checked>Есть
+							</label>
+							<label>
+								<input type="radio" value="Нет">Нет
+							</label>
+						</div>
+						<input class="line-feature" type="submit" value="Показать">
+					</form>
 				</div>
 				
-			</section>
-			
+<!--СОРТИРОВКА-->								
+				<div class="sort-catalog-holder">
+					<div class="sort-wrapper">
+						<h2>Сортировка:</h2>
+						<div class="sort-item-holder">
+							<ul>
+								<li class="sort-item">По цене</li>
+								<li class="sort-item">По типу</li>
+								<li class="sort-item">По популярности</li>
+							</ul>
+						</div>
+						<div class="sort-btn-holder">
+							<button>Вверх</button>
+							<button>Вниз</button>
+						</div>
+					</div>	
+									
 <!--КАТАЛОГ ТОВАРОВ-->			
-			<section class="catalog-section">	
-				<h2 class="visually-hidden">Список товаров</h2>
-				<div class="item">
-					<div class="item-holder">
-						<img src="img/amateur.jpg" width="200" height="200" alt="Любительская">	
-						<a class="visually-hidden line-feature" href="#">В корзину</a>
-						<a class="visually-hidden compare">Добавить к сравнению</a>	
+					<div class="catalog-holder">	
+						<h2 class="visually-hidden">Список товаров</h2>
+						<div class="item">
+							<div class="item-holder">
+								<img src="img/amateur.jpg" width="200" height="200" alt="Любительская">	
+								<a class="visually-hidden line-feature" href="#">В корзину</a>
+								<a class="visually-hidden compare">Добавить к сравнению</a>	
+							</div>
+							<div class="description-holder">
+								<b>Любительская селфи-палка</b>
+								<p class="item-price">500 руб.</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-holder">
+								<img src="img/unsinkable.jpg" width="200" height="200" alt="Непотопляемая">	
+								<a class="visually-hidden line-feature" href="#">В корзину</a>
+								<a class="visually-hidden compare">Добавить к сравнению</a>	
+							</div>
+							<div class="description-holder">
+								<b>Непотопляемая селфи-палка</b>
+								<p class="item-price">2500 руб.</p>
+							</div>
+						</div>		
+						<div class="item">
+							<div class="item-holder">
+								<img src="img/professional.jpg" width="200" height="200" alt="Профессиональная">	
+								<a class="visually-hidden line-feature" href="#">В корзину</a>
+								<a class="visually-hidden compare">Добавить к сравнению</a>	
+							</div>
+							<div class="description-holder">
+								<b>Профессиональная селфи-палка</b>
+								<p class="item-price">1500 руб.</p>
+							</div>
+						</div>			
+						<div class="item">
+							<div class="item-holder">
+								<img src="img/self-parks.jpg" width="200" height="200" alt="Следуй за мной">	
+								<span class="item-new">NEW</span>
+								<a class="visually-hidden line-feature" href="#">В корзину</a>
+								<a class="visually-hidden compare">Добавить к сравнению</a>	
+							</div>
+							<div class="description-holder">
+								<b>Селфи-палка "Следуй за мной"</b>
+								<p class="item-price">4900 руб.</p>
+							</div>
+						</div>					
+						<div class="catalog-navigation">
+							<div class="btn-control-prev">
+								<button class="nav-control-prev" type="submit">Назад</button>
+							</div>
+							<div class="pagination-list-holder">
+								<ul class="pagination-list">
+									<li class="pagination-item-current"><a href="#">1</a>
+									<li class="pagination-item"><a href="#">2</a>
+									<li class="pagination-item"><a href="#">3</a>
+								</ul>
+							</div>
+							<div class="btn-control-next">
+									<button class="nav-control-next"  type="submit">Вперед</button>
+							</div>
+						</div>
 					</div>
-					<div class="description-holder">
-						<b>Любительская селфи-палка</b>
-						<p class="item-price">500 руб.</p>
-					</div>
-				</div>
-				<div class="item">
-					<div class="item-holder">
-						<img src="img/unsinkable.jpg" width="200" height="200" alt="Непотопляемая">	
-						<a class="visually-hidden line-feature" href="#">В корзину</a>
-						<a class="visually-hidden compare">Добавить к сравнению</a>	
-					</div>
-					<div class="description-holder">
-						<b>Непотопляемая селфи-палка</b>
-						<p class="item-price">2500 руб.</p>
-					</div>
-				</div>		
-				<div class="item">
-					<div class="item-holder">
-						<img src="img/professional.jpg" width="200" height="200" alt="Профессиональная">	
-						<a class="visually-hidden line-feature" href="#">В корзину</a>
-						<a class="visually-hidden compare">Добавить к сравнению</a>	
-					</div>
-					<div class="description-holder">
-						<b>Профессиональная селфи-палка</b>
-						<p class="item-price">1500 руб.</p>
-					</div>
-				</div>			
-				<div class="item">
-					<div class="item-holder">
-						<img src="img/self-parks.jpg" width="200" height="200" alt="Следуй за мной">	
-						<span class="item-new">NEW</span>
-						<a class="visually-hidden line-feature" href="#">В корзину</a>
-						<a class="visually-hidden compare">Добавить к сравнению</a>	
-					</div>
-					<div class="description-holder">
-						<b>Селфи-палка "Следуй за мной"</b>
-						<p class="item-price">4900 руб.</p>
-					</div>
-				</div>					
-				<div class="catalog-navigation">
-					<div class="btn-control-prev">
-						<button class="nav-control-prev" type="submit">Назад</button>
-					</div>
-					<div class="pagination-list-holder">
-						<ul class="pagination-list">
-							<li class="pagination-item-current"><a href="#">1</a>
-							<li class="pagination-item"><a href="#">2</a>
-							<li class="pagination-item"><a href="#">3</a>
-						</ul>
-					</div>
-					<div class="btn-control-next">
-							<button class="nav-control-next"  type="submit">Вперед</button>
-					</div>
-				</div>
-			</section>			
+				</div>	
+			</section>		
 		</main>
 		
 <!--ПОДВАЛ-->		

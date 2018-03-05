@@ -68,17 +68,16 @@
 			
 <!--ВЕРХНИЙ СЛАЙДЕР-->			
 			<section class="main-slider-section">
-				<h2 class="visually-hidden">Популярные товары</h2>
-				<div class="main-slider-radio">
-					<input type="radio" name="point" id="slider-item1" checked>
-					<input type="radio" name="point" id="slider-item2">
-					<input type="radio" name="point" id="slider-item3">
-				</div>
-				
-				<div class="main-slider-items">
-					<div class="slides slider-item1">	
+				<h2 class="visually-hidden">Популярные товары</h2>		
+				<div class="main-slider-box">
+					<div class="main-slider-radio">
+						<input type="radio" id="monopod">
+						<input type="radio" id="fitbracelet">
+						<input type="radio" id="quadrocopter">
+					</div>
+					<div class="slides slider-item" title="Монопод">	
 						<div class="slider-image">
-							<img src="img/mon.jpg" width="200" height="200" alt="Монопод">
+							<img src="img/monopod.jpg" width="200" height="200" alt="Монопод">
 						</div>
 						<div class="slider-description">
 							<p class="lead">
@@ -107,9 +106,9 @@
 						</div>
 					</div>
 					
-					<div class="slides slider-item2">	
+					<div class="slides slider-item" title="Фитнес-браслет">	
 						<div class="slider-image">
-								<img src="img/fitbr.jpg" width="200" height="200" alt="Фитнес-браслет">
+								<img src="img/fitbracelet.jpg" width="200" height="200" alt="Фитнес-браслет">
 							</div>
 							<div class="slider-description">
 								<p class="lead">
@@ -133,10 +132,10 @@
 								</div>
 							</div>
 						</div>				
-						
-						<div class="slides slider-item3">	
+						 
+						<div class="slides slider-item" title="Квадрокоптер">	
 							<div class="slider-image">
-								<img src="img/kvadr.jpg" width="200" height="200" alt="Квадрокоптер">
+								<img src="img/quadrocopter.jpg" width="200" height="200" alt="Квадрокоптер">
 							</div>
 							<div class="slider-description">
 								<p class="lead">
@@ -163,11 +162,6 @@
 							</div>
 						</div>	
 				</div>
-				<div class="main-slider-controls">
-					<label for="slider-item1"></label>
-					<label for="slider-item2"></label>
-					<label for="slider-item3"></label>
-				</div>
 			</section>
 			
 <!--АССОРТИМЕНТ-->			
@@ -186,7 +180,7 @@
 <!--СЕРВИСЫ-->			
 			<section class="services-section">
 				<h2 class="visually-hidden">Сервисы</h2>
-				<div class="services-list">
+				<div class="services-list-box">
 					<div class="services-slider-controls">
 						<label for="slide-1">
 							<input class="services-item line-feature" type="radio" name="point" id="slide-1" value="Кредит" checked>Доставка
@@ -199,21 +193,21 @@
 						</label>
 					</div>
 					<div class="slider-services-description">
-						<div class="slides slide-1">
+						<div class="slides slide-1" title="delivery">
 							<h3 id="delivery">Доставка</h3>
 							<p>
 								Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
 							</p>
 						</div>
-						<div class="slides slide-2">
+						<div class="slides slide-2" title="safeguard">
 							<h3 id="safeguard">Гарантия</h3>
 							<p>
 								Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
 								Товар, не дом, конечно же.
 							</p>
 						</div>
-						<div class="slides slide-3">
-							<h3>Кредит</h3>
+						<div class="slides slide-3" title="credit">
+							<h3 id="credit">Кредит</h3>
 							<p>
 								Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
 								условия кредита. Выгодные для нашего банка, разумеется.

@@ -76,38 +76,49 @@
 				<div class="filter-forma">
 					<h2>Фильтр:</h2>
 					<form class="filter-form" action="#" method="post">
-						<div class="filter-price">
-							<h3>Стоимость</h3>
+						<fieldset class="filter-price">
+							<legend>Стоимость</legend>
 							<input type="range" id="filter-price" min="0" max="8000" value="5000" name="pricefilter" disabled>
 							<label for="filter-price">от 0 до 5000</label>
-						</div>
-						<div class="filter-color">
-							<h3>Цвет</h3>
-							<label>
-								<input type="checkbox" value="Черный" checked>Черный
-							</label>
-							<label>
-								<input type="checkbox" value="Белый">Белый
-							</label>
-							<label>
-								<input type="checkbox" value="Синий" checked>Синий
-							</label>
-							<label>
-								<input type="checkbox" value="Красный" checked>Красный
-							</label>
-							<label>
-								<input type="checkbox" value="Розовый">Розовый
-							</label>
-						</div>
-						<div class="filter-bluetooth">
-							<h3>Bluetooth</h3>
-							<label>
-								<input type="radio" name="radio" value="Есть" checked>Есть
-							</label>
-							<label>
-								<input type="radio" name="radio" value="Нет">Нет
-							</label>
-						</div>
+						</fieldset>
+						<fieldset class="filter-color">
+							<legend>Цвет</legend>
+							<ul>
+								<li class="filter-option">
+									<label for="filter-black">Черный</label>
+										<input class="visually-hidden" type="checkbox" value="Черный" name="black" id="filter-black" checked>
+								</li>
+								<li class="filter-option">
+									<label for="filter-white">Белый	</label>
+										<input class="visually-hidden" type="checkbox" value="Белый" name="white" id="filter-white">
+								</li>
+								<li class="filter-option">
+									<label for="filter-blue">Синий</label>
+									<input class="visually-hidden" type="checkbox" value="Синий" name="blue" id="filter-blue" checked>
+								</li>
+								<li class="filter-option">
+									<label for="filter-red">Красный</label>
+									<input class="visually-hidden" type="checkbox" value="Красный" name="red" id="filter-red" checked>
+								</li>
+								<li class="filter-option">
+									<label for="filter-pink">Розовый</label>
+									<input class="visually-hidden" type="checkbox" value="Розовый" name="pink" id="filter-pink">
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="filter-bluetooth">
+							<legend>Bluetooth</legend>
+							<ul>
+								<li class="filter-option">
+									<label for="filter-yes">Есть</label>
+									<input class="visually-hidden" type="radio" name="radio" value="Есть" id="filter-yes" checked>
+								</li>
+								<li class="filter-option">
+									<label for="filter-no">Нет</label>
+									<input class="visually-hidden" type="radio" name="radio" value="Нет" id="filter-no">
+								</li>
+							</ul>
+						</fieldset>
 						<input class="line-feature" type="submit" value="Показать">
 					</form>
 				</div>

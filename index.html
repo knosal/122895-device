@@ -8,20 +8,21 @@
 	<body>
 <!--ШАПКА-->
 		<header class="main-header">
-			<a href="#" class="logo"><img src="img/logo.png" width="164" height="36" alt="Логотип"></a>	
+			<a href="#" class="logo"><img src="img/logo.png" width="164" height="36" alt="Логотип Device"></a>	
 
 <!--ПОИСК_ВХОД-->			
 			<section class="user-nav-section">
-				<div class="search">
-					<input type="search" name="search" placeholder="Поиск по сайту">
-					<button class="btn-search-hidden">Найти</button>
+				<div class="user-search">
+					<label class="visually-hidden" for="nav-search">Поиск по сайту</label>
+					<input type="search" name="search" id="nav-search" placeholder="Поиск по сайту">
+					<button class="btn-search-hidden" aria-label="">Найти</button>
 				</div>
 				<div class="user-nav">
 					<div class="user-nav-login">
 						<a class="visually-hidden" href="#">Войти</a>
 					</div>
 					<div class="user-nav-basket-compare">
-						<a href="#">Сравнить</a>
+						<a href="#" >Сравнить</a>
 						<a href="#">Корзина</a>
 					</div>	
 				</div>	
@@ -33,7 +34,7 @@
 					<a class="menu-goods">Каталог товаров</a>
 					<ul class="sub-menu">
 						<li class="sub-menu-item"><a href="#1">Виртуальная реальность</a></li>
-						<li class="sub-menu-item"><a href="catalog.html">Моноподы для селфи</a></li>
+						<li class="sub-menu-item"><a href="#2">Моноподы для селфи</a></li>
 						<li class="sub-menu-item"><a href="#3">Экшн-камеры</a></li>
 					</ul>	
 					<ul class="sub-menu">
@@ -67,6 +68,10 @@
 					<input type="radio" name="radio" id="monopod" checked>
 					<input type="radio" name="radio" id="fitbracelet">			
 					<input type="radio" name="radio" id="quadrocopter">
+					
+					<label class="visually-hidden" for="monopod">Монопод</label>
+					<label class="visually-hidden" for="fitbracelet">Фитнес-браслет</label>
+					<label class="visually-hidden" for="quadrocopter">Квадрокоптер</label>
 
 					<div class="slider-item" title="Монопод">	
 						<div class="slider-image">
@@ -215,14 +220,16 @@
 					<input class="services-item line-feature" type="radio" name="point" id="slide-3" value="Кредит">
 					
 					<label for="slide-1">Доставка</label>
+					<label for="slide-2">Гарантия</label>
+					<label for="slide-3">Кредит</label>
+					
 					<div class="services-in-box" title="delivery">
 						<h3 id="delivery">Доставка</h3>
 						<p>
 							Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
 						</p>
 					</div>
-					
-					<label for="slide-2">Гарантия</label>
+
 					<div class="services-in-box" title="safeguard">
 						<h3 id="safeguard">Гарантия</h3>
 						<p>
@@ -230,8 +237,7 @@
 							Товар, не дом, конечно же.
 						</p>
 					</div>
-					
-					<label for="slide-3">Кредит</label>
+
 					<div class="services-in-box" title="credit">
 						<h3 id="credit">Кредит</h3>
 						<p>
@@ -287,7 +293,7 @@
 			
 			<section class="footer-user-section">
 				<div class="footer-logotype">
-					<a class="footer-logo" href="#"><img src="img/f-logo.png" width="163" height="36" alt="Логотип"></a>
+					<a class="footer-logo" href="#"><img src="img/f-logo.png" width="163" height="36" alt="Логотип Device"></a>
 				</div>
 				<ul class="footer-user-nav">
 					<li class="login-link"><a class="visually-hidden" href="#">Войти</a></li>
@@ -314,9 +320,9 @@
 			<section class="footer-socials-section">
 				<div></div>
 				<ul class="footer-socials">
-					<li><a class="social-button" href="#">Вконтакте</a></li>
-					<li><a class="social-button" href="#">Фейсбук</a></li>
-					<li><a class="social-button" href="#">Инстаграм</a></li>
+					<li><a class="social-icon social-icon-vk" href="#" aria-label="Вконтакте">Вконтакте</a></li>
+					<li><a class="social-icon social-icon-fb" href="#" aria-label="Фейсбук">Фейсбук</a></li>
+					<li><a class="social-icon social-icon-inst" href="#" aria-label="Инстаграм">Инстаграм</a></li>
 				</ul>
 				<div class="footer-copyright">
 					<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
@@ -329,14 +335,14 @@
 <!--ФОРМА ОБРАТНОЙ СВЯЗИ-->			
 			<section class="feedback">
 				<h2 class="visually-hidden">Форма обратной связи</h2>
-				<form class="feedback-form" method="post">
-					<span class="feedback-modal-close">x</span>
-					<div class="feedback-form-group feedback-form-group-left-part">
+				<form class="feedback-form" action="https//:echo.htmlacademy.ru" method="post">
+					<button class="feedback-modal-close" aria-label="Закрыть форму обратной связи" type="button">Закрыть</button>
+					<div class="feedback-form-group form-group-left">
 						<label><b>Ваше имя:</b>
 							<input type="text" name="fullname" placeholder="Имя Фамилия" required>
 						</label>
 					</div>
-					<div class="feedback-form-group feedback-form-group-right-part">
+					<div class="feedback-form-group form-group-right">
 						<label><b>Ваш e-mail:</b>
 							<input type="email" name="email" placeholder="email@example.com" required>
 						</label>
@@ -346,17 +352,17 @@
 							<textarea name="message" placeholder="В свободной форме" rows="5" cols="50" required></textarea>
 						</label>
 					</div>
-					<input class="btn line-feature" type="submit"  value="Отправить">
+					<input class="btn line-feature" type="submit" value="Отправить">
 				</form>
 			</section>
 			
 <!--КАРТА-->			
 			<section class="map-popular">
 				<h2 class="visually-hidden">Карта</h2>
-				<span class="map-modal-close">x</span>
-				<figure>
-					<img src="img/map-big.png" width="960" height="559" alt="Карта">
-				</figure>	
+				<p>
+					<img src="img/map-big.png" width="960" height="559" alt="Как до нас добраться">
+				</p>	
+				<button class="map-modal-close" aria-label="Закрыть карту" type="button">Закрыть</button>
 			</section>
 	</body>
 </html>

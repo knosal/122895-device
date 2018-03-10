@@ -8,13 +8,14 @@
 	<body>
 <!--ШАПКА-->
 		<header class="main-header">
-			<a href="img/logo.png" class="logo"><img src="img/logo.png" width="164" height="36" alt="Логотип"></a>	
+			<a href="#" class="logo"><img src="img/logo.png" width="164" height="36" alt="Логотип Device"></a>	
 
 <!--ПОИСК_ВХОД-->			
 			<section class="user-nav-section">
-				<div class="search">
-					<input type="search" name="search" placeholder="Поиск по сайту">
-					<button class="btn-search-hidden">Найти</button>
+				<div class="user-search">
+					<label class="visually-hidden" for="nav-search">Поиск по сайту</label>
+					<input type="search" name="search" id="nav-search" placeholder="Поиск по сайту">
+					<button class="btn-search-hidden" aria-label="">Найти</button>
 				</div>
 				<div class="user-nav">
 					<div class="user-nav-login">
@@ -77,8 +78,8 @@
 					<form class="filter-form" action="#" method="post">
 						<div class="filter-price">
 							<h3>Стоимость</h3>
-							<input type="range" min="0" max="8000" value="5000" name="pricefilter" disabled>
-							<p>от 0 до 5000</p>
+							<input type="range" id="filter-price" min="0" max="8000" value="5000" name="pricefilter" disabled>
+							<label for="filter-price">от 0 до 5000</label>
 						</div>
 						<div class="filter-color">
 							<h3>Цвет</h3>
@@ -101,10 +102,10 @@
 						<div class="filter-bluetooth">
 							<h3>Bluetooth</h3>
 							<label>
-								<input type="radio" value="Есть" checked>Есть
+								<input type="radio" name="radio" value="Есть" checked>Есть
 							</label>
 							<label>
-								<input type="radio" value="Нет">Нет
+								<input type="radio" name="radio" value="Нет">Нет
 							</label>
 						</div>
 						<input class="line-feature" type="submit" value="Показать">
@@ -123,8 +124,8 @@
 							</ul>
 						</div>
 						<div class="sort-btn-holder">
-							<button>Вверх</button>
-							<button>Вниз</button>
+							<button type="button">Вверх</button>
+							<button type="button">Вниз</button>
 						</div>
 					</div>	
 					
@@ -178,7 +179,7 @@
 						</div>					
 						<div class="catalog-navigation">
 							<div class="btn-control-prev">
-								<button class="nav-control-prev" type="submit">Назад</button>
+								<button class="button catalog-control-back" type="button">Назад</button>
 							</div>
 							<div class="pagination-list-holder">
 								<ul class="pagination-list">
@@ -188,7 +189,7 @@
 								</ul>
 							</div>
 							<div class="btn-control-next">
-									<button class="nav-control-next"  type="submit">Вперед</button>
+									<button class="button catalog-control-next"  type="button">Вперед</button>
 							</div>
 						</div>
 					</div>
@@ -202,7 +203,7 @@
 			
 			<section class="footer-user-section">
 				<div class="footer-logotype">
-					<a class="footer-logo" href="#"><img src="img/f-logo.png" width="163" height="36" alt="Логотип"></a>
+					<a class="footer-logo" href="#"><img src="img/f-logo.png" width="163" height="36" alt="Логотип Device"></a>
 				</div>
 				<ul class="footer-user-nav">
 					<li class="login-link"><span class="visually-hidden user">Валентин Петухов</span></li>
@@ -229,9 +230,9 @@
 			<section class="footer-socials-section">
 				<div></div>
 				<ul class="footer-socials">
-					<li><a class="social-button" href="#">Вконтакте</a></li>
-					<li><a class="social-button" href="#">Фейсбук</a></li>
-					<li><a class="social-button" href="#">Инстаграм</a></li>
+					<li><a class="social-icon social-icon-vk" href="#" aria-label="Вконтакте">Вконтакте</a></li>
+					<li><a class="social-icon social-icon-fb" href="#" aria-label="Фейсбук">Фейсбук</a></li>
+					<li><a class="social-icon social-icon-inst" href="#" aria-label="Инстаграм">Инстаграм</a></li>
 				</ul>
 				<div class="footer-copyright">
 					<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">

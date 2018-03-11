@@ -67,23 +67,31 @@
 			<section class="main-slider-section">
 				<h2 class="visually-hidden">Популярные товары</h2>		
 				<div class="main-slider-box">
-					<input type="radio" name="radio-slider" id="monopod" checked>
-					<input type="radio" name="radio-slider" id="fitbracelet">			
-					<input type="radio" name="radio-slider" id="quadrocopter">
-					<div class="slider-item" title="Монопод">	
+					<input class="hidden_radio" type="radio" name="radio-slider" id="monopod" checked>
+					<input class="hidden_radio" type="radio" name="radio-slider" id="fitbracelet">			
+					<input class="hidden_radio" type="radio" name="radio-slider" id="quadrocopter">
+			<!--#1-->  
+					<div class="slides slider-item" title="Монопод">	
 						<div class="slider-image">
 							<img src="img/slider-1.png" width="384" height="486" alt="Монопод">
 						</div>
 						<div class="slider-description">
 							<p class="lead">
-							Делай селфи,<br> 
-							как Бен Стиллер! 
+								Делай селфи,<br> 
+								как Бен Стиллер! 
 							</p>
 							<p>
 								Самая длинная палка для селфи доступна в нашем магазине.
 								Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
 							</p>
-							<a href="#" class="line-feature">Подробнее</a>
+							<div class="slider-wrapper">
+								<a href="#" class="">Подробнее</a>
+								<div class="slider-button">
+									<label class="pseudo_radio" for="monopod">Монопод</label>
+									<label class="pseudo_radio" for="fitbracelet">Фитнес-браслет</label>
+									<label class="pseudo_radio" for="quadrocopter">Квадрокоптер</label>
+								</div>
+							</div>
 							<table class="slider-table-description">
 								<tr class="product">
 									<td>8,5 м</td>
@@ -98,20 +106,28 @@
 							</table>
 						</div>
 					</div>		
-					<div class="slider-item" title="Фитнес-браслет">	
+			<!--#2-->         
+					<div class="slides slider-item" title="Фитнес-браслет">	
 						<div class="slider-image">
 							<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
 						</div>
 						<div class="slider-description">
 							<p class="lead">
-							Худеем<br>
-							правильно! 
+								Худеем<br>
+								правильно! 
 							</p>
 							<p>
 								Мотивирующие фитнес-браслеты помогут найти в себе силы 
 								не пропускать занятия и соблюдать диету.
 							</p>
-							<a href="#" class="line-feature">Подробнее</a>
+							<div class="slider-wrapper">
+								<a href="#" class="">Подробнее</a>
+								<div class="slider-button">
+									<label class="pseudo_radio" for="monopod">Монопод</label>
+									<label class="vpseudo_radio" for="fitbracelet">Фитнес-браслет</label>
+									<label class="pseudo_radio" for="quadrocopter">Квадрокоптер</label>
+								</div>
+							</div>
 							<table class="slider-table-description">
 								<tr class="product">
 									<td>48 часов</td>
@@ -121,8 +137,9 @@
 								</tr>
 							</table>
 						</div>
-					</div>				
-					<div class="slider-item" title="Квадрокоптер">	
+					</div>	
+			<!--#3-->           
+					<div class="slides slider-item" title="Квадрокоптер">	
 						<div class="slider-image">
 							<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
 						</div>
@@ -135,7 +152,14 @@
 								Этот обычный, на первый взгляд, квадрокоптер оснащен 
 								мощным лазером, замаскированным под стандартную камеру.
 							</p>
-							<a href="#" class="line-feature">Подробнее</a>
+							<div class="slider-wrapper">
+								<a href="#" class="">Подробнее</a>
+								<div class="slider-button">
+									<label class="pseudo_radio" for="monopod">Монопод</label>
+									<label class="pseudo_radio" for="fitbracelet">Фитнес-браслет</label>
+									<label class="pseudo_radio" for="quadrocopter">Квадрокоптер</label>
+								</div>
+							</div>
 							<table class="slider-table-description">
 								<tr class="product">
 									<td>800 м</td>
@@ -148,11 +172,6 @@
 							</table>
 						</div>
 					</div>	
-				</div>
-				<div>
-					<label class="visually-hidden" for="monopod">Монопод</label>
-					<label class="visually-hidden" for="fitbracelet">Фитнес-браслет</label>
-					<label class="visually-hidden" for="quadrocopter">Квадрокоптер</label>
 				</div>
 			</section>
 			

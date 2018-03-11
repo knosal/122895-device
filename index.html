@@ -24,7 +24,7 @@
 						<a class="visually-hidden" href="#">Войти</a>
 					</div>
 					<div class="user-nav-basket-compare">
-						<a href="#" >Сравнить</a>
+						<a href="#">Сравнить</a>
 						<a href="#">Корзина</a>
 					</div>	
 				</div>	
@@ -67,14 +67,9 @@
 			<section class="main-slider-section">
 				<h2 class="visually-hidden">Популярные товары</h2>		
 				<div class="main-slider-box">
-					<input type="radio" name="radio" id="monopod" checked>
-					<input type="radio" name="radio" id="fitbracelet">			
-					<input type="radio" name="radio" id="quadrocopter">
-					
-					<label class="visually-hidden" for="monopod">Монопод</label>
-					<label class="visually-hidden" for="fitbracelet">Фитнес-браслет</label>
-					<label class="visually-hidden" for="quadrocopter">Квадрокоптер</label>
-
+					<input type="radio" name="radio-slider" id="monopod" checked>
+					<input type="radio" name="radio-slider" id="fitbracelet">			
+					<input type="radio" name="radio-slider" id="quadrocopter">
 					<div class="slider-item" title="Монопод">	
 						<div class="slider-image">
 							<img src="img/slider-1.png" width="384" height="486" alt="Монопод">
@@ -102,8 +97,7 @@
 								</tr>
 							</table>
 						</div>
-					</div>
-					
+					</div>		
 					<div class="slider-item" title="Фитнес-браслет">	
 						<div class="slider-image">
 							<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
@@ -128,7 +122,6 @@
 							</table>
 						</div>
 					</div>				
-						 
 					<div class="slider-item" title="Квадрокоптер">	
 						<div class="slider-image">
 							<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
@@ -155,6 +148,11 @@
 							</table>
 						</div>
 					</div>	
+				</div>
+				<div>
+					<label class="visually-hidden" for="monopod">Монопод</label>
+					<label class="visually-hidden" for="fitbracelet">Фитнес-браслет</label>
+					<label class="visually-hidden" for="quadrocopter">Квадрокоптер</label>
 				</div>
 			</section>
 			
@@ -217,21 +215,20 @@
 			<section class="services-section">
 				<h2 class="visually-hidden">Сервисы</h2>
 				<div class="services-box">
-					<input class="services-item line-feature" type="radio" name="point" id="slide-1">
+					<input class="services-item line-feature" type="radio" name="point" id="slide-1" value="Доставка">
 					<input class="services-item line-feature" type="radio" name="point" id="slide-2" value="Гарантия">
 					<input class="services-item line-feature" type="radio" name="point" id="slide-3" value="Кредит">
-					
-					<label for="slide-1">Доставка</label>
-					<label for="slide-2">Гарантия</label>
-					<label for="slide-3">Кредит</label>
-					
+					<div class="slider-point">
+						<label for="slide-1">Доставка</label>
+						<label for="slide-2">Гарантия</label>
+						<label for="slide-3">Кредит</label>
+					</div>			
 					<div class="services-in-box" title="delivery">
 						<h3 id="delivery">Доставка</h3>
 						<p>
 							Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
 						</p>
 					</div>
-
 					<div class="services-in-box" title="safeguard">
 						<h3 id="safeguard">Гарантия</h3>
 						<p>
@@ -239,7 +236,6 @@
 							Товар, не дом, конечно же.
 						</p>
 					</div>
-
 					<div class="services-in-box" title="credit">
 						<h3 id="credit">Кредит</h3>
 						<p>
@@ -255,9 +251,13 @@
 				<h2 class="visually-hidden">Спонсоры</h2>
 				<div class="logotypes">
 					<img  src="img/logo-1c.jpg" width="260" height="100" alt="Dji">
+					<img  src="img/logo-1wb.jpg" width="260" height="100" alt="Dji">
 					<img  src="img/logo-2c.jpg" width="260" height="100" alt="SpGadgets">
+					<img  src="img/logo-2wb.jpg" width="260" height="100" alt="SpGadgets">
 					<img  src="img/logo-3c.jpg" width="260" height="100" alt="GoPto">
+					<img  src="img/logo-3wb.jpg" width="260" height="100" alt="GoPto">
 					<img  src="img/logo-4c.jpg" width="260" height="100" alt="Vive">
+					<img  src="img/logo-4wb.jpg" width="260" height="100" alt="Vive">
 				</div>	
 			</section>
 			
@@ -363,10 +363,10 @@
 <!--КАРТА-->			
 			<section class="map-popular">
 				<h2 class="visually-hidden">Карта</h2>
+				<button class="map-modal-close" aria-label="Закрыть карту" type="button">Закрыть</button>
 				<p>
 					<img src="img/map-big.png" width="960" height="559" alt="Как до нас добраться">
 				</p>	
-				<button class="map-modal-close" aria-label="Закрыть карту" type="button">Закрыть</button>
 			</section>
 	</body>
 </html>

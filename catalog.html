@@ -8,7 +8,7 @@
 	<body>
 <!--ШАПКА-->
 		<header class="main-header">
-			<a href="#" class="logo"><img src="img/logo.png" width="164" height="36" alt="Логотип Device"></a>	
+			<a href="index.html" class="logo"><img src="img/logo.png" width="164" height="36" alt="Логотип Device"></a>	
 			
 			<h1 class="visually-hidden">Моноподы для селфи</h1>
 <!--ПОИСК_ВХОД-->			
@@ -22,6 +22,7 @@
 				<div class="user-nav">
 					<div class="user-nav-login">
 						<span class="visually-hidden user">Валентин Петухов</span>
+						<a href="#">Выйти</a>
 					</div>
 					<div class="user-nav-basket-compare">
 						<a href="#">Сравнить</a>
@@ -62,8 +63,7 @@
 		
 <!--КОНТЕНТ-->		
 		<main class="container">
-	
-			
+				
 <!--НАВИГАЦИОННАЯ ЦЕПОЧКА-->				
 			<section class="catalog-nav-section">
 				<h2 class="visually-hidden">Навигация</h2>
@@ -82,7 +82,8 @@
 						<fieldset class="filter-price">
 							<legend>Стоимость</legend>
 							<input type="range" id="filter-price" min="0" max="8000" value="5000" name="pricefilter" disabled>
-							<label for="filter-price">от 0 до 5000</label>
+							<span for="filter-price">от 0</span>
+							<span for="filter-price">до 5000</span>
 						</fieldset>
 						<fieldset class="filter-color">
 							<legend>Цвет</legend>

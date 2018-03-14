@@ -8,7 +8,7 @@
 	<body>
 <!--ШАПКА-->
 		<header class="main-header">
-			<a href="#" class="logo"><img src="img/logo.png" width="164" height="36" alt="Логотип Device"></a>	
+			<a class="logo"><img src="img/logo.png" width="164" height="36" alt="Логотип Device"></a>	
 			<h1 class="visually-hidden">Магазин "Девайс"</h1>
 <!--ПОИСК_ВХОД-->			
 			<section class="user-section">
@@ -16,7 +16,7 @@
 				<div class="user-search">
 					<label class="visually-hidden" for="nav-search">Поиск по сайту</label>
 					<input type="search" name="search" id="nav-search" placeholder="Поиск по сайту">
-					<button class="btn-search-hidden" aria-label="">Найти</button>
+					<button class="btn-search-hidden" aria-label="Кнопка поиска">Найти</button>
 				</div>
 				<div class="user-nav">
 					<div class="user-nav-login">
@@ -32,29 +32,31 @@
 <!--НАВИГАЦИЯ-->			
 			<section class="main-nav-section">
 				<h2 class="visually-hidden">Навигация</h2>			
-				<nav class="dropdown-menu" aria-label="Каталог товаров">
-					<a class="menu-goods">Каталог товаров</a>
-					<ul class="sub-menu">
-						<li class="sub-menu-item"><a href="#1">Виртуальная реальность</a></li>
-						<li class="sub-menu-item"><a href="catalog.html">Моноподы для селфи</a></li>
-						<li class="sub-menu-item"><a href="#3">Экшн-камеры</a></li>
-					</ul>	
-					<ul class="sub-menu">
-						<li class="sub-menu-item"><a href="#4">Фитнес-браслеты</a></li>
-						<li class="sub-menu-item"><a href="#5">Умные часы</a></li>
-					</ul>
-					<ul class="sub-menu">
-						<li class="sub-menu-item"><a href="#6">Квадрокоптеры</a></li>
-					</ul>
-				</nav>
-				<nav class="main-nav-wrapper">
-					<div class="nav-delivery-safeguard">
-						<a href="#">Доставка</a>
-						<a href="#">Гарантии</a>
-					</div>
-					<div class="nav-contacts">
-						<a href="#">Контакты</a>
-					</div>
+				<nav class="nav-menu" aria-label="Каталог товаров">	
+					<nav class="dropdown-menu">
+						<a class="menu-goods">Каталог товаров</a>
+						<ul class="sub-menu">
+							<li class="sub-menu-item"><a href="#1">Виртуальная реальность</a></li>
+							<li class="sub-menu-item"><a href="catalog.html">Моноподы для селфи</a></li>
+							<li class="sub-menu-item"><a href="#3">Экшн-камеры</a></li>
+						</ul>	
+						<ul class="sub-menu">
+							<li class="sub-menu-item"><a href="#4">Фитнес-браслеты</a></li>
+							<li class="sub-menu-item"><a href="#5">Умные часы</a></li>
+						</ul>
+						<ul class="sub-menu">
+							<li class="sub-menu-item"><a href="#6">Квадрокоптеры</a></li>
+						</ul>
+					</nav>
+					<nav class="main-nav-wrapper">
+						<div class="nav-delivery-safeguard">
+							<a href="#">Доставка</a>
+							<a href="#">Гарантии</a>
+						</div>
+						<div class="nav-contacts">
+							<a href="#">Контакты</a>
+						</div>
+					</nav>
 				</nav>
 			</section>
 		</header>
@@ -84,11 +86,11 @@
 								Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
 							</p>
 							<div class="slider-wrapper">
-								<a href="#" class="">Подробнее</a>
+								<a href="#" class="" aria-label="Подробнее о моноподе">Подробнее</a>
 								<div class="slider-button">
-									<label class="pseudo_radio" for="monopod">Монопод</label>
-									<label class="pseudo_radio" for="fitbracelet">Фитнес-браслет</label>
-									<label class="pseudo_radio" for="quadrocopter">Квадрокоптер</label>
+									<label class="pseudo_radio" for="monopod" tabindex="0">Монопод</label>
+									<label class="pseudo_radio" for="fitbracelet" tabindex="0">Фитнес-браслет</label>
+									<label class="pseudo_radio" for="quadrocopter" tabindex="0">Квадрокоптер</label>
 								</div>
 							</div>
 							<table class="slider-table-description">
@@ -120,11 +122,11 @@
 								не пропускать занятия и соблюдать диету.
 							</p>
 							<div class="slider-wrapper">
-								<a href="#" class="">Подробнее</a>
+								<a href="#" class="" aria-label="Подробнее о Фитнес-браслете">Подробнее</a>
 								<div class="slider-button">
-									<label class="pseudo_radio" for="monopod">Монопод</label>
-									<label class="vpseudo_radio" for="fitbracelet">Фитнес-браслет</label>
-									<label class="pseudo_radio" for="quadrocopter">Квадрокоптер</label>
+									<label class="pseudo_radio" for="monopod" tabindex="0">Монопод</label>
+									<label class="vpseudo_radio" for="fitbracelet" tabindex="0">Фитнес-браслет</label>
+									<label class="pseudo_radio" for="quadrocopter" tabindex="0">Квадрокоптер</label>
 								</div>
 							</div>
 							<table class="slider-table-description">
@@ -136,7 +138,7 @@
 								</tr>
 							</table>
 						</div>
-					</div>	
+					</div>
 			<!--#3-->           
 					<div class="slides slider-item" title="Квадрокоптер">	
 						<div class="slider-image">
@@ -152,11 +154,11 @@
 								мощным лазером, замаскированным под стандартную камеру.
 							</p>
 							<div class="slider-wrapper">
-								<a href="#" class="">Подробнее</a>
+								<a href="#" class="" aria-label="Подробнее о Квадрокоптере">Подробнее</a>
 								<div class="slider-button">
-									<label class="pseudo_radio" for="monopod">Монопод</label>
-									<label class="pseudo_radio" for="fitbracelet">Фитнес-браслет</label>
-									<label class="pseudo_radio" for="quadrocopter">Квадрокоптер</label>
+									<label class="pseudo_radio" for="monopod" tabindex="0">Монопод</label>
+									<label class="pseudo_radio" for="fitbracelet" tabindex="0">Фитнес-браслет</label>
+									<label class="pseudo_radio" for="quadrocopter" tabindex="0">Квадрокоптер</label>
 								</div>
 							</div>
 							<table class="slider-table-description">
@@ -233,13 +235,13 @@
 			<section class="services-section">
 				<h2 class="visually-hidden">Сервисы</h2>
 				<div class="services-box">
-					<input class="services-item line-feature" type="radio" name="point" id="slide-1" value="Доставка">
+					<input class="services-item line-feature" type="radio" name="point" id="slide-1" value="Доставка" checked>
 					<input class="services-item line-feature" type="radio" name="point" id="slide-2" value="Гарантия">
 					<input class="services-item line-feature" type="radio" name="point" id="slide-3" value="Кредит">
 					<div class="slider-point">
-						<label for="slide-1">Доставка</label>
-						<label for="slide-2">Гарантия</label>
-						<label for="slide-3">Кредит</label>
+						<label for="slide-1" tabindex="0">Доставка</label>
+						<label for="slide-2" tabindex="0">Гарантия</label>
+						<label for="slide-3" tabindex="0">Кредит</label>
 					</div>			
 					<div class="services-in-box" title="delivery">
 						<h3 id="delivery">Доставка</h3>
@@ -277,8 +279,8 @@
 						<img  src="img/logo-2wb.jpg" width="260" height="100" alt="SpGadgets">
 					</a>
 					<a href="#">
-						<img  src="img/logo-3c.jpg" width="260" height="100" alt="GoPto">
-						<img  src="img/logo-3wb.jpg" width="260" height="100" alt="GoPto">
+						<img  src="img/logo-3c.jpg" width="260" height="100" alt="GoPro">
+						<img  src="img/logo-3wb.jpg" width="260" height="100" alt="GoPro">
 					</a>
 					<a href="#">
 						<img  src="img/logo-4c.jpg" width="260" height="100" alt="Vive">
@@ -310,7 +312,7 @@
 				<p>
 					Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 				</p>
-				<a class="map-btn" href="#"><img src="img/map.png" width="560" height="222" alt="Карта"></a>
+				<a class="map-btn" href="#"><img src="img/map.png" width="560" height="222" alt="Открытие модального окна"></a>
 				<a href="#" class="line-feature">Напишите нам</a>	
 			</section>
 		</main>
@@ -385,7 +387,7 @@
 <!--КАРТА-->			
 			<section class="map-popular">
 				<h2 class="visually-hidden">Карта</h2>
-				<button class="map-modal-close" aria-label="Закрыть карту" type="button">Закрыть</button>
+				<button class="map-modal-close" aria-label="Закрыть модальное окно с картой" type="button">Закрыть</button>
 				<p>
 					<img src="img/map-big.png" width="960" height="559" alt="Как до нас добраться">
 				</p>	

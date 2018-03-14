@@ -37,7 +37,7 @@
 					<a class="menu-goods">Каталог товаров</a>
 					<ul class="sub-menu">
 						<li class="sub-menu-item"><a href="#1">Виртуальная реальность</a></li>
-						<li class="sub-menu-item item-current"><a>Моноподы для селфи</a></li>
+						<li class="sub-menu-item item-current"><a aria-label="Моноподы для селфи" tabindex="0">Моноподы для селфи</a></li>
 						<li class="sub-menu-item"><a href="#3">Экшн-камеры</a></li>
 					</ul>	
 					<ul class="sub-menu">
@@ -78,20 +78,20 @@
 				<div class="filter-forma">
 					<h2>Фильтр:</h2>
 					<form class="filter-form" action="#" method="post">
-						<fieldset class="filter-price" aria-label="Фильтр стоимости">
-							<legend>Стоимость</legend>
+						<fieldset class="filter-price">
+							<legend tabindex="0" aria-label="Фильтр стоимости">Стоимость</legend>
 							<input type="range" id="filter-price" min="0" max="8000" value="5000" name="pricefilter" disabled>
 							<span class="filter-price">от 0</span>
 							<span class="filter-price">до 5000</span>
 						</fieldset>
-						<fieldset class="filter-color" aria-label="Фильтр цвета">
-							<legend>Цвет</legend>
+						<fieldset class="filter-color">
+							<legend tabindex="0" aria-label="Фильтр цвета">Цвет</legend>
 							<ul>
 								<li class="filter-option">
 									<label>
 										<input class="visually-hidden" type="checkbox" value="Черный" name="black" checked>Черный
 									</label>
-								</li>
+								</li>  
 								<li class="filter-option">
 									<label>
 										<input class="visually-hidden" type="checkbox" value="Белый" name="white">Белый	
@@ -114,8 +114,8 @@
 								</li>
 							</ul>
 						</fieldset>
-						<fieldset class="filter-bluetooth" aria-label="Фильтр bluetooth">
-							<legend>Bluetooth</legend>
+						<fieldset class="filter-bluetooth">
+							<legend tabindex="0" aria-label="Фильтр Bluetooth">Bluetooth</legend>
 							<ul>
 								<li class="filter-option">
 									<label for="filter-yes">Есть</label>

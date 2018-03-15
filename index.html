@@ -32,32 +32,37 @@
 			</section>
 			
 <!--НАВИГАЦИЯ-->			
-			<section class="main-nav-section">			
-				<h2 class="visually-hidden">Каталог товаров</h2>
-				<nav class="dropdown-menu">
-					<a class="menu-goods">Каталог товаров</a>
-					<ul class="sub-menu">
-						<li class="sub-menu-item"><a href="#1">Виртуальная реальность</a></li>
-						<li class="sub-menu-item item-current"><a aria-label="Моноподы для селфи" tabindex="0">Моноподы для селфи</a></li>
-						<li class="sub-menu-item"><a href="#3">Экшн-камеры</a></li>
-					</ul>	
-					<ul class="sub-menu">
-						<li class="sub-menu-item"><a href="#4">Фитнес-браслеты</a></li>
-						<li class="sub-menu-item"><a href="#5">Умные часы</a></li>
+			<section class="main-nav-section">
+				<h2 class="visually-hidden">Навигация</h2>			
+				<nav class="navigation" aria-label="Навигация по сайту">	
+					<ul class="nav-menu">
+						<li class="nav menu-catalog"><a href="#">Каталог товаров</a>
+							<ul class="dropdown-menu">
+								<li class="sub-menu">
+									<ul>
+										<li class="sub-menu-item"><a href="#1">Виртуальная реальность</a></li>
+										<li class="sub-menu-item"><a href="catalog.html">Моноподы для селфи</a></li>
+										<li class="sub-menu-item"><a href="#3">Экшн-камеры</a></li>
+									</ul>
+								</li>	
+								<li class="sub-menu">
+									<ul>
+										<li class="sub-menu-item"><a href="#4">Фитнес-браслеты</a></li>
+										<li class="sub-menu-item"><a href="#5">Умные часы</a></li>
+									</ul>
+								</li>
+								<li class="sub-menu">
+									<ul>
+										<li class="sub-menu-item"><a href="#6">Квадрокоптеры</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav nav-delivery"><a href="#">Доставка</a></li>
+						<li class="nav nav-safeguard"><a href="#">Гарантии</a></li>
+						<li class="nav nav-contacts"><a href="#">Контакты</a></li>
 					</ul>
-					<ul class="sub-menu">
-						<li class="sub-menu-item"><a href="#6">Квадрокоптеры</a></li>
-					</ul>
-				</nav>
-				<nav class="main-nav-wrapper">
-					<div class="nav-delivery-safeguard">
-						<a href="#">Доставка</a>
-						<a href="#">Гарантии</a>
-					</div>
-					<div class="nav-contacts">
-						<a href="#">Контакты</a>
-					</div>
-				</nav>
+				</nav>  
 			</section>
 		</header>
 		
@@ -235,13 +240,13 @@
 			<section class="services-section">
 				<h2 class="visually-hidden">Сервисы</h2>
 				<div class="services-box">
-					<input class="services-item line-feature" type="radio" name="point" id="slide-1" value="Доставка" checked>
-					<input class="services-item line-feature" type="radio" name="point" id="slide-2" value="Гарантия">
-					<input class="services-item line-feature" type="radio" name="point" id="slide-3" value="Кредит">
+					<input class="services-item visually-hidden" type="radio" name="point" id="slide-1" value="Доставка" checked>
+					<input class="services-item visually-hidden" type="radio" name="point" id="slide-2" value="Гарантия">
+					<input class="services-item visually-hidden" type="radio" name="point" id="slide-3" value="Кредит">
 					<div class="slider-point">
-						<label for="slide-1">Доставка</label>
-						<label for="slide-2">Гарантия</label>
-						<label for="slide-3">Кредит</label>
+						<label for="slide-1" class="line-feature">Доставка</label>
+						<label for="slide-2" class="line-feature">Гарантия</label>
+						<label for="slide-3" class="line-feature">Кредит</label>
 					</div>			
 					<div class="services-in-box" title="delivery">
 						<h3 id="delivery">Доставка</h3>
@@ -354,7 +359,7 @@
 				</ul>
 				<div class="footer-copyright">
 					<a href="https://htmlacademy.ru/intensive/htmlcss">
-							<span class="logo-html">HTML Academy</span>
+						<span class="logo-html">HTML Academy</span>
 					</a>
 				</div>
 			</section>	

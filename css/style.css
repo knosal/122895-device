@@ -33,6 +33,7 @@ img{
 
 .line-feature{
 	text-transform: uppercase;
+	text-decoration: line-through;
 	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 18px;
 }
@@ -44,7 +45,7 @@ h2,h3{
 }
 
 .line-feature:hover{
-	
+
 }
 
 .line-feature:focus{
@@ -182,14 +183,13 @@ h2,h3{
 	
 	border-right: 5px solid black;
 	
+	width: 284px;
 	margin: 50px 0px;
 	margin-right: 20px;
 	
+	text-decoration: line-through;
 	text-align: center;
 	line-height: 24px;
-	
-	width: 284px;
-	
 }
 .services-in-box{
 	margin-left: 116px;

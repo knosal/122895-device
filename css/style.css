@@ -34,22 +34,33 @@ img{
 .line-feature{
 	text-transform: uppercase;
 	text-decoration: line-through;
+
 	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 18px;
+	
+	padding: 10px;
 }
+
+.line-feature:hover{
+	background-color: #f7df8d;
+
+	text-decoration: none;
+}
+.line-feature:active{
+	background-color: #f7df8d;
+	color: rgba(255,255,255, 0.3);
+	
+	text-decoration: none;
+}
+
+
+
+
 
 h2,h3{
 		font-family: "Gilroy ExtraBold", Arial, sans-serif;
 		font-size: 47px;
 		line-height: 48px;
-}
-
-.line-feature:hover{
-
-}
-
-.line-feature:focus{
-	
 }
 
 /*ГОЛОВА*/
@@ -59,6 +70,18 @@ h2,h3{
 	flex-direction: row;
 	
 	background-color: #f7e296;
+}
+
+nav li{
+	list-style: none;
+}
+
+.dropdown-menu{
+	visibility: hidden;
+}
+
+.menu-catalog a:hover .dropdown-menu{
+	visibility: visible;
 }
 
 /*ВЕРХНИЙ СЛАЙДЕР*/
@@ -155,9 +178,13 @@ h2,h3{
 	height: 160px;
 	width: 160px;
 	
-
-	
 	background-color: #f7e296;
+}
+.popular-item:hover{
+	background-color: #f0c52e;
+}
+.popular-item:active .popular-img-wrapper{
+	opacity: 0.5;
 }
 .popular-img-wrapper{
 	display: flex;
@@ -176,32 +203,6 @@ h2,h3{
 	
 	width: 1090px;
 }
-.slider-point{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	
-	border-right: 5px solid black;
-	
-	width: 284px;
-	margin: 50px 0px;
-	margin-right: 20px;
-	
-	text-decoration: line-through;
-	text-align: center;
-	line-height: 24px;
-}
-.services-in-box{
-	margin-left: 116px;
-	
-	width: 437px;
-	
-	display: none;
-}
-.services-in-box p{
-	line-height: 30px;
-}
-
 .services-section{
 	background-color: #e5e5e0;
 	max-width: 1440px;
@@ -215,20 +216,57 @@ h2,h3{
 #credit:checked ~ .services[title='credit'] {
   display: block;
 }
+.slider-point{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	border-right: 5px solid black;
+	
+	width: 284px;
+	
+	margin: 50px 0px;
+	
+	text-align: center;
+	line-height: 24px;
+}
+.slider-point label{
+	padding-right: 109px;
+}
+.slider-point label:active{
+	background-color: black;
+	color: #f7e184;
+}
+.services-in-box{
+	margin-left: 116px;
+	
+	width: 437px;
+	
+	display: none;
+}
+.services-in-box p{
+	line-height: 30px;
+}
 
 /*СПОНСОРЫ*/
 .brands-logotypes{
 	margin: 94px auto;
 	display: flex;
-	justify-content: space-between
+	justify-content: space-between;
+}
+.logotypes{
+	position: relative;
 }
 .logotypes img:nth-child(2){
 	position: absolute;
+	opacity: 0;
 	visibility: hidden;
+	top: 0px;
 }
-
-a .logotypes{
-	position: relative;
+.logotypes:hover img:last-child{
+	cursor: pointer;
+	opacity: 1;
+	visibility: visible;
 }
 
 /*.brands-logotypes img:nth-child(1):hover .brands-logotypes a img:last-child{

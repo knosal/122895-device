@@ -16,7 +16,6 @@
 body {
 	max-width: 1440px;
 	min-width: 1160px;
-
 	margin: 0px auto; 
 	padding: 0 20px;
 }
@@ -28,39 +27,31 @@ a{
 	color: white;
 }
 img{
-	
+
 }
 
+/*КНОПКИ ПРИ НАВЕДЕНИИ*/
 .line-feature{
 	text-transform: uppercase;
 	text-decoration: line-through;
-
 	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 18px;
-	
 	padding: 10px;
 }
-
 .line-feature:hover{
 	background-color: #f7df8d;
-
 	text-decoration: none;
 }
 .line-feature:active{
 	background-color: #f7df8d;
 	color: rgba(255,255,255, 0.3);
-	
 	text-decoration: none;
 }
 
-
-
-
-
 h2,h3{
-		font-family: "Gilroy ExtraBold", Arial, sans-serif;
-		font-size: 47px;
-		line-height: 48px;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
 }
 
 /*ГОЛОВА*/
@@ -68,18 +59,14 @@ h2,h3{
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-	
 	background-color: #f7e296;
 }
-
 nav li{
 	list-style: none;
 }
-
 .dropdown-menu{
 	visibility: hidden;
 }
-
 .menu-catalog a:hover .dropdown-menu{
 	visibility: visible;
 }
@@ -88,23 +75,17 @@ nav li{
 .slides {
 	display: none;
 	margin: 0 auto;
-	
 	width: 1128px;
 	min-height: 466px;
-}
-.slider-item{
-	
 }
 .slider-image{
 	float: left;
 }
-
 .slider-description{
 	float: right;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
 	margin-bottom: 109px;
 	width: 560px;
 }
@@ -120,18 +101,15 @@ nav li{
 	font-size: 40px;
 	font-family: "Gilroy Light", Arial, sans-serif;
 }
-
 .product td{
 	padding-top: 72px;
 	padding-right: 65px;
 }
-
 .description td{
 	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 20px;
 }
-
 .hidden_radio{
 	position: relative;
 	margin: 0 auto;
@@ -158,7 +136,6 @@ nav li{
 	font-size: 47px;
 }
 .slider-description p:nth-child(2){
-	
 	font-family: "Open Sans Light", Arial, sans-serif;
 	line-height: 30px;
 }
@@ -168,16 +145,13 @@ nav li{
 	display: flex;
 	justify-content: space-between; /*Выравнивание блоков по ширине*/
 	align-items:center; /*Вертикальное выравнивание*/
-	
 	margin: 0px auto;
-	
 	height: 242px;
 	width: 1440px;
 }
 .popular-item{
 	height: 160px;
 	width: 160px;
-	
 	background-color: #f7e296;
 }
 .popular-item:hover{
@@ -198,9 +172,7 @@ nav li{
 .services-box{
 	display: flex;
 	justify-content: center;
-
 	margin-top: 126px;
-	
 	width: 1090px;
 }
 .services-section{
@@ -208,25 +180,21 @@ nav li{
 	max-width: 1440px;
 }
 #delivery:checked ~ .services[title='delivery'] {
-  display: block;
+	display: block;
 }
 #safeguard:checked ~ .services[title='safeguard'] {
-  display: block;
+	display: block;
 }
 #credit:checked ~ .services[title='credit'] {
-  display: block;
+	display: block;
 }
 .slider-point{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	
 	border-right: 5px solid black;
-	
 	width: 284px;
-	
 	margin: 50px 0px;
-	
 	text-align: center;
 	line-height: 24px;
 }
@@ -239,9 +207,7 @@ nav li{
 }
 .services-in-box{
 	margin-left: 116px;
-	
 	width: 437px;
-	
 	display: none;
 }
 .services-in-box p{
@@ -269,17 +235,10 @@ nav li{
 	visibility: visible;
 }
 
-/*.brands-logotypes img:nth-child(1):hover .brands-logotypes a img:last-child{
-	cursor: pointer;
-	visibility: visible;
-	opacity: 1;
-}*/
-
 /*О НАС*/
 .info-section,
 .contact-section section{
 	float: left;
-	
 	line-height: 30px;
 }
 .info-section{
@@ -287,11 +246,9 @@ nav li{
 	flex-direction: column;
 	justify-content: space-between;
 	align-content: center;
-	
 	margin-left: 135px;
 	margin-right: 140px;
 	margin-bottom: 96px;
-
 	width: 463px;
 	height: 561px;
 }
@@ -302,15 +259,11 @@ nav li{
 	flex-direction: column;
 	justify-content: space-between;
 	align-content: center;
-	
 	line-height: 30px;
-	
 	margin-bottom: 96px;
-
 	width: 562px;
 	height: 561px;
 }
-
 .contact-section .line-feature a{
 	padding-top: 82px;
 }
@@ -353,7 +306,6 @@ a.arrow {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-	
 	color: white;
 	background-color: #464646;
 }

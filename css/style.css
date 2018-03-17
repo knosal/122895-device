@@ -1,74 +1,92 @@
+/*ШРИФТЫ*/
+@font-face {
+	font-family: "Opensans";
+	src: url("../fonts/opensans.woff2") format("woff2"); 
+	font-style: normal; 
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Gilroy-ExtraBold";
+	src: url("../fonts/gilroyextrabold.woff2") format("woff2"); 
+	font-style: normal; 
+	font-weight: bold; 
+}
+
+/*ГЛОБАЛЬНО*/
 body {
-  margin: 0;
-  padding: 0;
-	width: 1440;
+	max-width: 1440px;
+	min-width: 1160px;
 
-	font-family: "Open Sans Light", Arial, sans-serif;
-	font-size: 15px;
+	margin: 0px auto; 
+	padding: 0 20px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.main-footer a{
+	color: white;
+}
+img{
+	
 }
 
-/*.visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	clip: rect(0 0 0 0);
-	overflow: hidden;
-}*/
+.line-feature{
+	text-transform: uppercase;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	
+}
 
+h2,h3{
+		font-family: "Gilroy", Arial, sans-serif;
+		font-size: 47px;
+}
 
-header{
+.line-feature:hover{
+	
+}
+
+.line-feature:focus{
+	
+}
+
+/*ГОЛОВА*/
+.main-header{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	
 	background-color: #f7e296;
-}
-.services-section{
-	background-color: #e5e5e0;
-}
-
-.main-footer{
-	background-color: #464646;
-}
-.popular-list{
-	display: flex;
-}
-.brands-logotypes{
-	display: flex;
-}
-.feedback, .map-popular{
-	display: none;
-}
-
-
-/*СТРЕЛКИ СОРТИРОВКИ*/
-a.arrow {
-	display: inline-block;
-	margin: 0 10px;
-	font-size: 0;
-}
-.arrow::before {
-	content: "";
-	border: 10px solid #231f20;
-	border-right-width: 5px;
-	border-left-width: 5px;
-	border-right-color: transparent;
-	border-left-color: transparent;
-	display: inline-block
-}
-.arrow-up::before {
-	border-top-width: 0;
-	border-color: #c3c2c2;
-	border-right-color: transparent;
-	border-left-color: transparent;
-  
-}
-.arrow-down::before {
-	border-bottom-width: 0;
 }
 
 /*ВЕРХНИЙ СЛАЙДЕР*/
 .slides {
 	display: none;
+	margin: 0 auto;
+	
+	width: 1128px;
+	min-height: 466px;
+}
+.slider-item{
+	
+}
+.slider-image{
+	float: left;
+}
+
+.slider-description{
+	float: right;
+	
+	width: 560px;
+}
+.hidden_radio{
+	position: relative;
+	margin: 0 auto;
+	top: 300px;
+	left: 1050px;
+}
+.hidden_radio:nth-child(3){
+	padding-right: 223px;
 }
 .pseudo_radio {
   display: none;
@@ -82,4 +100,194 @@ a.arrow {
 #quadrocopter:checked ~ .slides[title='Квадрокоптер'] {
   display: block;
 }
+.slider-description .lead{
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 47px;
+}
+.slider-description p:nth-child(2){
+	
+	font-family: "Open Sans Light", Arial, sans-serif;
+}
 
+/*АССОРТИМЕНТ*/
+.popular-list{
+	display: flex;
+	justify-content: space-between; /*Выравнивание блоков по ширине*/
+	align-items:center; /*Вертикальное выравнивание*/
+	
+	margin: 0px auto;
+	
+	height: 242px;
+	width: 1440px;
+}
+.popular-item{
+	height: 160px;
+	width: 160px;
+	
+	background-color: #f7e296;
+}
+.popular-img-wrapper{
+	display: flex;
+	justify-content: center;
+}
+.popular-item p{
+	display: none;
+}
+
+/*СЕРВИСЫ*/
+.services-box{
+	display: flex;
+	
+	width: 1090px;
+	
+	justify-content: center
+}
+.slider-point{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	margin: 50px 0px;
+	margin-right: 20px;
+	
+	text-align: center;
+	
+	width: 284px;
+	
+}
+.services-in-box{
+	margin-left: 116px;
+	
+	width: 437px;
+	
+	display: none;
+}
+.services-section{
+	background-color: #e5e5e0;
+	max-width: 1440px;
+}
+#delivery:checked ~ .services[title='delivery'] {
+  display: block;
+}
+#safeguard:checked ~ .services[title='safeguard'] {
+  display: block;
+}
+#credit:checked ~ .services[title='credit'] {
+  display: block;
+}
+
+/*СПОНСОРЫ*/
+.brands-logotypes{
+	margin: 94px auto;
+	display: flex;
+	justify-content: space-between
+}
+.brands-logotypes a img:last-child{
+	position: absolute;
+	visibility: hidden;
+}
+
+.logotypes {
+	position: relative;
+}
+
+
+.brands-logotypes img:nth-child(1):hover{
+	cursor: pointer;
+	visibility: visible;
+	opacity: 0;
+}
+
+
+
+/*О НАС*/
+.info-section,
+.contact-section section{
+	float: left;
+}
+.info-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: center;
+	
+	margin-left: 135px;
+	margin-right: 140px;
+	margin-bottom: 96px;
+
+	width: 463px;
+	height: 561px;
+}
+
+/*КАК ДОБРАТЬСЯ*/
+.contact-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: center;
+	
+	margin-bottom: 96px;
+
+	width: 562px;
+	height: 561px;
+}
+
+.contact-section .line-feature a{
+	padding-top: 82px;
+}
+
+/*СТРЕЛКИ СОРТИРОВКИ*/
+a.arrow {
+	display: inline-block;
+	margin: 0 10px;
+	font-size: 0;
+}
+.arrow::before {
+	display: inline-block;
+	content: "";
+	
+	border: 10px solid #231f20;
+	border-right-width: 5px;
+	border-left-width: 5px;
+	border-right-color: transparent;
+	border-left-color: transparent;
+}
+.arrow-up::before {
+	border-top-width: 0;
+	border-color: #c3c2c2;
+	border-right-color: transparent;
+	border-left-color: transparent;
+}
+.arrow-down::before {
+	border-bottom-width: 0;
+}
+
+/*ФОРМА ОБРАТНОЙ СВЯЗИ*/
+.feedback, .map-popular{
+	display: none;
+}
+
+/*МОДАЛЬНАЯ КАРТА*/
+
+/*ПОДВАЛ*/
+.main-footer{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	
+	color: white;
+	background-color: #464646;
+}
+.logo-html{
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}

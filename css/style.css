@@ -30,6 +30,20 @@ img{
 
 }
 
+/*ЛОГОТИП*/
+.logo:hover{
+	opacity: 0.6;
+}
+.logo:active{
+	opacity: 0.3;
+}
+
+h2,h3{
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+}
+
 /*КНОПКИ ПРИ НАВЕДЕНИИ*/
 .line-feature{
 	text-transform: uppercase;
@@ -46,12 +60,6 @@ img{
 	background-color: #f7df8d;
 	color: rgba(255,255,255, 0.3);
 	text-decoration: none;
-}
-
-h2,h3{
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
-	font-size: 47px;
-	line-height: 48px;
 }
 
 /*ГОЛОВА*/
@@ -97,8 +105,7 @@ nav li{
 }
 .product{
 	line-height: 48px;
-	font-family:sans-serif;
-	font-size: 40px;
+	font-size: 36px;
 	font-family: "Gilroy Light", Arial, sans-serif;
 }
 .product td{
@@ -109,6 +116,7 @@ nav li{
 	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 20px;
+	padding-top: 20px;
 }
 .hidden_radio{
 	position: relative;
@@ -165,7 +173,8 @@ nav li{
 	justify-content: center;
 }
 .popular-item p{
-	display: none;
+	
+	
 }
 
 /*СЕРВИСЫ*/

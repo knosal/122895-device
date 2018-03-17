@@ -34,12 +34,13 @@ img{
 .line-feature{
 	text-transform: uppercase;
 	font-family: "Gilroy ExtraBold", Arial, sans-serif;
-	
+	font-size: 18px;
 }
 
 h2,h3{
-		font-family: "Gilroy", Arial, sans-serif;
+		font-family: "Gilroy ExtraBold", Arial, sans-serif;
 		font-size: 47px;
+		line-height: 48px;
 }
 
 .line-feature:hover{
@@ -76,14 +77,42 @@ h2,h3{
 
 .slider-description{
 	float: right;
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	margin-bottom: 109px;
 	width: 560px;
 }
+.slider-wrapper {
+	padding-top: 40px;
+}
+.slider-table-description{
+	padding-top: 72px 0px;
+}
+.product{
+	line-height: 48px;
+	font-family:sans-serif;
+	font-size: 40px;
+	font-family: "Gilroy Light", Arial, sans-serif;
+}
+
+.product td{
+	padding-top: 72px;
+	padding-right: 65px;
+}
+
+.description td{
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+}
+
 .hidden_radio{
 	position: relative;
 	margin: 0 auto;
-	top: 300px;
-	left: 1050px;
+	top: 350px;
+	left: 1100px;
 }
 .hidden_radio:nth-child(3){
 	padding-right: 223px;
@@ -107,6 +136,7 @@ h2,h3{
 .slider-description p:nth-child(2){
 	
 	font-family: "Open Sans Light", Arial, sans-serif;
+	line-height: 30px;
 }
 
 /*АССОРТИМЕНТ*/
@@ -124,6 +154,8 @@ h2,h3{
 	height: 160px;
 	width: 160px;
 	
+
+	
 	background-color: #f7e296;
 }
 .popular-img-wrapper{
@@ -137,20 +169,24 @@ h2,h3{
 /*СЕРВИСЫ*/
 .services-box{
 	display: flex;
+	justify-content: center;
+
+	margin-top: 126px;
 	
 	width: 1090px;
-	
-	justify-content: center
 }
 .slider-point{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	
+	border-right: 5px solid black;
+	
 	margin: 50px 0px;
 	margin-right: 20px;
 	
 	text-align: center;
+	line-height: 24px;
 	
 	width: 284px;
 	
@@ -162,6 +198,10 @@ h2,h3{
 	
 	display: none;
 }
+.services-in-box p{
+	line-height: 30px;
+}
+
 .services-section{
 	background-color: #e5e5e0;
 	max-width: 1440px;
@@ -182,28 +222,27 @@ h2,h3{
 	display: flex;
 	justify-content: space-between
 }
-.brands-logotypes a img:last-child{
+.logotypes img:nth-child(2){
 	position: absolute;
 	visibility: hidden;
 }
 
-.logotypes {
+a .logotypes{
 	position: relative;
 }
 
-
-.brands-logotypes img:nth-child(1):hover{
+/*.brands-logotypes img:nth-child(1):hover .brands-logotypes a img:last-child{
 	cursor: pointer;
 	visibility: visible;
-	opacity: 0;
-}
-
-
+	opacity: 1;
+}*/
 
 /*О НАС*/
 .info-section,
 .contact-section section{
 	float: left;
+	
+	line-height: 30px;
 }
 .info-section{
 	display: flex;
@@ -225,6 +264,8 @@ h2,h3{
 	flex-direction: column;
 	justify-content: space-between;
 	align-content: center;
+	
+	line-height: 30px;
 	
 	margin-bottom: 96px;
 

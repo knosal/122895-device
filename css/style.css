@@ -24,4 +24,134 @@ a{
 }
 .main-footer a{
 	color: white;
-}ы
+}
+
+/*ЛОГОТИП*/
+.logo:hover{
+	opacity: 0.6;
+}
+.logo:active{
+	opacity: 0.3;
+}
+
+h2,h3,.line-feature{
+		font-family: "Gilroy ExtraBold", Arial, sans-serif;
+}
+
+h2,h3{
+	font-size: 47px;
+	line-height: 48px;
+}
+
+/*КНОПКИ ПРИ НАВЕДЕНИИ*/
+.line-feature{
+	text-transform: uppercase;
+	text-decoration: line-through;
+	font-size: 18px;
+	padding: 10px;
+}
+.line-feature:hover{
+	background-color: #f7df8d;
+	text-decoration: none;
+}
+.line-feature:active{
+	background-color: #f7df8d;
+	color: rgba(255,255,255, 0.3);
+	text-decoration: none;
+}
+
+/*ГОЛОВА*/
+.main-header{
+	background-color: #f7e296;
+}
+nav li{
+	list-style: none;
+}
+
+/*ВЕРХНИЙ СЛАЙДЕР*/
+.product{
+	line-height: 48px;
+	font-size: 36px;
+	font-family: "Gilroy Light", Arial, sans-serif;
+}
+.description td{
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.slider-description .lead{
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 47px;
+}
+.slider-description p:nth-child(2){
+	font-family: "Open Sans Light", Arial, sans-serif;
+	line-height: 30px;
+}
+
+/*АССОРТИМЕНТ*/
+.popular-item{
+	height: 160px;
+	width: 160px;
+	background-color: #f7e296;
+}
+.popular-item:hover{
+	background-color: #f0c52e;
+}
+.popular-item:active .popular-img-wrapper{
+	opacity: 0.5;
+}
+
+/*СЕРВИСЫ*/
+
+.services-section{
+	background-color: #e5e5e0;
+	max-width: 1440px;
+}
+.slider-point{
+
+	line-height: 24px;
+}
+.slider-point label:active{
+	background-color: black;
+	color: #f7e184;
+}
+.services-in-box p{
+	line-height: 30px;
+}
+
+/*ПОДВАЛ*/
+.main-footer{
+	color: white;
+	background-color: #464646;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

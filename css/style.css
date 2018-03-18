@@ -32,7 +32,8 @@ h2,h3,.line-feature{
 
 .user-section{
 	font-family: "Open Sans Light", Arial, sans-serif;
-	font-size: 13px;
+	font-size: 15px;
+	line-height: 30px;
 }
 
 h2,h3{
@@ -65,13 +66,7 @@ h2,h3{
 	opacity: 0.3;
 }
 
-/*ГОЛОВА*/
-.main-header{
-	background-color: #f7e296;
-}
-nav li{
-	list-style: none;
-}
+/*ПОИСК*/
 input[type="search"]{
 	opacity: 0.3;
 	border: none;
@@ -84,7 +79,31 @@ input[type="search"]:hover{
 input[type="search"]:active,
 input[type="search"]:focus,{
 	opacity: 1;
+	border-bottom: 1px solid #000;
 }
+
+/*ГОЛОВА*/
+.main-header{
+	background-color: #f7e296;
+}
+/*НАВИГАЦИЯ*/
+nav li{
+	list-style: none;
+}
+li[class~="nav-"]{
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 2px;
+}
+
+/*ПОДМЕНЮ*/
+.sub-menu{
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 36px;
+}
+
 
 
 /*ВЕРХНИЙ СЛАЙДЕР*/

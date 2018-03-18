@@ -26,16 +26,13 @@ a{
 	color: white;
 }
 
-/*ЛОГОТИП*/
-.logo:hover{
-	opacity: 0.6;
-}
-.logo:active{
-	opacity: 0.3;
-}
-
 h2,h3,.line-feature{
 		font-family: "Gilroy ExtraBold", Arial, sans-serif;
+}
+
+.user-section{
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 13px;
 }
 
 h2,h3{
@@ -60,6 +57,14 @@ h2,h3{
 	text-decoration: none;
 }
 
+/*ЛОГОТИП*/
+.logo:hover{
+	opacity: 0.6;
+}
+.logo:active{
+	opacity: 0.3;
+}
+
 /*ГОЛОВА*/
 .main-header{
 	background-color: #f7e296;
@@ -67,6 +72,20 @@ h2,h3{
 nav li{
 	list-style: none;
 }
+input[type="search"]{
+	opacity: 0.3;
+	border: none;
+	background-color: #f7e296;
+	text-align: center;
+}
+input[type="search"]:hover{
+	opacity: 0.6;
+}
+input[type="search"]:active,
+input[type="search"]:focus,{
+	opacity: 1;
+}
+
 
 /*ВЕРХНИЙ СЛАЙДЕР*/
 .product{

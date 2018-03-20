@@ -2,22 +2,25 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Device</title>
+		<title>Catalog</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
 <!--ШАПКА-->
 		<header class="main-header">
-			<a href="index.html" class="logo"><img src="img/logo.png" width="164" height="36" alt="Логотип Device"></a>	
-			<h1 class="visually-hidden">Моноподы для селфи</h1>
+			<a class="logo header-logo"><img src="img/logo.png" width="164" height="36" alt="Логотип Device"></a>	
+			<h1 class="visually-hidden">Магазин "Девайс"</h1>
 <!--ПОИСК_ВХОД-->			
-			<section class="user-nav-section">
+			<section class="user-section">
 				<h2  class="visually-hidden">Поиск по сайту</h2>
 				<div class="user-search">
-					<label class="visually-hidden" for="nav-search">Поиск по сайту</label>
-					<input type="search" name="search" id="nav-search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
-					<button class="btn-search-hidden" aria-label="Кнопка поиска">Найти</button>
+					<form action="" method="post">	
+						<label class="visually-hidden" for="nav-search">Поиск по сайту</label>
+						<input type="search" name="search" id="nav-search" placeholder="Поиск по сайту">
+						<button class="btn-search" type="button" aria-label="Кнопка поиска">Найти</button>
+					</form>
 				</div>
 				<div class="user-nav">
 					<div class="user-nav-login">
@@ -25,8 +28,8 @@
 						<a href="#">Выйти</a>
 					</div>
 					<div class="user-nav-basket-compare">
-						<a href="#">Сравнить</a>
-						<a href="#">Корзина</a>
+						<a href="#" class="compare">Сравнить</a>
+						<a href="#" class="bin">Корзина</a>
 					</div>	
 				</div>	
 			</section>
@@ -36,12 +39,12 @@
 				<h2 class="visually-hidden">Навигация</h2>			
 				<nav class="navigation" aria-label="Навигация по сайту">	
 					<ul class="nav-menu">
-						<li class="nav menu-catalog"><a href="#">Каталог товаров</a>
+						<li class="nav"><a class="nav-catalog" href="#">Каталог товаров</a>
 							<ul class="dropdown-menu">
 								<li class="sub-menu">
 									<ul>
 										<li class="sub-menu-item"><a href="#1">Виртуальная реальность</a></li>
-										<li class="sub-menu-item item-current"><a aria-label="Моноподы для селфи" tabindex="0">Моноподы для селфи</a></li>
+										<li class="sub-menu-item"><a href="catalog.html">Моноподы для селфи</a></li>
 										<li class="sub-menu-item"><a href="#3">Экшн-камеры</a></li>
 									</ul>
 								</li>	
@@ -71,7 +74,7 @@
 				
 <!--НАВИГАЦИОННАЯ ЦЕПОЧКА-->				
 			<section class="catalog-nav-section">
-				<h2 class="visually-hidden">Навигация</h2>
+				<h2>Моноподы для селфи</h2>
 				<ul class="breadcrumbs">
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="#">Каталог товаров</a></li>
@@ -81,7 +84,7 @@
 			
 <!--ФИЛЬТР-->	
 			<section class="main-filter-section">
-				<div class="filter-forma">
+				<div class="filter-form">
 					<h2>Фильтр:</h2>
 					<form class="filter-form" action="#" method="post">
 						<fieldset class="filter-price">
@@ -100,22 +103,22 @@
 								</li>  
 								<li class="filter-option">
 									<label>
-										<input class="visually-hidden" type="checkbox" value="Белый" name="white">Белый	
+										<input class="visually-hidden filter-input" type="checkbox" value="Белый" name="white">Белый	
 									</label>
 								</li>
 								<li class="filter-option">
 									<label>
-										<input class="visually-hidden" type="checkbox" value="Синий" name="blue" checked>Синий
+										<input class="visually-hidden filter-input" type="checkbox" value="Синий" name="blue" checked>Синий
 									</label>
 									</li>
 								<li class="filter-option">
 									<label>
-										<input class="visually-hidden" type="checkbox" value="Красный" name="red" checked>Красный
+										<input class="visually-hidden filter-input" type="checkbox" value="Красный" name="red" checked>Красный
 									</label>
 								</li>
 								<li class="filter-option">
 									<label>
-										<input class="visually-hidden" type="checkbox" value="Розовый" name="pink" >Розовый
+										<input class="visually-hidden filter-input" type="checkbox" value="Розовый" name="pink" >Розовый
 									</label>
 								</li>
 							</ul>
@@ -133,7 +136,7 @@
 								</li>
 							</ul>
 						</fieldset>
-						<button class="line-feature button" type="submit" value="Показать">Показать</button>
+						<button class="button line-feature" type="submit" value="Показать">Показать</button>
 					</form>
 				</div>
 				
@@ -149,8 +152,8 @@
 							</ul>
 						</div>
 						<div class="sort-btn-holder">
-							<a class="arrow arrow-up" href="#">по возрастанию</a>
-							<a class="arrow arrow-down" href="#">по убыванию</a>
+							<a class="arrow arrow-up" href="#" aria-label="Сортировка по возрастанию">по возрастанию</a>
+							<a class="arrow arrow-down" href="#" aria-label="Сортировка по убыванию">по убыванию</a>
 						</div>
 					</div>	
 					
@@ -221,12 +224,12 @@
 			</section>		
 		</main>
 		
-<!--ПОДВАЛ-->		
+<!--ПОДВАЛ-->
 		<footer class="main-footer">
 			<section class="footer-user">
 				<h2 class="visually-hidden">Для пользователя</h2>
 				<div class="footer-logotype">
-					<a class="footer-logo"><img src="img/f-logo.png" width="163" height="36" alt="Логотип Device"></a>
+					<a class="logo footer-logo"><img src="img/f-logo.png" width="163" height="36" alt="Логотип Device"></a>
 				</div>
 				<ul class="footer-user-nav">
 					<li class="login-link"><span class="visually-hidden user">Валентин Петухов</span></li>
@@ -252,13 +255,13 @@
 			<section class="footer-socials">
 				<h2 class="visually-hidden">Мы в соцсетях</h2>
 				<ul class="socials-buttons">
-					<li><a class="social-icon social-btn-facebook" href="#">Facebook</a></li>
-					<li><a class="social-icon social-btn-instagram" href="#">Instagram</a></li>
-					<li><a class="social-icon social-btn-twitter" href="#">Twitter</a></li>
+					<li><a class="social-icon social-btn-facebook" href="#" alt="Facebook"><span class="visually-hidden">Facebook</span></a></li>
+					<li><a class="social-icon social-btn-instagram" href="#" href="#" alt="Instagram"><span class="visually-hidden">Instagram</span></a></li>
+					<li><a class="social-icon social-btn-twitter" href="#" href="#" alt="Twitter"><span class="visually-hidden">Twitter</span></a></li>
 				</ul>
 				<div class="footer-copyright">
 					<a href="https://htmlacademy.ru/intensive/htmlcss">
-							<span class="logo-html">HTML Academy</span>
+						<span class="logo-html" alt="HTML Academy" ></span>
 					</a>
 				</div>
 			</section>	

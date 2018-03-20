@@ -89,9 +89,14 @@
 					<form class="filter-form" action="#" method="post">
 						<fieldset class="filter-price">
 							<legend tabindex="0" aria-label="Фильтр стоимости">Стоимость</legend>
-							<input type="range" id="filter-price" min="0" max="8000" value="5000" name="pricefilter" disabled>
-							<span class="filter-price">от 0</span>
-							<span class="filter-price">до 5000</span>
+							<div class="scale">
+								<div class="scrol"></div>
+								<input class="visually-hidden" type="range" id="filter-price" min="0" max="8000" value="5000" name="pricefilter" disabled>
+							</div>
+							<span class="filter-price filter-price-min">от 0</span>
+							<span class="filter-price filter-price-max">до 5000</span>
+							<span class="range-toggle range-toggle-min"></span>
+       			  <span class="range-toggle range-toggle-max"></span>
 						</fieldset>
 						<fieldset class="filter-color">
 							<legend tabindex="0" aria-label="Фильтр цвета">Цвет</legend>

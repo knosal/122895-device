@@ -578,7 +578,10 @@ input[type="email"]{
 /*ФИЛЬТРЫ*/
 .filter-form-wrapper{
 	background-color: rgba(238,238,238,1);
-	width: 100%;
+	max-width: 468px;
+}
+.filter-form-wrapper form{
+	max-width: 201px;
 }
 .filter-form-wrapper h2{
 	font-family: "Gilroy ExtraBold", Arial, sans-serif;
@@ -597,6 +600,49 @@ fieldset legend{
 	line-height: 24px;
 	letter-spacing: 0.18px;
 }
+
+/*RANGE*/
+.filter-price {
+	position: relative;
+}
+.filter-price .scale {
+	height: 2px;
+	background: rgba(0, 0, 0, 0.3);
+}
+.scale .scrol{
+  width: 70%;
+  height: 2px;
+  background: rgba(201, 224, 162, 1);
+}
+.filter-price .filter-price{
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0;
+}
+.filter-price .filter-price-min{
+	padding-right: 64px;
+}
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+.range-toggle-min {
+  left: 0;
+	top: 20px;
+}
+.range-toggle-max {
+  left: 65%;
+	top: 20px;
+}
+/*ПУНКТЫ ФИЛЬТРА*/
 ul .filter-option{
 	list-style: none;
 	font-family: "Open Sans Light", Arial, sans-serif;

@@ -16,9 +16,11 @@
 			<section class="user-section">
 				<h2  class="visually-hidden">Поиск по сайту</h2>
 				<div class="user-search">
-					<label class="visually-hidden" for="nav-search">Поиск по сайту</label>
-					<input type="search" name="search" id="nav-search" placeholder="Поиск по сайту">
-					<button class="btn-search" aria-label="Кнопка поиска">Найти</button>
+					<form action="" method="post">	
+						<label class="visually-hidden" for="nav-search">Поиск по сайту</label>
+						<input type="search" name="search" id="nav-search" placeholder="Поиск по сайту">
+						<button class="btn-search" type="button" aria-label="Кнопка поиска">Найти</button>
+					</form>
 				</div>
 				<div class="user-nav">
 					<div class="user-nav-login">
@@ -357,9 +359,9 @@
 			<section class="footer-socials">
 				<h2 class="visually-hidden">Мы в соцсетях</h2>
 				<ul class="socials-buttons">
-					<li><a class="social-icon social-btn-facebook" href="#" alt="Facebook"></a></li>
-					<li><a class="social-icon social-btn-instagram" href="#" href="#" alt="Instagram"></a></li>
-					<li><a class="social-icon social-btn-twitter" href="#" href="#" alt="Twitter"></a></li>
+					<li><a class="social-icon social-btn-facebook" href="#" alt="Facebook"><span class="visually-hidden">Facebook</span></a></li>
+					<li><a class="social-icon social-btn-instagram" href="#" href="#" alt="Instagram"><span class="visually-hidden">Instagram</span></a></li>
+					<li><a class="social-icon social-btn-twitter" href="#" href="#" alt="Twitter"><span class="visually-hidden">Twitter</span></a></li>
 				</ul>
 				<div class="footer-copyright">
 					<a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -373,22 +375,24 @@
 			<section class="feedback">
 				<h2 class="visually-hidden">Форма обратной связи</h2>
 				<form class="feedback-form" action="#" method="post">
-					<button class="feedback-modal-close" aria-label="Закрыть форму обратной связи" type="button">Закрыть</button>
-					<div class="feedback-form-group form-group-left">
-						<label><b>Ваше имя:</b><br>
-							<input type="text" name="fullname" placeholder="Имя Фамилия"  aria-label="Введите ваше имя" required>
-						</label>
-					</div>
-					<div class="feedback-form-group form-group-right">
-						<label><b>Ваш e-mail:</b><br>
-							<input type="email" name="email" placeholder="email@example.com" aria-label="Введите ваш email" required>
-						</label>
-					</div>
-					<div class="feedback-form-group">
-						<label><b>Текст письма:</b><br>
-							<textarea name="message" placeholder="В свободной форме" rows="5" cols="50" required></textarea>
-						</label>
-					</div>
+					<button class="feedback-modal-close" aria-label="Закрыть форму обратной связи" type="button"></button>
+					<div class="qqq">
+							<div class="feedback-form-group form-group-left">
+							<label><b>Ваше имя:</b><br>
+								<input type="text" name="fullname" placeholder="Имя Фамилия"  aria-label="Введите ваше имя" required>
+							</label>
+						</div>
+						<div class="feedback-form-group form-group-right">
+							<label><b>Ваш e-mail:</b><br>
+								<input type="email" name="email" placeholder="email@example.com" aria-label="Введите ваш email" required>
+							</label>
+						</div>
+						<div class="feedback-form-group">
+							<label><b>Текст письма:</b><br>
+								<textarea name="message" placeholder="В свободной форме" rows="5" cols="50" required></textarea>
+							</label>
+						</div>
+						</div>
 					<input class="btn line-feature" type="submit" value="Отправить" aria-label="Отправить форму">
 				</form>
 			</section>
@@ -396,7 +400,7 @@
 <!--КАРТА-->			
 			<section class="map-popular">
 				<h2 class="visually-hidden">Карта</h2>
-				<button class="map-modal-close" aria-label="Закрыть модальное окно с картой" type="button">Закрыть</button>
+				<button class="map-modal-close" aria-label="Закрыть модальное окно с картой" type="button"></button>
 				<p>
 					<img src="img/map-big.png" width="960" height="559" alt="Как до нас добраться">
 				</p>	

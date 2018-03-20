@@ -1,16 +1,5 @@
 /*ШРИФТЫ*/
-/*@font-face {
-	font-family: "Open Sans";
-	src: url("../fonts/opensans.woff2") format("woff2"); 
-	font-style: normal; 
-	font-weight: normal;
-}
-@font-face {
-	font-family: "Open Sans Light";
-	src: url("../fonts/opensanslight.woff2") format("woff2"); 
-	font-style: italic; 
-	font-weight: normal;
-}
+/*
 @font-face {
 	font-family: "Gilroy ExtraBold";
 	src: url("../fonts/gilroyextrabold.woff2") format("woff2"); 
@@ -22,11 +11,12 @@
 	src: url("../fonts/gilroylight.woff2") format("woff2"); 
 	font-style: normal; 
 	font-weight: normal; 
-}*/
+}
+*/
 
 /*ГЛОБАЛЬНО*/
 body {
-	max-width: 1160px;
+	max-width: 1440px;
 	margin: 0px auto; 
 	padding: 0 20px;
 }
@@ -37,15 +27,6 @@ a{
 a:visited,
 a:link{
 		color: black;
-}
-.main-footer a{
-	color: #fff;
-}
-h2,
-h3{
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
-	font-size: 47px;
-	line-height: 48px;
 }
 
 /*КНОПКИ ПРИ НАВЕДЕНИИ*/
@@ -73,9 +54,6 @@ h3{
 .line-feature:hover{
 	background-color: rgba(240,197,46,1);
 }
-a.line-feature:hover{
-	background-color: rgba(240,197,46,1);
-}
 .line-feature:active{
 	color: rgba(0,0,0,0.3);
 }
@@ -87,8 +65,9 @@ a.line-feature:hover{
 	top: 40px;
 	padding-left: 0 160px;
 	background-color: #f7e296;	
-	width: 100%;
+	min-width: 1160px;
 	height: 299px;
+	
 }
 .user-section{
 	font-family: "Open Sans Light", Arial, sans-serif;
@@ -112,9 +91,6 @@ a.line-feature:hover{
 }
 
 /*ПОИСК*/
-input{
-	outline: none;
-}
 input[type="search"]{
 	opacity: 0.3;
 	border: none;
@@ -126,6 +102,7 @@ input[type="search"]{
 	letter-spacing: -1px;
 	width: 200px;
 	border-bottom: 2px solid transparent;
+	outline: none;
 }
 input[type="search"]:hover{
 	opacity: 0.6;
@@ -159,6 +136,7 @@ input[type="search"]:active ~ .btn-search{
 }
 .btn-search:active{
 	color: rgba(255,255,255,0.3);
+	visibility: visible;
 }
 
 /*НАВИГАЦИЯ*/
@@ -250,12 +228,8 @@ nav li{
 	letter-spacing: 0.36px;
 }
 .slider-item a{
-	padding: 10px 49px;
+	padding: 15px 49px;
 }
-.slider-item line-feature:hover:before{
-	width: 220px;
-}
-
 /*АССОРТИМЕНТ*/
 .popular-img-wrapper{
 	width: 160px;
@@ -290,7 +264,7 @@ nav li{
 /*СЕРВИСЫ*/
 .services-section{
 	background-color: rgba(229,229,229,1);
-	width: 1445px;
+	min-width: 1440px;
 /*	height: 288px;*/
 }
 .services-in-box{
@@ -332,6 +306,11 @@ nav li{
 .slider-point .line-feature:active{
 	color: rgba(247,225,132,1);
 }
+.services-section h3{
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+}
 
 /*СПОНСОРЫ*/
 .logotypes>img:last-child{
@@ -348,10 +327,20 @@ nav li{
 	font-size: 15px;
 	line-height: 30px;
 }
+.info-section h2{
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+}
 
 /*КОНТАКТЫ*/
 .contact-section .line-feature{
 	padding: 12px 41px;
+}
+.contact-section h2{
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
 }
 
 .contact-section p:not(:last-child){
@@ -363,7 +352,10 @@ nav li{
 /*ПОДВАЛ*/
 .main-footer{
 	background-color: rgba(70,70,70,1);
-	width: 1440px;
+	max-width: 1160px;
+}
+.main-footer a{
+	color: #fff;
 }
 .main-footer li{
 	list-style: none;
@@ -385,7 +377,7 @@ li.login-link a:active{
 	opacity: 0.3;
 }
 .footer-site-nav{
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 2px;
@@ -439,53 +431,103 @@ a.social-icon:active{
 	opacity: 0.3;
 }
 
+.feedback, .map-popular{
+	display: none;
+}
+
+
 /*ФОРМА ОБРАТНОЙ СВЯЗИ*/
 .feedback{
 	width: 960px;
-	height: 553px;
-	border: 1px solid red;
-}
-.feedback{
-	outline: none;
-}
-.feedback-form input{
-	background-color: rgba(242,242,242,0.5);
-}
-.feedback-form-group b{
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
-	font-size: 18px;
-	line-height: 24px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	position: relative;
 }
 .feedback-form{
 	padding-left: 100px;
 	padding-top: 98px;
 }
-.form-group-left input{
+.feedback-form-group b{
+	display: block;
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+}
+.feedback-form input[type="text"], 
+input[type="email"], 
+textarea{
+	background-color: rgba(242,242,242,0.5);
+	outline: none;
+	border: 3px solid transparent;
+	padding-left: 19px;
+}
+/*
+.feedback-form input:active:required, 
+textarea:required{ 
+	background-color: rgba(246,218,218,0.5);
+}
+*/
+.feedback-form input[type="text"]:hover, 
+input[type="email"]:hover, 
+textarea:hover{
+	background-color: rgba(242,242,242,0.8);
+}
+.feedback-form input[type="text"]:focus, 
+input[type="email"]:focus, 
+textarea:focus{
+	border: 3px solid;
+	border-color: rgba(247,226,150,0.5);
+	background-color: rgba(255,255,255,1);
+}
+.form-group-left input[type="text"],
+input[type="email"]{
 	width: 360px;
 	height: 50px;
 	margin-bottom: 64px;
 }
-.form-group-right{
+/*.form-group-right{
 	margin-left: 40px;
-}
-.form-group-right input{
-	width: 360px;
-	height: 50px;
-	margin-bottom: 64px;
-}
+}*/
 .feedback-form-group textarea{
 	width: 760px;
 	height: 156px;
-	outline: none;
-	background-color: rgba(242,242,242,0.5);
+	padding-top: 18px;
 }
-.feedback-form-group btextarea{
-	padding-top: 38px;
+.feedback-form input[type="submit"]{
+	margin-top: 54px;
+	margin-bottom: 92px;
 }
 
 /*МОДАЛЬНЯ КАРТА*/
-.feedback, .map-popular{
-	display: none;
+.map-popular{
+	width: 960px;
+	position: relative;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+/*КНОПКА "ЗАКРЫТЬ" МОДАЛЬНОЕ ОКНО*/
+.feedback-modal-close, 
+.map-modal-close{
+	position: absolute;
+	top: 22px;
+	right: 22px;
+	background-color:  transparent;
+	border:  transparent;
+}
+.feedback-modal-close::before, 
+.map-modal-close::before{
+	content: url(../img/svg/modal-close.svg);
+	position: absolute;
+	top: 22px;
+	right: 22px;
+	opacity: 0.5;
+}
+.feedback-modal-close:hover::before, 
+.map-modal-close:hover::before{
+	opacity: 1;
+}
+.feedback-modal-close:active::before, 
+.map-modal-close:active::before{
+	opacity: 0.3;
 }
 
 .visually-hidden {

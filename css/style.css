@@ -17,6 +17,8 @@
 /*ГЛОБАЛЬНО*/
 body {
 	max-width: 1440px;
+	margin: 0;
+  padding: 0;
 	margin: 0px auto; 
 	padding: 0 20px;
 }
@@ -58,16 +60,19 @@ a:link{
 	color: rgba(0,0,0,0.3);
 }
 
+.main-header{
+	position: relative;
+}
+
 /*ГОЛОВА*/
 .main-header::before{
 	content: '';
 	position: absolute;
 	top: 40px;
-	padding-left: 0 160px;
 	background-color: #f7e296;	
-	min-width: 1160px;
+	width: 100%;
+	max-width: 1160px;
 	height: 299px;
-	
 }
 .user-section{
 	font-family: "Open Sans Light", Arial, sans-serif;
@@ -264,7 +269,7 @@ nav li{
 /*СЕРВИСЫ*/
 .services-section{
 	background-color: rgba(229,229,229,1);
-	min-width: 1440px;
+	max-width: 1440px;
 /*	height: 288px;*/
 }
 .services-in-box{
@@ -352,7 +357,7 @@ nav li{
 /*ПОДВАЛ*/
 .main-footer{
 	background-color: rgba(70,70,70,1);
-	max-width: 1160px;
+	max-width: 1440px;
 }
 .main-footer a{
 	color: #fff;
@@ -484,9 +489,6 @@ input[type="email"]{
 	height: 50px;
 	margin-bottom: 64px;
 }
-/*.form-group-right{
-	margin-left: 40px;
-}*/
 .feedback-form-group textarea{
 	width: 760px;
 	height: 156px;
@@ -510,6 +512,10 @@ input[type="email"]{
 	position: absolute;
 	top: 22px;
 	right: 22px;
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+	background-color: rgba(247,226,150,50);
 	background-color:  transparent;
 	border:  transparent;
 }
@@ -517,8 +523,8 @@ input[type="email"]{
 .map-modal-close::before{
 	content: url(../img/svg/modal-close.svg);
 	position: absolute;
-	top: 22px;
-	right: 22px;
+	top: 0px;
+	right: 0px;
 	opacity: 0.5;
 }
 .feedback-modal-close:hover::before, 

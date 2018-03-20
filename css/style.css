@@ -1,5 +1,5 @@
 /*ШРИФТЫ*/
-@font-face {
+/*@font-face {
 	font-family: "Open Sans";
 	src: url("../fonts/opensans.woff2") format("woff2"); 
 	font-style: normal; 
@@ -19,10 +19,10 @@
 }
 @font-face {
 	font-family: "Gilroy Light";
-	src: url("../fonts/gilroyextr.woff2") format("woff2"); 
+	src: url("../fonts/gilroylight.woff2") format("woff2"); 
 	font-style: normal; 
 	font-weight: normal; 
-}
+}*/
 
 /*ГЛОБАЛЬНО*/
 body {
@@ -54,7 +54,7 @@ h3{
 	text-transform: uppercase;
 	font-size: 18px;
 	padding: 10px;
-	letter-spacing: 2px;
+	letter-spacing: 3.6px;
 	position: relative;
 	z-index: 1;
 }
@@ -86,7 +86,7 @@ a.line-feature:hover{
 	position: absolute;
 	top: 40px;
 	padding-left: 0 160px;
-	background-color: #f7e296;
+	background-color: #f7e296;	
 	width: 100%;
 	height: 299px;
 }
@@ -94,6 +94,7 @@ a.line-feature:hover{
 	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 30px;
+	letter-spacing: 0.15px;
 	position: relative;
 }
 
@@ -111,6 +112,9 @@ a.line-feature:hover{
 }
 
 /*ПОИСК*/
+input{
+	outline: none;
+}
 input[type="search"]{
 	opacity: 0.3;
 	border: none;
@@ -121,26 +125,22 @@ input[type="search"]{
 	line-height: 30px;
 	letter-spacing: -1px;
 	width: 200px;
-}
-/*
-input[type="search"]::before{
-	content: "";
-	background-image: url(../img/svg/search.svg);
-}
-*/
-input{
-	outline: none;
+	border-bottom: 2px solid transparent;
 }
 input[type="search"]:hover{
 	opacity: 0.6;
 }
 input[type="search"]:focus,
 input[type="search"]:active{
-	opacity: 1;
 	border-bottom: 2px solid #000;
+	opacity: 1;
+}
+input[type="search"]:focus ~ .btn-search,
+input[type="search"]:active ~ .btn-search{
+	visibility: visible;
 }
 .btn-search{
-/*	visibility: hidden;*/
+	visibility: hidden;
 	border: 2px solid #000;
 	outline: none;
 	background: rgba(247,226,150,0.5);
@@ -173,7 +173,7 @@ nav li{
 	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 30px;
-	letter-spacing: -1px;
+	letter-spacing: 0.15px;
 }
 .user-nav a:hover{
 	opacity: 0.6;
@@ -188,7 +188,7 @@ nav li{
 	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
-	letter-spacing: 1px;
+	letter-spacing: 3.6px;
 	opacity: 1;
 }
 .nav-catalog:hover{
@@ -235,6 +235,7 @@ nav li{
 	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 20px;
+	letter-spacing: 0.13px;
 }
 .slider-description .lead{
 	font-family: "Gilroy ExtraBold", Arial, sans-serif;
@@ -246,7 +247,7 @@ nav li{
 	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 30px;
-	letter-spacing: 0.47px;
+	letter-spacing: 0.36px;
 }
 .slider-item a{
 	padding: 10px 49px;
@@ -283,6 +284,7 @@ nav li{
 	line-height: 24px;
 	width: 160px;
 	min-height: 78px;
+	letter-spacing: 0.18px;
 }
 
 /*СЕРВИСЫ*/
@@ -290,6 +292,12 @@ nav li{
 	background-color: rgba(229,229,229,1);
 	width: 1445px;
 /*	height: 288px;*/
+}
+.services-in-box{
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 0.15px;
 }
 .slider-point{
 	display: flex;
@@ -330,15 +338,26 @@ nav li{
 	opacity: 0.2;
 }
 
-
 /*О НАС*/
-.info-section .line-feature{
+.info-section .line-feature {
 	padding: 12px 23px;
+}
+.info-section p:not(:last-child), 
+.info-list{
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
 }
 
 /*КОНТАКТЫ*/
 .contact-section .line-feature{
 	padding: 12px 41px;
+}
+
+.contact-section p:not(:last-child){
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
 }
 
 /*ПОДВАЛ*/

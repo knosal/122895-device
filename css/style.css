@@ -19,7 +19,7 @@
 }
 @font-face {
 	font-family: "Gilroy Light";
-	src: url("../fonts/gilroyextrabold.woff2") format("woff2"); 
+	src: url("../fonts/gilroyextr.woff2") format("woff2"); 
 	font-style: normal; 
 	font-weight: normal; 
 }
@@ -166,6 +166,9 @@ nav li{
 	list-style: none;
 	position: relative;
 }
+.nav>a{
+	text-transform: uppercase;
+}
 .user-nav a{
 	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 15px;
@@ -178,7 +181,7 @@ nav li{
 .user-nav a:active{
 	opacity: 0.3;
 }
-.nav-menu:hover .dropdown-menu{
+.nav:hover .dropdown-menu{
 	display: block;
 }
 .nav-menu > li.nav{
@@ -236,10 +239,14 @@ nav li{
 .slider-description .lead{
 	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 47px;
+	line-height: 56px;
+	letter-spacing: 0.47px;
 }
 .slider-description p:nth-child(2){
 	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 15px;
 	line-height: 30px;
+	letter-spacing: 0.47px;
 }
 .slider-item a{
 	padding: 10px 49px;
@@ -257,10 +264,12 @@ nav li{
 	justify-content: center;
 	align-items: center;
 }
-
-.popular-img-wrapper img[alt~="Моноподы"]{
-	padding-top: 41px;
+.monopod{
+	align-items: flex-end;
 }
+/*.popular-list a:nth-child(2) .popular-img-wrapper{
+	align-items: flex-end;
+}*/
 
 .popular-img-wrapper:hover{
 	background-color: rgba(240,197,46,1);

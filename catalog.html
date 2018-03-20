@@ -10,7 +10,7 @@
 	<body>
 <!--ШАПКА-->
 		<header class="main-header">
-			<a class="logo header-logo"><img src="img/logo.png" width="164" height="36" alt="Логотип Device"></a>	
+			<a href="index.html" class="logo header-logo"><img src="img/logo.png" width="164" height="36" alt="Логотип Device"></a>	
 			<h1 class="visually-hidden">Магазин "Девайс"</h1>
 <!--ПОИСК_ВХОД-->			
 			<section class="user-section">
@@ -72,7 +72,7 @@
 <!--КОНТЕНТ-->		
 		<main class="container">
 				
-<!--НАВИГАЦИОННАЯ ЦЕПОЧКА-->				
+<!--ХЛЕБНЫЕ КРОШКИ-->				
 			<section class="catalog-nav-section">
 				<h2>Моноподы для селфи</h2>
 				<ul class="breadcrumbs">
@@ -84,7 +84,7 @@
 			
 <!--ФИЛЬТР-->	
 			<section class="main-filter-section">
-				<div class="filter-form">
+				<div class="filter-form-wrapper">
 					<h2>Фильтр:</h2>
 					<form class="filter-form" action="#" method="post">
 						<fieldset class="filter-price">
@@ -163,8 +163,10 @@
 						<div class="item">
 							<div class="item-holder">
 								<img src="img/item-1.jpg" width="360" height="380" alt="Любительская">	
-								<a class="visually-hidden line-feature" href="#">В корзину</a>
-								<a class="visually-hidden compare" href="#">Добавить к сравнению</a>	
+								<div class="active">
+									<a class="visually-hidden line-feature in-garbage" href="#">В корзину</a>
+									<a class="visually-hidden compare add-to-compare" href="#">Добавить к сравнению</a>	
+								</div>
 							</div>
 							<div class="description-holder">
 								<a href="#" tabindex="0">Любительская селфи-палка</a>
@@ -174,8 +176,10 @@
 						<div class="item">
 							<div class="item-holder">
 								<img src="img/item-2.jpg" width="360" height="380" alt="Непотопляемая">	
-								<a class="visually-hidden line-feature" href="#">В корзину</a>
-								<a class="visually-hidden compare" href="#">Добавить к сравнению</a>	
+								<div class="active">
+									<a class="visually-hidden line-feature in-garbage" href="#">В корзину</a>
+									<a class="visually-hidden compare add-to-compare" href="#">Добавить к сравнению</a>	
+								</div>
 							</div>
 							<div class="description-holder">
 								<a href="#" tabindex="0">Непотопляемая селфи-палка</a>
@@ -185,8 +189,10 @@
 						<div class="item">
 							<div class="item-holder">
 								<img src="img/item-3.jpg" width="360" height="380" alt="Профессиональная">	
-								<a class="visually-hidden line-feature" href="#">В корзину</a>
-								<a class="visually-hidden compare" href="#">Добавить к сравнению</a>	
+								<div class="active">
+									<a class="visually-hidden line-feature in-garbage" href="#">В корзину</a>
+									<a class="visually-hidden compare add-to-compare" href="#">Добавить к сравнению</a>	
+								</div>
 							</div>
 							<div class="description-holder">
 								<a href="#" tabindex="0">Профессиональная селфи-палка</a>
@@ -196,16 +202,18 @@
 						<div class="item">
 							<div class="item-holder">
 								<img src="img/item-4.jpg" width="360" height="380" alt="Следуй за мной">	
-								<a class="visually-hidden line-feature" href="#">В корзину</a>
-								<a class="visually-hidden compare" href="#">Добавить к сравнению</a>	
+								<div class="active">
+									<a class="visually-hidden line-feature in-garbage" href="#">В корзину</a>
+									<a class="visually-hidden compare add-to-compare" href="#">Добавить к сравнению</a>	
+								</div>
 							</div>
 							<div class="description-holder">
-								<a href="#" tabindex="0">Селфи-палка "Следуй за мной"</a>
+								<a href="#" tabindex="0">Селфи-палка &#171;Следуй за мной&#187;</a>
 								<p class="item-price">4900 руб.</p>
 							</div>
 						</div>					
 						<div class="catalog-navigation">
-							<div class="btn-control-prev">
+							<div class="btn-control control-prev">
 								<button class="button catalog-control-back" type="button">Назад</button>
 							</div>
 							<div class="pagination-list-holder">
@@ -215,7 +223,7 @@
 									<li class="pagination-item"><a href="#">3</a>
 								</ul>
 							</div>
-							<div class="btn-control-next">
+							<div class="btn-control control-next">
 									<button class="button catalog-control-next"  type="button">Вперед</button>
 							</div>
 						</div>

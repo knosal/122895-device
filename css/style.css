@@ -1,5 +1,5 @@
 /*ШРИФТЫ*/
-/*@font-face {
+@font-face {
 	font-family: "Open Sans";
 	src: url("../fonts/opensans.woff2") format("woff2"); 
 	font-style: normal; 
@@ -22,7 +22,7 @@
 	src: url("../fonts/gilroyextrabold.woff2") format("woff2"); 
 	font-style: normal; 
 	font-weight: normal; 
-}*/
+}
 
 /*ГЛОБАЛЬНО*/
 body {
@@ -84,10 +84,10 @@ a.line-feature:hover{
 .main-header::before{
 	content: '';
 	position: absolute;
-	margin-top: 40px;
+	top: 40px;
 	padding-left: 0 160px;
 	background-color: #f7e296;
-	width: 1160px;
+	width: 100%;
 	height: 299px;
 }
 .user-section{
@@ -99,9 +99,9 @@ a.line-feature:hover{
 
 /*ЛОГОТИП*/
 .header-logo{
-	position: absolute;
-	padding-top: 21px;
-	padding-left: 60px;
+	position: relative;
+	top: 21px;
+	left: 60px;
 }
 .logo:hover{
 	opacity: 0.6;
@@ -151,6 +151,7 @@ input[type="search"]:active{
 	height: 49px;
 	position: absolute;
 	margin-top: 76px;
+	cursor: pointer;
 }
 .btn-search:hover{
 	background-color: #000;
@@ -185,7 +186,6 @@ nav li{
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 1px;
-	text-transform: uppercase;
 	opacity: 1;
 }
 .nav-catalog:hover{
@@ -257,6 +257,11 @@ nav li{
 	justify-content: center;
 	align-items: center;
 }
+
+.popular-img-wrapper img[alt~="Моноподы"]{
+	padding-top: 41px;
+}
+
 .popular-img-wrapper:hover{
 	background-color: rgba(240,197,46,1);
 }
@@ -268,7 +273,7 @@ nav li{
 	font-size: 18px;
 	line-height: 24px;
 	width: 160px;
-	height: 78px;
+	min-height: 78px;
 }
 
 /*СЕРВИСЫ*/
@@ -286,6 +291,7 @@ nav li{
 }
 .slider-point label{
 	margin: 20px 0;
+	cursor: pointer;
 }
 .slider-point label[for="delivery"]{
 	padding: 7px 15px 7px 24px;
@@ -309,6 +315,12 @@ nav li{
 .slider-point .line-feature:active{
 	color: rgba(247,225,132,1);
 }
+
+/*СПОНСОРЫ*/
+.logotypes>img:last-child{
+	opacity: 0.2;
+}
+
 
 /*О НАС*/
 .info-section .line-feature{
@@ -398,6 +410,52 @@ a.social-icon:active{
 .footer-copyright .logo-html:active::before{
 	opacity: 0.3;
 }
+
+/*ФОРМА ОБРАТНОЙ СВЯЗИ*/
+.feedback{
+	width: 960px;
+	height: 553px;
+	border: 1px solid red;
+}
+.feedback{
+	outline: none;
+}
+.feedback-form input{
+	background-color: rgba(242,242,242,0.5);
+}
+.feedback-form-group b{
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+}
+.feedback-form{
+	padding-left: 100px;
+	padding-top: 98px;
+}
+.form-group-left input{
+	width: 360px;
+	height: 50px;
+	margin-bottom: 64px;
+}
+.form-group-right{
+	margin-left: 40px;
+}
+.form-group-right input{
+	width: 360px;
+	height: 50px;
+	margin-bottom: 64px;
+}
+.feedback-form-group textarea{
+	width: 760px;
+	height: 156px;
+	outline: none;
+	background-color: rgba(242,242,242,0.5);
+}
+.feedback-form-group btextarea{
+	padding-top: 38px;
+}
+
+/*МОДАЛЬНЯ КАРТА*/
 .feedback, .map-popular{
 	display: none;
 }

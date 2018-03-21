@@ -452,7 +452,7 @@ a.social-icon:active{
 
 /*ФОРМА ОБРАТНОЙ СВЯЗИ*/
 .feedback{
-	width: 960px;
+	max-width: 960px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	position: relative;
 }
@@ -507,9 +507,9 @@ input[type="email"]{
 
 /*МОДАЛЬНЯ КАРТА*/
 .map-popular{
-	width: 960px;
+	max-width: 960px;
 	position: relative;
-	box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 /*КНОПКА "ЗАКРЫТЬ" МОДАЛЬНОЕ ОКНО*/
@@ -654,15 +654,15 @@ ul .filter-option{
 	line-height: 40px;
 	letter-spacing: 0.14px;
 	position: relative;
-	user-select: none;
 }
 .filter-option-input + label{
 	cursor: pointer;
 }
 .filter-option-input:disabled + label{
 	opacity: 0.25;
+	
 }
-.filter-option-input + label::before:hover{
+.filter-option-input + label:hover::before{
 	opacity: 0.6;
 }
 .filter-option-input + label:active::before{
@@ -763,14 +763,29 @@ a.arrow{
 }
 
 /*КАТАЛОГ*/
+.catalog-holder .item{
+	max-width: 360px;
+}
 .catalog-holder .item-holder{
 	margin-bottom: 37px;
+	position: relative;
+}
+
+.item-holder-active{
+	position: absolute;
+	width: 0px;
+	height: 17px;
+	top: 0;
+	left: 0;
+	margin: 50%;
 }
 .item-holder:hover::before{
+	margin: 0;
+	padding: 0;
 	cursor: pointer;
 	content: '';
 	width: 360px;
-	height: 360px;
+	height: 379px;
 	background-color: rgba(238,238,238,0.7);
 	position: absolute;
 }

@@ -662,7 +662,7 @@ ul .filter-option{
 .filter-option-input:disabled + label{
 	opacity: 0.25;
 }
-.filter-option-input + label:hover::before{
+.filter-option-input + label::before:hover{
 	opacity: 0.6;
 }
 .filter-option-input + label:active::before{
@@ -682,17 +682,29 @@ ul .filter-option{
 }
 
 /*ФИЛЬТР BLUETOOTH*/
-.filter-bluetooth .filter-option:active::before{
+.filter-option-radio:checked + label::before{
 	content: url(../img/svg/radio-on.svg);
 	position: absolute;
 	top:5px;
 	left: -35px;
 }
-.filter-bluetooth .filter-option::before{
+.filter-option-radio + label::before{
 	content: url(../img/svg/radio-off.svg);
 	position: absolute;
 	top:5px;
 	left: -35px;
+}
+.filter-option-radio + label{
+	cursor: pointer;
+}
+.filter-option-radio:disabled + label{
+	opacity: 0.25;
+}
+.filter-option-radio + label:hover::before{
+	opacity: 0.6;
+}
+.filter-option-radio + label:active::before{
+	opacity: 1;
 }
 .filter-form button{
 	background-color: transparent;

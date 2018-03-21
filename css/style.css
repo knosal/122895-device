@@ -1,5 +1,5 @@
 /*ШРИФТЫ*/
-/*@font-face {
+@font-face {
 	font-family: "Open Sans";
 	src: url("../fonts/opensans.woff2") format("woff2"); 
 	font-style: normal; 
@@ -22,7 +22,7 @@
 	src: url("../fonts/gilroylight.woff2") format("woff2"); 
 	font-style: normal; 
 	font-weight: normal; 
-}*/
+}
 
 /*ГЛОБАЛЬНО*/
 body {
@@ -482,8 +482,7 @@ textarea:hover{
 .feedback-form input[type="text"]:focus, 
 input[type="email"]:focus, 
 textarea:focus{
-	border: 3px solid;
-	border-color: rgba(247,226,150,0.5);
+	border: 3px solid rgba(247,226,150,0.5);
 	background-color: rgba(255,255,255,1);
 }
 .form-group-left input[type="text"],
@@ -503,6 +502,7 @@ input[type="email"]{
 	border: none;
 	padding-left: 35px;
 	padding-right: 35px;
+	outline: none;
 }
 
 /*МОДАЛЬНЯ КАРТА*/
@@ -601,7 +601,7 @@ fieldset legend{
 	letter-spacing: 0.18px;
 }
 
-/*RANGE*/
+/*ФИЛЬТР СТОИМОСТИ*/
 .filter-price {
 	position: relative;
 }
@@ -609,7 +609,7 @@ fieldset legend{
 	height: 2px;
 	background: rgba(0, 0, 0, 0.3);
 }
-.scale .scrol{
+.scale .range{
   width: 70%;
   height: 2px;
   background: rgba(201, 224, 162, 1);
@@ -624,25 +624,29 @@ fieldset legend{
 	padding-right: 64px;
 }
 .range-toggle {
-  position: absolute;
-  top: -9px;
-  width: 4px;
-  height: 4px;
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+.range-toggle:hover {
+	border: 9px solid #ffffff;
 }
 .range-toggle-min {
-  left: 0;
+	left: 0;
 	top: 20px;
 }
 .range-toggle-max {
-  left: 65%;
+	left: 65%;
 	top: 20px;
 }
-/*ПУНКТЫ ФИЛЬТРА*/
+
+/*ФИЛЬТР ЦВЕТА*/
 ul .filter-option{
 	list-style: none;
 	font-family: "Open Sans Light", Arial, sans-serif;
@@ -650,27 +654,34 @@ ul .filter-option{
 	line-height: 40px;
 	letter-spacing: 0.14px;
 	position: relative;
+	user-select: none;
 }
-/*.filter-input:hover + label,
-.filter-input:focus + label {
-	color: #663d15;
+.filter-option-input + label{
+	cursor: pointer;
 }
-.filter-input:disabled + label {
-	color: #000000;
-	opacity: 0.5;
-}*/
-ul .filter-option::before{
+.filter-option-input:disabled + label{
+	opacity: 0.25;
+}
+.filter-option-input + label:hover::before{
+	opacity: 0.6;
+}
+.filter-option-input + label:active::before{
+	opacity: 1;
+}
+.filter-option-input + label::before{
 	content: url(../img/svg/checkbox-off.svg);
 	position: absolute;
 	top:5px;
 	left: -35px;
 }
-.filter-color .filter-option:active::before{
+.filter-option-input:checked + label::before{
 	content: url(../img/svg/checkbox-on.svg);
 	position: absolute;
 	top:5px;
 	left: -35px;
 }
+
+/*ФИЛЬТР BLUETOOTH*/
 .filter-bluetooth .filter-option:active::before{
 	content: url(../img/svg/radio-on.svg);
 	position: absolute;

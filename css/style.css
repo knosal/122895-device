@@ -751,13 +751,24 @@ textarea:invalid button[type="submit"]:active{
 	font-size: 14px;
 	line-height: 18px;
 	letter-spacing: 0px;
-	opacity: 0.3;
 }
-.sort-item:hover{
+/*.sort-item > input[type="radio"] + label:hover{
 	opacity: 0.6;
 }
 .sort-item:active{
 	opacity: 1;
+}*/
+.sort-item > input[type="radio"]{
+	display: none;
+}
+.sort-item > input[type="radio"]:checked + label{
+	opacity: 1;
+}
+.sort-item > input[type="radio"]:not(:checked) + label{
+	opacity: 0.3;
+}
+.sort-btn-holder > input[type="radio"]{
+	display: none;
 }
 .arrow{
 	font-size: 0px;
@@ -765,21 +776,30 @@ textarea:invalid button[type="submit"]:active{
 }
 .arrow-up::before{
 	content: url(../img/svg/icon-up-dir.svg);
-	opacity: 0.2;
 }
 .arrow-down::before{
 	content: url(../img/svg/icon-down-dir.svg);
-	opacity: 0.2;
 }
-.arrow-up:hover::before,
+/*.arrow-up:hover::before,
 .arrow-down:hover::before{
 	opacity: 0.4;
 }
 .arrow-up:active::before,
 .arrow-down:active::before{
 	opacity: 1;
+}*/
+.sort-btn-holder > input[type="radio"]:checked + label{
+	opacity: 1;
 }
-
+.sort-btn-holder > input[type="radio"]:not(:checked) + label{
+	opacity: 0.2;
+}
+.sort-btn-holder > input[type="radio"]:not(:checked):hover + label{
+	opacity: 0.6;
+}
+.sort-btn-holder > input[type="radio"]:not(:checked):active + label{
+	opacity: 1;
+}
 /*КАТАЛОГ*/
 .catalog-holder{
 	margin-top: 69px;

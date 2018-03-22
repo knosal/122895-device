@@ -133,7 +133,7 @@
 								</li>
 							</ul>
 						</fieldset>
-						<button class="button line-feature" type="submit" value="Показать">Показать</button>
+						<button class="button line-feature" type="button" value="Показать">Показать</button>
 					</form>
 				</div>
 				
@@ -143,14 +143,35 @@
 						<h2>Сортировка:</h2>
 						<div class="sort-item-holder">
 							<ul>
-								<li class="sort-item"><a href="#">По цене</a></li>
-								<li class="sort-item"><a href="#">По типу</a></li>
-								<li class="sort-item"><a href="#">По популярности</a></li>
+								<li class="sort-item">
+									<input type="radio" id="price" name="sort-radio" checked>
+									<label for="price">
+										<a >По цене</a>
+									</label>
+								</li>
+								<li class="sort-item">
+									<input type="radio" id="type" name="sort-radio">
+									<label for="type">
+										<a >По типу</a>
+									</label>
+								</li>
+								<li class="sort-item">
+									<input type="radio" id="popularity" name="sort-radio">
+									<label for="popularity">
+										<a >По популярности</a>
+									</label>
+								</li>
 							</ul>
 						</div>
 						<div class="sort-btn-holder">
-							<a class="arrow arrow-up" href="#" aria-label="Сортировка по возрастанию">по возрастанию</a>
-							<a class="arrow arrow-down" href="#" aria-label="Сортировка по убыванию">по убыванию</a>
+							<input type="radio" id="arrow-up" name="arrow" checked>
+							<label for="arrow-up">
+								<a class="arrow arrow-up"  aria-label="Сортировка по возрастанию">по возрастанию</a>
+							</label>
+							<input type="radio" id="arrow-down" name="arrow">
+							<label for="arrow-down">
+								<a class="arrow arrow-down" aria-label="Сортировка по убыванию">по убыванию</a>
+							</label>
 						</div>
 					</div>	
 					

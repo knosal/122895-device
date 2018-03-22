@@ -64,6 +64,8 @@ a:link{
 
 .main-header{
 	position: relative;
+	max-width: 1160px;
+	margin: 0 auto;
 }
 
 /*ГОЛОВА*/
@@ -214,6 +216,8 @@ input[type="search"]:active ~ .btn-search{
 /*ВЕРХНИЙ СЛАЙДЕР*/
 .main-slider-section{
 	position: relative;
+	max-width:1160px;
+	margin: 0 auto;
 }
 .product{
 	line-height: 48px;
@@ -250,6 +254,7 @@ input[type="search"]:active ~ .btn-search{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 }
 .monopod{
 	align-items: flex-end;
@@ -257,7 +262,10 @@ input[type="search"]:active ~ .btn-search{
 /*.popular-list a:nth-child(2) .popular-img-wrapper{
 	align-items: flex-end;
 }*/
-
+.popular-section{
+	max-width:1160px;
+	margin: 0 auto;
+}
 .popular-img-wrapper:hover{
 	background-color: rgba(240,197,46,1);
 }
@@ -278,6 +286,10 @@ input[type="search"]:active ~ .btn-search{
 	background-color: rgba(229,229,229,1);
 	max-width: 1440px;
 	min-height: 288px;
+}
+.services-wrapper{
+	max-width: 1160px;
+	margin: 0 auto;
 }
 .services-in-box{
 	font-family: "Open Sans Light", "Arial", sans-serif;
@@ -322,11 +334,19 @@ input[type="search"]:active ~ .btn-search{
 }
 
 /*СПОНСОРЫ*/
+.brands{
+	max-width: 1160px;
+	margin: 0 auto;
+}
 .logotypes>img:last-child{
 	opacity: 0.2;
 }
 
 /*О НАС*/
+.info-section{
+	max-width: 1160px;
+	margin: 0 auto;
+}
 .info-section .line-feature {
 	padding: 12px 23px;
 }
@@ -344,6 +364,10 @@ input[type="search"]:active ~ .btn-search{
 }
 
 /*КОНТАКТЫ*/
+.contact-section{
+	max-width: 1160px;
+	margin: 0 auto;
+}
 .contact-section .line-feature{
 	padding: 12px 41px;
 }
@@ -372,6 +396,10 @@ input[type="search"]:active ~ .btn-search{
 	
 	font-family: "Open Sans Light", "Arial", sans-serif;
 }
+.footer-user{
+	max-width: 1160px;
+	margin: 0 auto;
+}
 .footer-user-nav .login-link{
 	font-size: 15px;
 	line-height: 30px;
@@ -382,6 +410,10 @@ input[type="search"]:active ~ .btn-search{
 }
 .login-link a.logout{
 		color:  rgba(255,255,255,0.3);
+}
+.footer-conditions{
+	max-width: 1160px;
+	margin: 0 auto;
 }
 .footer-address,
 .footer-phone{
@@ -414,6 +446,10 @@ input[type="search"]:active ~ .btn-search{
 }
 
 /*СОЦСЕТИ*/
+.footer-socials{
+	max-width: 1160px;
+	margin: 0 auto;
+}
 .socials-buttons::before{
 	display: block;
 	width: 10px;
@@ -458,6 +494,7 @@ a.social-icon:active{
 	max-width: 960px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	position: relative;
+	margin: 0 auto;
 }
 .feedback-form{
 	padding-left: 100px;
@@ -524,6 +561,7 @@ textarea:invalid button[type="submit"]:active{
 	max-width: 960px;
 	position: relative;
 	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	margin: 0 auto;
 }
 
 /*КНОПКА "ЗАКРЫТЬ" МОДАЛЬНОЕ ОКНО*/
@@ -921,22 +959,3 @@ a.add-to-compare:active{
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

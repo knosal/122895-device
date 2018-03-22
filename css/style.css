@@ -33,7 +33,7 @@ a:link{
 
 /*КНОПКИ ПРИ НАВЕДЕНИИ*/
 .line-feature{
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	text-transform: uppercase;
 	font-size: 18px;
 	padding: 10px;
@@ -76,7 +76,7 @@ a:link{
 	height: 299px;
 }
 .user-section{
-	font-family: "Open Sans Light", Arial, sans-serif;
+	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 0.15px;
@@ -154,7 +154,7 @@ input[type="search"]:active ~ .btn-search{
 	text-transform: uppercase;
 }
 .user-nav a{
-	font-family: "Open Sans Light", Arial, sans-serif;
+	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 0.15px;
@@ -173,7 +173,7 @@ input[type="search"]:active ~ .btn-search{
 	display: block;
 }
 .nav-menu > li.nav{
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 3.6px;
@@ -195,7 +195,7 @@ input[type="search"]:active ~ .btn-search{
 /*ПОДМЕНЮ*/
 .dropdown-menu{
 	display: none;
-	font-family: "Open Sans Light", Arial, sans-serif;
+	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 36px;
 	letter-spacing: -1px;
@@ -218,22 +218,22 @@ input[type="search"]:active ~ .btn-search{
 .product{
 	line-height: 48px;
 	font-size: 36px;
-	font-family: "Gilroy Light", Arial, sans-serif;
+	font-family: "Gilroy Light", "Arial", sans-serif;
 }
 .description td{
-	font-family: "Open Sans Light", Arial, sans-serif;
+	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 20px;
 	letter-spacing: 0.13px;
 }
 .slider-description .lead{
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 47px;
 	line-height: 56px;
 	letter-spacing: 0.47px;
 }
 .slider-description p:nth-child(2){
-	font-family: "Open Sans Light", Arial, sans-serif;
+	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 0.36px;
@@ -265,7 +265,7 @@ input[type="search"]:active ~ .btn-search{
 	opacity: 0.5;
 }
 .popular-item .description{
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	width: 160px;
@@ -280,7 +280,7 @@ input[type="search"]:active ~ .btn-search{
 	min-height: 288px;
 }
 .services-in-box{
-	font-family: "Open Sans Light", Arial, sans-serif;
+	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 0.15px;
@@ -316,7 +316,7 @@ input[type="search"]:active ~ .btn-search{
 	color: rgba(247,225,132,1);
 }
 .services-section h3{
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 47px;
 	line-height: 48px;
 }
@@ -332,12 +332,12 @@ input[type="search"]:active ~ .btn-search{
 }
 .info-section p:not(:last-child), 
 .info-list{
-	font-family: "Open Sans Light", Arial, sans-serif;
+	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 }
 .info-section h2{
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 47px;
 	line-height: 48px;
 	letter-spacing: 0.47px;
@@ -348,13 +348,13 @@ input[type="search"]:active ~ .btn-search{
 	padding: 12px 41px;
 }
 .contact-section h2{
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 47px;
 	line-height: 48px;
 }
 
 .contact-section p:not(:last-child){
-	font-family: "Open Sans Light", Arial, sans-serif;
+	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 }
@@ -370,7 +370,7 @@ input[type="search"]:active ~ .btn-search{
 .main-footer li{
 	list-style: none;
 	
-	font-family: "Open Sans Light", Arial, sans-serif;
+	font-family: "Open Sans Light", "Arial", sans-serif;
 }
 .footer-user-nav .login-link{
 	font-size: 15px;
@@ -385,7 +385,7 @@ input[type="search"]:active ~ .btn-search{
 }
 .footer-address,
 .footer-phone{
-	font-family: "Open Sans Light", Arial, sans-serif;
+	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	color:  rgba(255,255,255,0.7);
@@ -465,7 +465,7 @@ a.social-icon:active{
 }
 .feedback-form-group b{
 	display: block;
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 }
@@ -476,6 +476,9 @@ textarea{
 	outline: none;
 	border: 3px solid transparent;
 	padding-left: 19px;
+	font-family: "Open Sans Regular", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
 }
 .feedback-form input[type="text"]:hover, 
 input[type="email"]:hover, 
@@ -507,7 +510,9 @@ input[type="email"]{
 	padding-left: 35px;
 	padding-right: 35px;
 	outline: none;
+	background-color: #fff;
 }
+
 .feedback-form 
 input[type="text"]:invalid  button[type="submit"]:active, 
 input[type="email"]:invalid  button[type="submit"]:active, 
@@ -554,7 +559,7 @@ textarea:invalid button[type="submit"]:active{
 
 /*КАТАЛОГ_ХЛЕБНЫЕ-КРОШКИ*/
 .catalog-nav-section h2{
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 47px;
 	line-height: 56px;
 	letter-spacing: 0.47px;
@@ -568,7 +573,7 @@ textarea:invalid button[type="submit"]:active{
 	opacity: 0.3;
 } 
 .catalog-nav-section .breadcrumbs{
-	font-family: "Open Sans Light", Arial, sans-serif;
+	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	letter-spacing: 0.14px;
@@ -594,7 +599,7 @@ textarea:invalid button[type="submit"]:active{
 	max-width: 201px;
 }
 .filter-form-wrapper h2{
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 3.2px;
@@ -610,7 +615,7 @@ textarea:invalid button[type="submit"]:active{
 .filter-price legend, 
 .filter-color legend, 
 .filter-bluetooth legend{
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.18px;
@@ -630,7 +635,7 @@ textarea:invalid button[type="submit"]:active{
   background: rgba(201, 224, 162, 1);
 }
 .filter-price .filter-price{
-	font-family: "Open Sans Light", Arial, sans-serif;
+	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	letter-spacing: 0;
@@ -664,7 +669,7 @@ textarea:invalid button[type="submit"]:active{
 /*ФИЛЬТР ЦВЕТА*/
 .filter-option{
 	list-style: none;
-	font-family: "Open Sans Light", Arial, sans-serif;
+	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 40px;
 	letter-spacing: 0.14px;
@@ -726,7 +731,7 @@ textarea:invalid button[type="submit"]:active{
 .filter-form button{
 	background-color: transparent;
 	border: none;
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: auto;
 	letter-spacing: 3.6px;
@@ -739,7 +744,7 @@ textarea:invalid button[type="submit"]:active{
 	background-color: rgba(235,235,235,0.92); 
 }
 .sort-wrapper h2{
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 3.2px;
@@ -747,17 +752,11 @@ textarea:invalid button[type="submit"]:active{
 }
 .sort-item-holder .sort-item{
 	list-style: none;
-	font-family: "Open Sans Regular", Arial, sans-serif;
+	font-family: "Open Sans Regular", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	letter-spacing: 0px;
 }
-/*.sort-item > input[type="radio"] + label:hover{
-	opacity: 0.6;
-}
-.sort-item:active{
-	opacity: 1;
-}*/
 .sort-item > input[type="radio"]{
 	display: none;
 }
@@ -765,7 +764,13 @@ textarea:invalid button[type="submit"]:active{
 	opacity: 1;
 }
 .sort-item > input[type="radio"]:not(:checked) + label{
-	opacity: 0.3;
+	opacity: 0.2;
+}
+.sort-item > input[type="radio"]:not(:checked):hover + label{
+	opacity: 0.6;
+}
+.sort-item > input[type="radio"]:not(:checked):active + label{
+	opacity: 1;
 }
 .sort-btn-holder > input[type="radio"]{
 	display: none;
@@ -780,14 +785,6 @@ textarea:invalid button[type="submit"]:active{
 .arrow-down::before{
 	content: url(../img/svg/icon-down-dir.svg);
 }
-/*.arrow-up:hover::before,
-.arrow-down:hover::before{
-	opacity: 0.4;
-}
-.arrow-up:active::before,
-.arrow-down:active::before{
-	opacity: 1;
-}*/
 .sort-btn-holder > input[type="radio"]:checked + label{
 	opacity: 1;
 }
@@ -800,6 +797,7 @@ textarea:invalid button[type="submit"]:active{
 .sort-btn-holder > input[type="radio"]:not(:checked):active + label{
 	opacity: 1;
 }
+
 /*КАТАЛОГ*/
 .catalog-holder{
 	margin-top: 69px;
@@ -835,7 +833,7 @@ textarea:invalid button[type="submit"]:active{
 	
 }
 .add-to-compare{
-	font-family: "Open Sans Light", Arial, sans-serif;
+	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 36px;
 	letter-spacing: 0.13px;
@@ -854,14 +852,14 @@ a.add-to-compare:active{
 
 /*ОПИСАНИЕ ТОВАРОВ*/
 .description-holder a{
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.18px;
 	min-height: 68px;
 }
 .description-holder .item-price{
-	font-family: "Gilroy Light", Arial, sans-serif;
+	font-family: "Gilroy Light", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 0.16px;
@@ -873,7 +871,7 @@ a.add-to-compare:active{
 }
 .pagination-list{
 	list-style: none;
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 3.2px;
@@ -882,7 +880,7 @@ a.add-to-compare:active{
 	border: none;
 	background-color: rgba(255,255,255,0);
 	outline: none;
-	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 3.2px;

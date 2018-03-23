@@ -112,6 +112,7 @@ input[type="search"]{
 	width: 200px;
 	border-bottom: 2px solid transparent;
 	outline: none;
+	position: relative;
 }
 input[type="search"]:hover{
 	opacity: 0.6;
@@ -148,6 +149,25 @@ input[type="search"]:active ~ .btn-search{
 	visibility: visible;
 }
 
+.login::before{
+	content: url(../img/svg/user.svg);
+}
+.compare::before{
+	content: url(../img/svg/compare.svg);
+}
+.bin::before{
+	content: url(../img/svg/cart.svg);
+}
+.login::before,
+.compare::before,
+.bin::before{
+		padding-right: 13px;
+}
+/*.footer-user-nav .login::before,
+.footer-user-nav .compare::before,
+.footer-user-nav  .bin::before{
+		background-color: rgba(247,192,3,1);
+}*/
 /*НАВИГАЦИЯ*/
 .navigation li{
 	list-style: none;
@@ -194,7 +214,11 @@ input[type="search"]:active ~ .btn-search{
 .nav-menu .current-page:active{
 	opacity: 0.3;
 }
-
+.nav-catalog::after{
+	content: url(../img/svg/plus.svg);
+	padding-left: 16px;
+	opacity: 0.3;
+}
 /*ПОДМЕНЮ*/
 .dropdown-menu{
 	display: none;
@@ -382,6 +406,9 @@ input[type="search"]:active ~ .btn-search{
 	font-weight: bold;
 	list-style-type: circle;
 }
+.info-list .info-item{
+	padding-left: 25px;
+}
 
 /*КОНТАКТЫ*/
 .contact-section{
@@ -536,6 +563,7 @@ textarea{
 	font-family: "Open Sans Regular", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
+	 box-sizing: border-box;
 }
 .feedback-form input[type="text"]:hover, 
 input[type="email"]:hover, 
@@ -560,7 +588,6 @@ input[type="email"]{
 	min-height: 156px;
 	padding-top: 18px;
 	resize: none;
-	box-sizing: border-box;
 }
 .feedback-form button[type="submit"]{
 	margin-top: 54px;

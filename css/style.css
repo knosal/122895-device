@@ -438,10 +438,21 @@ input[type="search"]:active ~ .btn-search{
 	background-color: rgba(70,70,70,1);
 	max-width: 1440px;
 }
+.footer-user-nav .login::before{
+	content: url(../img/user.png);
+}
+.footer-user-nav .compare::before{
+	content: url(../img/compare.png);
+}
+.footer-user-nav .bin::before{
+	content: url(../img/cart.png);
+}
+
+
 .footer-user-nav .login::before,
 .footer-user-nav .compare::before,
 .footer-user-nav .bin::before{
-	background-color: rgba(255,198,0,1);
+	color: rgba(255,198,0,1);
 }
 
 .main-footer a{
@@ -859,16 +870,16 @@ input[type="email"]{
 .sort-item > input[type="radio"]{
 	display: none;
 }
-.sort-item > input[type="radio"]:checked + label{
+.sort-radio:checked + label{
 	opacity: 1;
 }
-.sort-item > input[type="radio"]:not(:checked) + label{
+.sort-radio:not(:checked) + label{
 	opacity: 0.2;
 }
-.sort-item > input[type="radio"]:not(:checked):hover + label{
+.sort-radio:not(:checked):hover + label{
 	opacity: 0.6;
 }
-.sort-item > input[type="radio"]:not(:checked):active + label{
+.sort-radio:not(:checked):active + label{
 	opacity: 1;
 }
 .sort-btn-holder > input[type="radio"]{
@@ -884,16 +895,16 @@ input[type="email"]{
 .arrow-down::before{
 	content: url(../img/svg/icon-down-dir.svg);
 }
-.sort-btn-holder > input[type="radio"]:checked + label{
+.sort-radio-arrow:checked + label{
 	opacity: 1;
 }
-.sort-btn-holder > input[type="radio"]:not(:checked) + label{
+.sort-radio-arrow:not(:checked) + label{
 	opacity: 0.2;
 }
-.sort-btn-holder > input[type="radio"]:not(:checked):hover + label{
+.sort-radio-arrow:not(:checked):hover + label{
 	opacity: 0.6;
 }
-.sort-btn-holder > input[type="radio"]:not(:checked):active + label{
+.sort-radio-arrow:not(:checked):active + label{
 	opacity: 1;
 }
 

@@ -100,12 +100,13 @@ a:link{
 }
  
 /*ПОИСК*/
+.img-search::after{
+	content: url('../img/svg/search.svg');
+}
 input[type="search"]{
 	opacity: 0.3;
 	border: none;
 	background-color: rgba(247,226,150,0.5);
-	margin-top: 91px;
-	margin-left: 98px;
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: -1px;
@@ -113,6 +114,7 @@ input[type="search"]{
 	border-bottom: 2px solid transparent;
 	outline: none;
 	position: relative;
+	
 }
 input[type="search"]:hover{
 	opacity: 0.6;
@@ -148,7 +150,9 @@ input[type="search"]:active ~ .btn-search{
 	color: rgba(255,255,255,0.3);
 	visibility: visible;
 }
-
+/*.search::before{
+	content: url(../img/svg/search.svg);
+}*/
 .login::before{
 	content: url(../img/svg/user.svg);
 }
@@ -227,8 +231,7 @@ input[type="search"]:active ~ .btn-search{
 	line-height: 36px;
 	letter-spacing: -1px;
 	opacity: 1;
-/*	background-color: rgba(247,225,132,1);*/
-	background-color: rgba(247,226,150,1);
+	background-color: rgba(247,225,132,1);
 }
 .dropdown-menu 
 .sub-menu-item:hover{
@@ -435,12 +438,17 @@ input[type="search"]:active ~ .btn-search{
 	background-color: rgba(70,70,70,1);
 	max-width: 1440px;
 }
+.footer-user-nav .login::before,
+.footer-user-nav .compare::before,
+.footer-user-nav .bin::before{
+	background-color: rgba(255,198,0,1);
+}
+
 .main-footer a{
 	color: #ffffff;
 }
 .main-footer li{
 	list-style: none;
-	
 	font-family: "Open Sans Light", "Arial", sans-serif;
 }
 .footer-user{
@@ -597,10 +605,11 @@ input[type="email"]{
 	padding-right: 35px;
 	outline: none;
 	background-color: #fff;
+	cursor:  pointer;
 }
-/*.feedback-form input[type="text"]:focus:required:invalid  input[type="submit"]:active {
+.feedback-form input[type="text"]:invalid  input[type="submit"]:active {
 	background-color: rgba(246,218,218,1);
-}*/
+}
 
 /*
 .map-popular, .feedback{

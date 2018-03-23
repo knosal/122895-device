@@ -52,11 +52,12 @@ a:link{
 	height: 8px;
 	background-color: rgba(240,197,46,1);
 	z-index: -1;
+	transition: 0.3s;
 }
 .line-feature:hover:before{
 	cursor: pointer;
 	transform: scale(1,6);
-	transition: 0.1s;
+	transition: 0.3s;
 }
 .line-feature:active{
 	color: rgba(0,0,0,0.3);
@@ -202,7 +203,8 @@ input[type="search"]:active ~ .btn-search{
 	line-height: 36px;
 	letter-spacing: -1px;
 	opacity: 1;
-	background-color: rgba(247,225,132,1);
+/*	background-color: rgba(247,225,132,1);*/
+	background-color: rgba(247,226,150,1);
 }
 .dropdown-menu 
 .sub-menu-item:hover{
@@ -286,10 +288,12 @@ input[type="search"]:active ~ .btn-search{
 	background-color: rgba(229,229,229,1);
 	max-width: 1440px;
 	min-height: 288px;
+	
 }
 .services-wrapper{
 	max-width: 1160px;
 	margin: 0 auto;
+	position: relative;
 }
 .services-in-box{
 	font-family: "Open Sans Light", "Arial", sans-serif;
@@ -303,6 +307,7 @@ input[type="search"]:active ~ .btn-search{
 	width: 160px;
 	font-size: 18px;
 	line-height: 24px;
+
 }
 .slider-point label{
 	margin: 20px 0;
@@ -318,10 +323,21 @@ input[type="search"]:active ~ .btn-search{
 .slider-point label[for="credit"]{
 	padding: 7px 39px 7px 38px;
 }
-.slider-point .line-feature:active:before{
+.slider-point .line-feature:active:before {
 	background-color: rgba(0,0,0,1);
-	transform: scale(2,6);	
+	transform: scale(1.75,6);	
 	transform-origin: left;
+}
+.slider-point::after{
+	content: '';
+	position: absolute;
+	top: 70px;
+	bottom: 0;
+	left: 117px;
+	height: 7px;
+	width: 319px;
+	background-color: #000;
+	transform: rotate(90deg);
 }
 
 .slider-point .line-feature:active{
@@ -361,6 +377,10 @@ input[type="search"]:active ~ .btn-search{
 	font-size: 47px;
 	line-height: 48px;
 	letter-spacing: 0.47px;
+}
+.info-section .info-list{
+	font-weight: bold;
+	list-style-type: circle;
 }
 
 /*КОНТАКТЫ*/
@@ -536,9 +556,11 @@ input[type="email"]{
 	
 }
 .feedback-form-group textarea{
-	width: 760px;
+	width: 85%;
 	min-height: 156px;
 	padding-top: 18px;
+	resize: none;
+	box-sizing: border-box;
 }
 .feedback-form button[type="submit"]{
 	margin-top: 54px;
@@ -549,13 +571,16 @@ input[type="email"]{
 	outline: none;
 	background-color: #fff;
 }
-
-.feedback-form 
-input[type="text"]:invalid  button[type="submit"]:active, 
-input[type="email"]:invalid  button[type="submit"]:active, 
-textarea:invalid button[type="submit"]:active{
+/*.feedback-form input[type="text"]:focus:required:invalid  input[type="submit"]:active {
 	background-color: rgba(246,218,218,1);
+}*/
+
+/*
+.map-popular, .feedback{
+	display: none
 }
+*/
+
 /*МОДАЛЬНЯ КАРТА*/
 .map-popular{
 	max-width: 960px;

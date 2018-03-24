@@ -1,19 +1,23 @@
 /*ШРИФТЫ*/
 @font-face {
-	font-family: "Gilroy ExtraBold";
-	src: url("../fonts/gilroyextrabold.woff2") format("woff2"); 
+	font-family: 'Gilroy ExtraBold';
+	src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+			 url('../fonts/gilroyextrabold.woff') format('woff'); 
 }
 @font-face {
-	font-family: "Gilroy Light";
-	src: url("../fonts/gilroylight.woff2") format("woff2"); 
+	font-family: 'Gilroy Light';
+	src: url('../fonts/gilroylight.woff2') format('woff2'),
+			 url('../fonts/gilroylight.woff') format('woff'); 
 }
 @font-face {
 	font-family: 'Open Sans Light';
-	src: url("../fonts/opensanslight.woff2") format("woff2"); 
+	src: url('../fonts/opensanslight.woff2') format('woff2'),
+			 url('../fonts/opensanslight.woff') format('woff'); 
 }
 @font-face {
 	font-family: 'Open Sans';
-	src: url("../fonts/opensans.woff2") format("woff2"); 
+	src: url('../fonts/opensans.woff2') format('woff2'),
+			 url('../fonts/opensans.woff') format('woff'); 
 }
 
 /*ГЛОБАЛЬНО*/
@@ -93,14 +97,6 @@ a:link{
 }
  
 /*ПОИСК*/
-/*
-.img-search::after{
-	content: '';
-	background-image: url("../img/svg/search.svg");
-	background-position: left;
-}
-*/
-
 input[type="search"]{
 	opacity: 0.3;
 	border: none;
@@ -112,6 +108,7 @@ input[type="search"]{
 	border-bottom: 2px solid transparent;
 	outline: none;
 	position: relative;
+	padding-left: 30px;
 	
 }
 input[type="search"]:hover{
@@ -147,9 +144,12 @@ input[type="search"]:active ~ .btn-search{
 	color: rgba(255,255,255,0.3);
 	visibility: visible;
 }
-/*.search::before{
-	content: url(../img/svg/search.svg);
-}*/
+.search::after{
+	content: url('../img/svg/search.svg');
+	position: absolute;
+	top: 2px;
+	z-index: 1;
+}
 .login::before{
 	content: url(../img/svg/user.svg);
 }
@@ -270,6 +270,9 @@ input[type="search"]:active ~ .btn-search{
 .slides {
   display: none;
 }
+.hidden-radio{
+	display: none;
+}
 #monopod:checked ~ .slides[title='Монопод'] {
   display: block;
 }
@@ -278,6 +281,29 @@ input[type="search"]:active ~ .btn-search{
 }
 #quadrocopter:checked ~ .slides[title='Квадрокоптер'] {
   display: block;
+}
+.slider-button{
+	font-size: 0px;
+	margin-top: 20px;
+}
+.pseudo-radio{
+	margin-left: 20px;
+	position: relative;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+	border: 1px solid #000;
+}
+.slider-button .active::before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px; 
+	width: 2px;
+	height: 2px;
+	background: #ffffff;
+	border-radius: 50%;
+	border: 1px solid #000;
 }
 
 /*АССОРТИМЕНТ*/
@@ -355,13 +381,11 @@ input[type="search"]:active ~ .btn-search{
 	padding: 7px 39px 7px 38px;
 }
 
-/*
-.services-item:active ~ .slider-point label::after{
-	content: '';
-	background-color: aqua;
-	width: 10px;
+.services-item:checked:active ~ .slider-point label:checked::before{
+	background-color: rgba(0,0,0,1);
+	width: 278px;
+	height: 79px;
 }
-*/
 
 #delivery:checked ~ .services[title='delivery'] {
 	display: block;
@@ -597,6 +621,14 @@ a.social-icon:active{
 	font-size: 18px;
 	line-height: 24px;
 }
+
+/*
+.feedback-form input:invalid,
+.feedback-form textarea:invalid {
+  background-color: rgba(246,218,218,0.5);
+}
+*/
+
 .feedback-form input[type="text"], 
 input[type="email"], 
 textarea{
@@ -624,8 +656,7 @@ textarea:focus{
 input[type="email"]{
 	min-width: 360px;
 	height: 50px;
-	margin-bottom: 64px;
-	
+	margin-bottom: 64px;	
 }
 .feedback-form-group textarea{
 	width: 85%;
@@ -642,9 +673,6 @@ input[type="email"]{
 	outline: none;
 	background-color: #fff;
 	cursor:  pointer;
-}
-.feedback-form input[type="text"]:invalid  input[type="submit"]:active {
-	background-color: rgba(246,218,218,1);
 }
 
 /*
@@ -760,10 +788,6 @@ input[type="email"]{
 }
 
 /*ФИЛЬТР СТОИМОСТИ*/
-/*.main-filter-section{
-	max-width:1160px;
-	margin: 0 auto;
-}*/
 .filter-price {
 	position: relative;
 }

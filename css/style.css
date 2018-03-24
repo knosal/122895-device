@@ -35,6 +35,7 @@ a:link{
 		color: #000;
 }
 
+
 /*КНОПКИ ПРИ НАВЕДЕНИИ*/
 .line-feature{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
@@ -144,6 +145,8 @@ input[type="search"]:active ~ .btn-search{
 	color: rgba(255,255,255,0.3);
 	visibility: visible;
 }
+
+/*ИКОНКИ*/
 .search::after{
 	content: url('../img/svg/search.svg');
 	position: absolute;
@@ -297,8 +300,8 @@ input[type="search"]:active ~ .btn-search{
 .slider-button .active::before {
 	content: '';
 	position: absolute;
-	top: 3px;
-	left: 3px; 
+	top: 4px;
+	left: 4px; 
 	width: 2px;
 	height: 2px;
 	background: #ffffff;
@@ -319,9 +322,6 @@ input[type="search"]:active ~ .btn-search{
 .monopod{
 	align-items: flex-end;
 }
-/*.popular-list a:nth-child(2) .popular-img-wrapper{
-	align-items: flex-end;
-}*/
 .popular-section{
 	max-width:1160px;
 	margin: 0 auto;
@@ -341,12 +341,11 @@ input[type="search"]:active ~ .btn-search{
 	letter-spacing: 0.18px;
 }
 
-/*СЕРВИСЫ*/
+/*СЕРВИСЫ-КНОПКИ*/
 .services-section{
 	background-color: rgba(229,229,229,1);
 	max-width: 1440px;
 	min-height: 288px;
-	
 }
 .services-wrapper{
 	max-width: 1160px;
@@ -373,24 +372,40 @@ input[type="search"]:active ~ .btn-search{
 .slider-point label[for="delivery"]{
 	padding: 7px 15px 7px 24px;
 }
-.slider-point label[for="safeguard"]{
-	padding: 14px 25px;
-	margin: 20px 0;
+.slider-point label[for="warranty"]{
+	padding: 7px 25px 7px 25px;
 }
 .slider-point label[for="credit"]{
 	padding: 7px 39px 7px 38px;
 }
-
-.services-item:checked:active ~ .slider-point label:checked::before{
-	background-color: rgba(0,0,0,1);
-	width: 278px;
-	height: 79px;
+.slider-point{
+	position: relative;
 }
 
+.slider-point .active::after {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: 0px; 
+	width: 278px;
+	height: 48px;
+	background: #000;
+}
+
+/*СЕРВИСЫ-ОПИСАНИЕ*/
+.services[title='delivery']::after{
+	content: url(../img/svg/delivery.svg);
+}
+.services[title='warranty']::after{
+	content: url(../img/svg/warranty.svg);
+}
+.services[title='credit']::after{
+	content: url(../img/svg/credit.svg);
+}
 #delivery:checked ~ .services[title='delivery'] {
 	display: block;
 }
-#safeguard:checked ~ .services[title='safeguard'] {
+#warranty:checked ~ .services[title='warranty'] {
 	display: block;
 }
 #credit:checked ~ .services[title='credit'] {
@@ -399,13 +414,6 @@ input[type="search"]:active ~ .btn-search{
 .services-in-box{
 	display: none;
 }
-/*
-.slider-point .line-feature:active:before {
-	background-color: rgba(0,0,0,1);
-	transform: scale(1.75,6);	
-	transform-origin: left;
-}
-*/
 .slider-point::after{
 	content: '';
 	position: absolute;
@@ -456,11 +464,14 @@ input[type="search"]:active ~ .btn-search{
 	letter-spacing: 0.47px;
 }
 .info-section .info-list{
-	font-weight: bold;
-	list-style-type: circle;
+	list-style-type: circle;	
+	color: rgba(229,229,229,1);
 }
-.info-list .info-item{
-	padding-left: 25px;
+.info-item span{
+	padding-left: 15px;
+	font-family: "Open Sans Light", "Arial", sans-serif;
+	color: #000;
+	font-weight: 600;
 }
 
 /*КОНТАКТЫ*/
@@ -476,7 +487,6 @@ input[type="search"]:active ~ .btn-search{
 	font-size: 47px;
 	line-height: 48px;
 }
-
 .contact-section p:not(:last-child){
 	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
@@ -622,12 +632,12 @@ a.social-icon:active{
 	line-height: 24px;
 }
 
-/*
-.feedback-form input:invalid,
-.feedback-form textarea:invalid {
-  background-color: rgba(246,218,218,0.5);
+/*.feedback-form button[type="submit"]:checked ~ .feedback-form-group input[type="text"]:invalid {
+	background-color: rgba(246,218,218,0.5);
+}*/
+.feedback-form input:not(:placeholder-shown) { 
+		background-color: rgba(246,218,218,0.5);
 }
-*/
 
 .feedback-form input[type="text"], 
 input[type="email"], 
@@ -639,7 +649,7 @@ textarea{
 	font-family: "Open Sans Regular", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
-	 box-sizing: border-box;
+	box-sizing: border-box;
 }
 .feedback-form input[type="text"]:hover, 
 input[type="email"]:hover, 
@@ -654,8 +664,8 @@ textarea:focus{
 }
 .form-group-left input[type="text"],
 input[type="email"]{
-	min-width: 360px;
-	height: 50px;
+	width: 85%;
+	min-height: 50px;
 	margin-bottom: 64px;	
 }
 .feedback-form-group textarea{
@@ -687,6 +697,10 @@ input[type="email"]{
 	position: relative;
 	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 	margin: 0 auto;
+}
+.map-popular img{
+	width: 100%;
+	height: auto;
 }
 
 /*КНОПКА "ЗАКРЫТЬ" МОДАЛЬНОЕ ОКНО*/

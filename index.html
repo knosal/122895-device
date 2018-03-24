@@ -17,7 +17,7 @@
 					<form action="" method="post">	
 						<label class="visually-hidden" for="nav-search">Поиск по сайту</label>
 						<span class="search"></span>
-						<input class="" type="search" name="search" id="nav-search" placeholder="Поиск по сайту">
+						<input type="search" name="search" id="nav-search" placeholder="Поиск по сайту">
 						<button class="btn-search" type="button" aria-label="Кнопка поиска">Найти</button>
 					</form>
 				<div class="user-nav">
@@ -59,7 +59,7 @@
 							</ul>
 						</li>
 						<li class=" current-page nav nav-delivery"><a href="#">Доставка</a></li>
-						<li class="current-page nav nav-safeguard"><a href="#">Гарантии</a></li>
+						<li class="current-page nav nav-warranty"><a href="#">Гарантии</a></li>
 						<li class="current-page nav nav-contacts"><a href="#">Контакты</a></li>
 					</ul>
 				</nav>  
@@ -242,27 +242,37 @@
 					<h2 class="visually-hidden">Сервисы</h2>
 					<div class="services-box">
 						<input class="services-item visually-hidden" type="radio" name="point" id="delivery" value="Доставка" checked>
-						<input class="services-item visually-hidden" type="radio" name="point" id="safeguard" value="Гарантия">
-						<input class="services-item visually-hidden" type="radio" name="point" id="credit" value="Кредит">
-						<div class="slider-point">
-							<label for="delivery" class="line-feature">Доставка</label>
-							<label for="safeguard" class="line-feature">Гарантия</label>
-							<label for="credit" class="line-feature">Кредит</label>
-						</div>			
+						<input class="services-item visually-hidden" type="radio" name="point" id="warranty" value="Гарантия">
+						<input class="services-item visually-hidden" type="radio" name="point" id="credit" value="Кредит">	
 						<div class="services services-in-box" title="delivery">
+							<div class="slider-point">
+								<label class="line-feature active" for="delivery" >Доставка</label>
+								<label class="line-feature" for="warranty" >Гарантия</label>
+								<label class="line-feature" for="credit">Кредит</label>
+							</div>		
 							<h3 id="delivery">Доставка</h3>
 							<p>
 								Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
 							</p>
 						</div>
-						<div class="services services-in-box" title="safeguard">
-							<h3 id="safeguard">Гарантия</h3>
+						<div class="services services-in-box" title="warranty">
+							<div class="slider-point">
+								<label class="line-feature" for="delivery" >Доставка</label>
+								<label class="line-feature active" for="warranty" >Гарантия</label>
+								<label class="line-feature" for="credit">Кредит</label>
+							</div>	
+							<h3 id="warranty">Гарантия</h3>
 							<p>
 								Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
 								Товар, не дом, конечно же.
 							</p>
 						</div>
 						<div class="services services-in-box" title="credit">
+							<div class="slider-point">
+								<label class="line-feature" for="delivery" >Доставка</label>
+								<label class="line-feature" for="warranty" >Гарантия</label>
+								<label class="line-feature active" for="credit">Кредит</label>
+							</div>	
 							<h3 id="credit">Кредит</h3>
 							<p>
 								Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
@@ -306,9 +316,9 @@
 					Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
 				</p>
 				<ul class="info-list">
-					<li class="info-item">Деловые Линии</li>
-					<li class="info-item">Автотрейдинг</li>
-					<li class="info-item">ЖелДорЭкспедиция</li>
+					<li class="info-item"><span>Деловые Линии</span></li>
+					<li class="info-item"><span>Автотрейдинг</span></li>
+					<li class="info-item"><span>ЖелДорЭкспедиция</span></li>
 				</ul>
 				<p>
 					<a href="#" class="line-feature">Подробнее о нас</a>

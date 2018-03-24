@@ -17,14 +17,14 @@
 					<form action="" method="post">	
 						<label class="visually-hidden" for="nav-search">Поиск по сайту</label>
 						<span class="search"></span>
-						<input type="search" name="search" id="nav-search" placeholder="Поиск по сайту">
+						<input class="user-search" type="search" name="search" id="nav-search" placeholder="Поиск по сайту">
 						<button class="btn-search" type="button" aria-label="Кнопка поиска">Найти</button>
 					</form>
 				<div class="user-nav">
 					<div class="user-nav-login">
 						<a class="login" href="#">Войти</a>
 					</div>
-					<div class="user-nav-basket-compare">
+					<div class="user-nav-bin-compare">
 						<a href="#" class="compare">Сравнить</a>
 						<a href="#" class="bin">Корзина</a>
 					</div>	
@@ -36,7 +36,7 @@
 				<h2 class="visually-hidden">Навигация</h2>			
 				<nav class="navigation" aria-label="Навигация по сайту">	
 					<ul class="nav-menu">
-						<li class="nav"><a class="current-page nav-catalog" href="#">Каталог товаров</a>
+						<li class="nav"><a class="nav-catalog current-page" href="#">Каталог товаров</a>
 							<ul class="dropdown-menu">
 								<li class="sub-menu">
 									<ul>
@@ -86,7 +86,7 @@
 								Делай селфи,<br> 
 								как Бен Стиллер! 
 							</p>
-							<p>
+							<p class="item-description">
 								Самая длинная палка для селфи доступна в нашем магазине.
 								Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
 							</p>
@@ -122,7 +122,7 @@
 								Худеем<br>
 								правильно! 
 							</p>
-							<p>
+							<p class="item-description">
 								Мотивирующие фитнес-браслеты помогут найти в себе силы 
 								не пропускать занятия и соблюдать диету.
 							</p>
@@ -154,7 +154,7 @@
 								Порхает как бабочка,<br>
 								жалит как пчела!
 							</p>
-							<p>
+							<p class="item-description">
 								Этот обычный, на первый взгляд, квадрокоптер оснащен 
 								мощным лазером, замаскированным под стандартную камеру.
 							</p>
@@ -332,9 +332,7 @@
 					Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 				</p>
 				<a class="map-btn" href="#"><img src="img/map.png" width="560" height="222" alt="Открытие модального окна"></a>
-				<p>
-					<a href="#" class="line-feature">Напишите нам</a>	
-				</p>
+				<a href="#" class="line-feature">Напишите нам</a>	
 			</section>	
 		</main>
 		
@@ -343,13 +341,13 @@
 			<section class="footer-user">
 				<h2 class="visually-hidden">Для пользователя</h2>
 				<div class="footer-logotype">
-					<a class="logo footer-logo"><img src="img/f-logo.png" width="163" height="36" alt="Логотип Device"></a>
+					<a href="#" class="logo footer-logo"><img src="img/f-logo.png" width="163" height="36" alt="Логотип Device"></a>
 				</div>
 				<ul class="footer-user-nav">
 					<li class="login-link"><a class="login" href="#">Войти</a></li>
 					<li class="login-link"><a class="visually-hidden logout" href="#">Выйти</a></li>
-					<li class="login-link"><a class="compare" href="#">Сравнить</a></li>
-					<li class="login-link"><a class="bin" href="#">Корзина</a></li>
+					<li class="user-nav-link"><a class="compare" href="#">Сравнить</a></li>
+					<li class="user-nav-link"><a class="bin" href="#">Корзина</a></li>
 				</ul>	
 			</section >
 			<section class="footer-conditions">
@@ -374,8 +372,8 @@
 					<li><a class="social-icon social-btn-twitter" href="#" href="#" alt="Twitter"><span class="visually-hidden">Twitter</span></a></li>
 				</ul>
 				<div class="footer-copyright">
-					<a href="https://htmlacademy.ru/intensive/htmlcss">
-						<span class="logo-html" alt="HTML Academy" ></span>
+					<a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss">
+						<span class="visually-hidden" alt="HTML Academy" >HTML Academy</span>
 					</a>
 				</div>
 			</section>	
@@ -387,18 +385,18 @@
 				<form class="feedback-form" action="#" method="post">
 					<button class="feedback-modal-close" aria-label="Закрыть форму обратной связи" type="button"></button>
 					<div class="feedback-form-group form-group-left">
-						<label><b>Ваше имя:</b><br>
-							<input type="text" name="fullname" placeholder="Имя Фамилия"  aria-label="Введите ваше имя" required>
+						<label><b>Ваше имя:</b>
+							<input class="form-group-fio" type="text" name="fullname" placeholder="Имя Фамилия"  aria-label="Введите ваше имя" required>
 						</label>
 					</div>
 					<div class="feedback-form-group form-group-right">
-						<label><b>Ваш e-mail:</b><br>
-							<input type="email" name="email" placeholder="email@example.com" aria-label="Введите ваш email" required>
+						<label><b>Ваш e-mail:</b>
+							<input class="form-group-email" type="email" name="email" placeholder="email@example.com" aria-label="Введите ваш email" required>
 						</label>
 					</div>
 					<div class="feedback-form-group">
-						<label><b>Текст письма:</b><br>
-							<textarea name="message" placeholder="В свободной форме" rows="5" cols="50" required></textarea>
+						<label><b>Текст письма:</b>
+							<textarea class="form-group-text" name="message" placeholder="В свободной форме" rows="5" cols="50" required></textarea>
 						</label>
 					</div>
 					<button class="button line-feature" type="submit" value="Отправить" aria-label="Отправить форму">Отправить</button>

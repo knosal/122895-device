@@ -23,11 +23,13 @@
 /*ГЛОБАЛЬНО*/
 body {
 	max-width: 1440px;
+	
 	margin: 0px auto; 
 	padding: 0 20px;
 }
 a{
 	text-decoration: none;
+	
 	cursor: pointer;
 }
 a:visited,
@@ -38,31 +40,40 @@ a:link{
 
 /*КНОПКИ ПРИ НАВЕДЕНИИ*/
 .line-feature{
+	display: inline-block;
+	position: relative;
+	
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	text-transform: uppercase;
 	font-size: 18px;
-	padding: 10px;
 	letter-spacing: 3.6px;
-	position: relative;
-	z-index: 1;
-	display: inline-block;
+	
+	padding: 10px;
+	
+	z-index: 1;	
 }
 .line-feature::before{
 	content: "";
 	position: absolute;
+	
 	left: 0;
 	right: 0;
 	top: calc(50% - 4px);
 	bottom: calc(50% - 4px);
+	
 	height: 8px;
+
 	background-color: rgba(240,197,46,1);
+	
 	z-index: -1;
 }
 .line-feature:hover::before{
-	cursor: pointer;
 	top: 0;
 	bottom: 0;
+	
 	height: 100%;
+	
+	cursor: pointer;
 }
 .line-feature:active{
 	color: rgba(0,0,0,0.3);
@@ -71,19 +82,23 @@ a:link{
 /*ГОЛОВА*/
 .main-header{
 	position: relative;
+	
 	max-width: 1160px;
+	min-height: 299px;
+	
 	margin: 0 auto;
 	top: 40px;
+	
 	background-color: rgba(247,226,150,1);
-	min-height: 299px;
 }
 .user-section{
+	position: relative;
+	
 	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 0.15px;
-	position: relative;
-	
+		
 /*	background-color: rgba(0,128,0,0.2);
 	box-shadow: 0 0 0 3px green;*/
 }
@@ -91,6 +106,7 @@ a:link{
 /*ЛОГОТИП*/
 .header-logo{
 	position: absolute;
+	
 	margin-top: -21px; 
 }
 .logo:hover{
@@ -102,18 +118,24 @@ a:link{
  
 /*ПОИСК*/
 .user-search{
-	opacity: 0.3;
+	position: relative;
+	
+	outline: none;
 	border: none;
+	border-bottom: 2px solid transparent;
+	
 	background-color: rgba(247,226,150,0.5);
+	
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: -1px;
+	
 	width: 200px;
 	height: 49px;
-	border-bottom: 2px solid transparent;
-	outline: none;
-	position: relative;
+	
 	padding-left: 30px;
+	
+	opacity: 0.3;
 }
 .user-search:hover{
 	opacity: 0.6;
@@ -121,6 +143,7 @@ a:link{
 .user-search:focus,
 .user-search:active{
 	border-bottom: 2px solid #000;
+	
 	opacity: 1;
 }
 .user-search:focus ~ .btn-search,
@@ -129,16 +152,22 @@ a:link{
 }
 
 .btn-search{
+	position: absolute;
+	
 	visibility: hidden;
+	
 	border: 2px solid #000;
 	outline: none;
+	
 	background: rgba(247,226,150,0.5);
+	
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: -1px;
+	
 	width: 86px;
 	height: 49px;
-	position: absolute;
+
 	cursor: pointer;
 }
 .btn-search:hover{
@@ -147,18 +176,23 @@ a:link{
 }
 .btn-search:active{
 	color: rgba(255,255,255,0.3);
+
 	visibility: visible;
 }
 
 /*ИКОНКИ*/
 .search::after{
 	content: "";
+	
 	position: absolute;
+
 	top: 14px;
 	left: 0px;
+	
 	background-image: url("../img/svg/search.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	
 	width: 20px;
 	height: 20px;
 }
@@ -166,61 +200,77 @@ a:link{
 .compare,
 .bin{
 	position: relative;
+	
 	padding-left: 20px;
 }
 
 .login::before{
 	content: "";
+	
 	position: absolute;
 	top: 4px;
 	left: 0px;
+	
 	background-image: url("../img/svg/user.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+
 	width: 20px;
 	height: 20px;
 }
 .compare::before{
 	content: "";
+	
 	position: absolute;
 	top: 7px;
 	left: 0px;
+	
 	background-image: url("../img/svg/compare.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	
 	width: 20px;
 	height: 20px;
 }
 .bin::before{
 	content: "";
+	
 	position: absolute;
 	top: 4px;
 	left: 0px;
+	
 	background-image: url("../img/svg/cart.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	
 	width: 20px;
 	height: 20px;
 }
 
 .nav-catalog::after{
 	content: "";
+	
 	position: absolute;
 	top: 3px;
 	right: -30px;
+	
 	background-image: url("../img/svg/plus.svg");
 	background-repeat: no-repeat;
 	background-position: 0px 0;
+	
 	width: 20px;
 	height: 20px;
+	
 	opacity: 0.3;
 }
 
 .footer-user-nav .login::before{
 	content: "";
+	
 	position: absolute;
 	top: 4px;
 	left: 0px;	
+	
 	background-image: url("../img/user.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -229,32 +279,39 @@ a:link{
 }
 .footer-user-nav .compare::before{
 	content: "";
+	
 	position: absolute;
 	top: 7px;
 	left: 0px;
+	
 	background-image: url("../img/compare.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	
 	width: 20px;
 	height: 20px;
 }
 .footer-user-nav .bin::before{
 	content: "";
+	
 	position: absolute;
 	top: 4px;
 	left: 0px;
+	
 	background-image: url("../img/cart.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	
 	width: 20px;
 	height: 20px;
 }
 
 /*НАВИГАЦИЯ*/
 .navigation li{
-	list-style: none;
 	position: relative;
-	}
+	
+	list-style: none;
+}
 .current-page{
 	position: relative;
 }
@@ -286,6 +343,7 @@ a:link{
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 3.6px;
+	
 	opacity: 1;
 }
 
@@ -306,14 +364,18 @@ a:link{
 /*ПОДМЕНЮ*/
 .dropdown-menu{
 	display: none;
+	
 	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 36px;
 	letter-spacing: -1px;
-	opacity: 1;
+	
 	background-color: rgb(247,226,150);
+	
 	padding: 0;
 	margin: 0;
+	
+	opacity: 1;
 }
 .dropdown-menu 
 .sub-menu-item:hover{
@@ -327,7 +389,9 @@ a:link{
 /*ВЕРХНИЙ СЛАЙДЕР*/
 .main-slider-section{
 	position: relative;
+	
 	max-width:1160px;
+
 	margin: 0 auto;
 }
 .product{
@@ -355,15 +419,15 @@ a:link{
 }
 
 .slider-item a{
-	padding: 20px 49px;
+	padding: 12px 49px;
 }
 .slides {
   display: none;
 }
-
 .hidden-radio{
 	display: none;
 }
+
 #monopod:checked ~ .slides[title="Монопод"] {
   display: block;
 }
@@ -376,24 +440,31 @@ a:link{
 
 .slider-button{
 	font-size: 0px;
+	
 	margin-top: 20px;
 }
 .pseudo-radio{
-	margin-left: 20px;
 	position: relative;
-  padding: 6px;
-  border-radius: 50%;
-  cursor: pointer;
+	
+	margin-left: 20px;
+	padding: 6px;
+	
+	border-radius: 50%;
 	border: 1px solid #000;
+	
+	cursor: pointer;
 }
 .slider-button .active::before {
 	content: "";
+	
 	position: absolute;
 	top: 4px;
 	left: 4px; 
 	width: 2px;
 	height: 2px;
+	
 	background: #ffffff;
+	
 	border-radius: 50%;
 	border: 1px solid #000;
 }
@@ -401,6 +472,7 @@ a:link{
 /*АССОРТИМЕНТ*/
 .popular-section{
 	max-width:1160px;
+	
 	margin: 0 auto;
 }
 .popular-item .monopod{
@@ -410,19 +482,21 @@ a:link{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
+	letter-spacing: 0.18px;
+	
 	width: 160px;
 	min-height: 78px;
-	letter-spacing: 0.18px;
 }
 
 .popular-img-wrapper{
-	width: 160px;
-	height: 160px;
-	background-color: rgba(240,197,46,0.5);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	
+	width: 160px;
+	height: 160px;
+	
+	background-color: rgba(240,197,46,0.5);
 }
 .popular-img-wrapper:hover{
 	background-color: rgba(240,197,46,1);
@@ -434,13 +508,16 @@ a:link{
 /*СЕРВИСЫ-КНОПКИ*/
 .services-section{
 	background-color: rgba(229,229,229,1);
+	
 	max-width: 1440px;
 	min-height: 288px;
 }
 .services-wrapper{
-	max-width: 1160px;
-	margin: 0 auto;
 	position: relative;
+	
+	max-width: 1160px;
+	
+	margin: 0 auto;
 }
 .services-in-box{
 	font-family: "Open Sans Light", "Arial", sans-serif;
@@ -452,12 +529,15 @@ a:link{
 .slider-point{
 	display: flex;
 	flex-direction: column;
+	
 	width: 160px;
+	
 	font-size: 18px;
 	line-height: 24px;
 }
 .slider-point label{
 	margin: 20px 0;
+	
 	cursor: pointer;
 }
 .slider-point label[for="delivery"]{
@@ -509,14 +589,16 @@ a:link{
 }
 .slider-point::after{
 	content: "";
+	
 	position: absolute;
 	top: -50px;
 	bottom: 0px;
 	right: -117px;
+	
 	height: 319px;
 	width: 7px;
+	
 	background-color: #000;
-
 }
 .slider-point .line-feature:active{
 	color: rgba(247,225,132,1);
@@ -530,6 +612,7 @@ a:link{
 /*СПОНСОРЫ*/
 .brands{
 	max-width: 1160px;
+	
 	margin: 0 auto;
 }
 .logotypes>img:last-child{
@@ -539,6 +622,7 @@ a:link{
 /*О НАС*/
 .info-section{
 	max-width: 1160px;
+	
 	margin: 0 auto;
 }
 .info-section .line-feature {
@@ -559,18 +643,22 @@ a:link{
 }
 .info-section .info-list{
 	list-style-type: circle;	
+	
 	color: rgba(229,229,229,1);
 }
 .info-item span{
-	padding-left: 15px;
 	font-family: "Open Sans Light", "Arial", sans-serif;
-	color: #000;
 	font-weight: 600;
+	
+	color: #000;
+
+	padding-left: 15px;
 }
 
 /*КОНТАКТЫ*/
 .contact-section{
 	max-width: 1160px;
+	
 	margin: 0 auto;
 }
 .contact-section .line-feature{
@@ -590,18 +678,21 @@ a:link{
 /*ПОДВАЛ*/
 .main-footer{
 	background-color: rgba(70,70,70,1);
+	
 	max-width: 1440px;
 }
 .main-footer a{
 	color: #ffffff;
 }
 .main-footer li{
-	list-style: none;
 	font-family: "Open Sans Light", "Arial", sans-serif;
+	
+	list-style: none;
 }
 
 .footer-user{
 	max-width: 1160px;
+	
 	margin: 0 auto;
 }
 .footer-user-nav .login-link,
@@ -614,11 +705,12 @@ a:link{
 	color:  rgba(255,255,255,0.6);
 }
 .login-link a.logout{
-		color:  rgba(255,255,255,0.3);
+	color:  rgba(255,255,255,0.3);
 }
 
 .footer-conditions{
 	max-width: 1160px;
+	
 	margin: 0 auto;
 }
 .footer-address,
@@ -626,6 +718,7 @@ a:link{
 	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
+	
 	color:  rgba(255,255,255,0.7);
 }
 
@@ -659,18 +752,22 @@ a:link{
 /*СОЦСЕТИ*/
 .footer-socials{
 	max-width: 1160px;
+	
 	margin: 0 auto;
 }
 .socials-buttons::before{
 	display: block;
+	
 	width: 10px;
 	height: 10px;
+	
 	margin: 80px 80px;
 }
 .social-icon{
+	display: block;
+	
 	width: 40px;
 	height: 40px;
-	display: block;
 }
 
 .social-btn-facebook{
@@ -705,9 +802,12 @@ a.social-icon:active{
 
 /*ФОРМА ОБРАТНОЙ СВЯЗИ*/
 .feedback{
-	max-width: 960px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	position: relative;
+	
+	max-width: 960px;
+	
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	
 	margin: 0 auto;
 }
 .feedback-form{
@@ -716,6 +816,7 @@ a.social-icon:active{
 }
 .feedback-form-group b{
 	display: block;
+	
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
@@ -730,14 +831,18 @@ textarea:invalid{
 .feedback-form input, 
 .form-group-text{
 	background-color: rgba(242,242,242,1);
+	
 	outline: none;
 	border: 3px solid transparent;
+	
 	padding-left: 19px;
+	margin-top: 12px;
+	
 	font-family: "Open Sans Regular", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
+	
 	box-sizing: border-box;
-	margin-top: 12px;
 }
 .feedback-form input:hover, 
 .form-group-text:hover{
@@ -746,6 +851,7 @@ textarea:invalid{
 .feedback-form input:focus, 
 .form-group-text:focus{
 	border: 3px solid rgba(247,226,150,0.5);
+	
 	background-color: rgba(255,255,255,1);
 }
 
@@ -753,22 +859,28 @@ textarea:invalid{
 .form-group-email{
 	width: 85%;
 	min-height: 50px;
+	
 	margin-bottom: 64px;	
 }
 .form-group-text{
 	width: 85%;
 	min-height: 156px;
+	
 	padding-top: 18px;
+	
 	resize: none;
 }
 .feedback-form button[type="submit"]{
 	margin-top: 54px;
 	margin-bottom: 92px;
-	border: none;
 	padding-left: 35px;
 	padding-right: 35px;
+	
+	border: none;
 	outline: none;
+	
 	background-color: #fff;
+	
 	cursor:  pointer;
 }
 
@@ -780,9 +892,12 @@ textarea:invalid{
 
 /*МОДАЛЬНЯ КАРТА*/
 .map-popular{
-	max-width: 960px;
 	position: relative;
+	
+	max-width: 960px;
+	
 	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+
 	margin: 0 auto;
 }
 .map-popular img{
@@ -796,25 +911,33 @@ textarea:invalid{
 	position: absolute;
 	top: 22px;
 	right: 22px;
+	
 	height: 55px;
 	width: 55px;
+	
 	border-radius: 50%;
 	background-color: rgba(247,226,150,50);
 	background-color:  transparent;
+	
 	border:  transparent;
+	
 	cursor: pointer;
 }
 .feedback-modal-close::before, 
 .map-modal-close::before{
 	content: "";
+	
 	position: absolute;
 	top: 0px;
 	left: 0px;	
+	
 	background-image: url("../img/svg/modal-close.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	width: 60px;
+	
 	height: 60px;
+	
 	opacity: 0.5;
 }
 .feedback-modal-close:hover::before, 
@@ -834,8 +957,9 @@ textarea:invalid{
 	letter-spacing: 0.47px;
 }
 .catalog-nav-section li{
-	list-style: none;
 	position: relative;
+	
+	list-style: none;
 }
 .catalog-nav-section a,
 .breadcrumbs>li:last-child{
@@ -857,7 +981,9 @@ textarea:invalid{
 
 .catalog-nav-section li:not(:last-child)::after{
 	content: url(../img/svg/nav-arrow.svg);
+	
 	position: absolute;
+	
 	padding: 0 17px;
 }
 .catalog-nav-section{
@@ -867,6 +993,7 @@ textarea:invalid{
 /*ФИЛЬТРЫ*/
 .filter-form-wrapper{
 	background-color: rgba(238,238,238,1);
+	
 	max-width: 468px;
 }
 .filter-form-wrapper form{
@@ -877,11 +1004,15 @@ textarea:invalid{
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 3.2px;
+	
+	text-transform: uppercase;
+	
 	margin-bottom: 99px;
 	margin-top: 28px;
-	text-transform: uppercase;
-	background-color: rgba(220,220,220,1);
+	
 	padding: 27px 0;
+	
+	background-color: rgba(220,220,220,1);
 }
 
 .filter-form fieldset{
@@ -916,18 +1047,24 @@ textarea:invalid{
 .scale .range{
   width: 70%;
   height: 2px;
-  background: rgba(201, 224, 162, 1);
+  
+	background: rgba(201, 224, 162, 1);
 }
 
 .range-toggle {
 	position: absolute;
 	top: -9px;
+	
 	width: 4px;
 	height: 4px;
+	
 	background: #ababab;
+	
 	border: 8px solid #ffffff;
 	border-radius: 50%;
+	
 	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	
 	cursor: pointer;
 }
 .range-toggle:active {
@@ -944,19 +1081,20 @@ textarea:invalid{
 
 /*ФИЛЬТР ЦВЕТА*/
 .filter-option{
-	list-style: none;
+	position: relative;
+	
 	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 40px;
 	letter-spacing: 0.14px;
-	position: relative;
+	
+	list-style: none;
 }
 .filter-option-input + label{
 	cursor: pointer;
 }
 .filter-option-input:disabled + label{
 	opacity: 0.25;
-	
 }
 .filter-option-input:not(:disabled) + label:hover::before,
 .filter-option:hover{
@@ -968,12 +1106,14 @@ textarea:invalid{
 }
 .filter-option-input + label::before{
 	content: url(../img/svg/checkbox-off.svg);
+	
 	position: absolute;
 	top:5px;
 	left: -35px;
 }
 .filter-option-input:checked + label::before{
 	content: url(../img/svg/checkbox-on.svg);
+	
 	position: absolute;
 	top:5px;
 	left: -35px;
@@ -982,12 +1122,14 @@ textarea:invalid{
 /*ФИЛЬТР BLUETOOTH*/
 .filter-option-radio:checked + label::before{
 	content: url(../img/svg/radio-on.svg);
+	
 	position: absolute;
 	top:5px;
 	left: -35px;
 }
 .filter-option-radio + label::before{
 	content: url(../img/svg/radio-off.svg);
+	
 	position: absolute;
 	top:5px;
 	left: -35px;
@@ -1005,14 +1147,17 @@ textarea:invalid{
 	opacity: 1;
 }
 .filter-form button{
-	background-color: transparent;
-	border: none;
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: auto;
 	letter-spacing: 3.6px;
+	
 	padding-left: 43px;
 	padding-right: 43px;
+	
+	background-color: transparent;
+	
+	border: none;
 }		
 
 /*КНОПКИ СОРТИРОКИ*/
@@ -1024,14 +1169,15 @@ textarea:invalid{
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 3.2px;
+	
 	text-transform: uppercase;
 }
 .sort-item-holder .sort-item{
-	list-style: none;
 	font-family: "Open Sans Regular", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
-	letter-spacing: 0px;
+	
+	list-style: none;
 }
 .sort-item > input[type="radio"]{
 	display: none;
@@ -1054,6 +1200,7 @@ textarea:invalid{
 }
 .arrow{
 	font-size: 0px;
+	
 	margin-right: 8px;
 }
 .arrow-up::before{
@@ -1085,41 +1232,50 @@ textarea:invalid{
 	max-width: 360px;
 }
 .item-holder{
-	cursor: pointer;
 	position: relative;
+	
 	margin-bottom: 37px;
+	
+	cursor: pointer;
 }
 
 /*КОРЗИНА-СРАВНЕНИЕ*/
 .item-holder-active{
 	position: absolute;
+	
 	width: 360px;
 	height: 379px;
+	
 	top: 0px;
 	left: 0px;
+	
 	visibility: hidden;
 }
 .item-holder:hover .item-holder-active{
 	visibility: visible;
+	
 	background-color: rgba(238,238,238,0.7);
 }
 .in-garbage{
 	padding-left: 37px;
 	padding-right: 37px;
 	margin-left: 80px;
-	top: 183px;
 	
+	top: 183px;
 }
 .add-to-compare{
+	display: block;
+	
 	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 36px;
 	letter-spacing: 0.13px;
-	display: block;
-	text-align: center;
-	padding-top: 190px;
-	opacity: 0.5;
 	
+	text-align: center;
+	
+	padding-top: 190px;
+	
+	opacity: 0.5;
 }
 a.add-to-compare:hover{
 	opacity: 1;
@@ -1134,6 +1290,7 @@ a.add-to-compare:active{
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.18px;
+	
 	min-height: 68px;
 }
 .description-holder .item-price{
@@ -1148,34 +1305,42 @@ a.add-to-compare:active{
 	background-color: rgba(235,235,235,0.92);
 }
 .pagination-list{
-	list-style: none;
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 3.2px;
+	
+	list-style: none;
 }
 .btn-control .button{
 	border: none;
-	background-color: rgba(255,255,255,0);
 	outline: none;
+	
+	background-color: rgba(255,255,255,0);
+	
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 3.2px;
+	
 	height: 70px;
 	width: 126px;
+	
 	text-transform: uppercase;
+	
 	cursor: pointer;
 }
 
 .btn-control .catalog-control-back:hover,
 .btn-control .catalog-control-next:hover{
 	color: rgba(0,0,0,1);
+	
 	background-color: rgba(217,217,217,1);
 }
 .btn-control .catalog-control-back:active,
 .btn-control .catalog-control-next:active{
 	color: rgba(0,0,0,0.3);
+	
 	background-color: rgba(217,217,217,1);
 }
 
@@ -1191,6 +1356,7 @@ a.add-to-compare:active{
 .pagination-item-current{ 
 	color: rgba(0,0,0,1);
 }
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;

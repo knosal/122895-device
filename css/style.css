@@ -1,4 +1,7 @@
-/*ШРИФТЫ*/
+/*
+	ШРИФТЫ
+*/
+
 /*@font-face {
 	font-family: "Gilroy ExtraBold";
 	src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
@@ -20,7 +23,15 @@
 			 url("../fonts/opensans.woff") format("woff"); 
 }*/
 
-/*ГЛОБАЛЬНО*/
+/*
+	ГЛОБАЛЬНО
+*/
+
+/*	
+	background-color: rgba(0,128,0,0.2);
+	box-shadow: 0 0 0 3px green;
+*/
+
 body {
 	max-width: 1440px;
 	
@@ -37,8 +48,10 @@ a:link{
 		color: #000;
 }
 
+/*
+	КНОПКИ ПРИ НАВЕДЕНИИ
+*/
 
-/*КНОПКИ ПРИ НАВЕДЕНИИ*/
 .line-feature{
 	display: inline-block;
 	position: relative;
@@ -79,7 +92,10 @@ a:link{
 	color: rgba(0,0,0,0.3);
 }
 
-/*ГОЛОВА*/
+/*
+	ГОЛОВА
+*/
+
 .main-header{
 	position: relative;
 	
@@ -98,12 +114,12 @@ a:link{
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 0.15px;
-		
-/*	background-color: rgba(0,128,0,0.2);
-	box-shadow: 0 0 0 3px green;*/
 }
 
-/*ЛОГОТИП*/
+/*
+	ЛОГОТИП
+*/
+
 .header-logo{
 	position: absolute;
 	
@@ -116,7 +132,10 @@ a:link{
 	opacity: 0.3;
 }
  
-/*ПОИСК*/
+/*
+	ПОИСК
+*/
+
 .user-search{
 	position: relative;
 	
@@ -180,7 +199,10 @@ a:link{
 	visibility: visible;
 }
 
-/*ИКОНКИ*/
+/*
+	ИКОНКИ
+*/
+
 .search::after{
 	content: "";
 	
@@ -306,7 +328,10 @@ a:link{
 	height: 20px;
 }
 
-/*НАВИГАЦИЯ*/
+/*
+	НАВИГАЦИЯ
+*/
+
 .navigation li{
 	position: relative;
 	
@@ -315,7 +340,7 @@ a:link{
 .current-page{
 	position: relative;
 }
-.nav>a{
+.nav > a{
 	text-transform: uppercase;
 }
 
@@ -361,7 +386,10 @@ a:link{
 	opacity: 0.3;
 }
 
-/*ПОДМЕНЮ*/
+/*
+	ПОДМЕНЮ
+*/
+
 .dropdown-menu{
 	display: none;
 	
@@ -386,7 +414,10 @@ a:link{
 	opacity: 0.3;
 }
 
-/*ВЕРХНИЙ СЛАЙДЕР*/
+/*
+	ВЕРХНИЙ СЛАЙДЕР
+*/
+
 .main-slider-section{
 	position: relative;
 	
@@ -417,7 +448,22 @@ a:link{
 	line-height: 30px;
 	letter-spacing: 0.36px;
 }
-
+.main-slider-box{
+	counter-reset: items;
+}
+.slider-item{
+		counter-increment: items;
+}
+.slider-item::before{
+/*	content: "0" counter(items) " ";*/
+	content: counter(items, decimal-leading-zero);
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 179px;
+	line-height: 179px;
+	letter-spacing: 18px;
+	
+	color: #000;
+}
 .slider-item a{
 	padding: 12px 49px;
 }
@@ -469,7 +515,10 @@ a:link{
 	border: 1px solid #000;
 }
 
-/*АССОРТИМЕНТ*/
+/*
+	АССОРТИМЕНТ
+*/
+
 .popular-section{
 	max-width:1160px;
 	
@@ -505,7 +554,10 @@ a:link{
 	opacity: 0.5;
 }
 
-/*СЕРВИСЫ-КНОПКИ*/
+/*
+	СЕРВИСЫ-КНОПКИ
+*/
+
 .services-section{
 	background-color: rgba(229,229,229,1);
 	
@@ -535,7 +587,7 @@ a:link{
 	font-size: 18px;
 	line-height: 24px;
 }
-.slider-point label{
+.slider-point .line-feature{
 	margin: 20px 0;
 	
 	cursor: pointer;
@@ -563,7 +615,10 @@ a:link{
 	background: #000;
 }*/
 
-/*СЕРВИСЫ-ОПИСАНИЕ*/
+/*
+	СЕРВИСЫ-ОПИСАНИЕ
+*/
+
 .services[title="delivery"]::after{
 	content: url(../img/svg/delivery.svg);
 }
@@ -609,17 +664,23 @@ a:link{
 	line-height: 48px;
 }
 
-/*СПОНСОРЫ*/
+/*
+	СПОНСОРЫ
+*/
+
 .brands{
 	max-width: 1160px;
 	
 	margin: 0 auto;
 }
-.logotypes>img:last-child{
+.logotypes > img:last-child{
 	opacity: 0.2;
 }
 
-/*О НАС*/
+/*
+	О НАС
+*/
+
 .info-section{
 	max-width: 1160px;
 	
@@ -655,7 +716,10 @@ a:link{
 	padding-left: 15px;
 }
 
-/*КОНТАКТЫ*/
+/*
+	КОНТАКТЫ
+*/
+
 .contact-section{
 	max-width: 1160px;
 	
@@ -675,7 +739,10 @@ a:link{
 	line-height: 30px;
 }
 
-/*ПОДВАЛ*/
+/*
+	ПОДВАЛ
+*/
+
 .main-footer{
 	background-color: rgba(70,70,70,1);
 	
@@ -749,7 +816,10 @@ a:link{
 	opacity: 0.3;
 }
 
-/*СОЦСЕТИ*/
+/*
+	СОЦСЕТИ
+*/
+
 .footer-socials{
 	max-width: 1160px;
 	
@@ -800,7 +870,10 @@ a.social-icon:active{
 	opacity: 0.3;
 }
 
-/*ФОРМА ОБРАТНОЙ СВЯЗИ*/
+/*
+	ФОРМА ОБРАТНОЙ СВЯЗИ
+*/
+
 .feedback{
 	position: relative;
 	
@@ -890,7 +963,10 @@ textarea:invalid{
 }
 */
 
-/*МОДАЛЬНЯ КАРТА*/
+/*
+	МОДАЛЬНЯ КАРТА
+*/
+
 .map-popular{
 	position: relative;
 	
@@ -905,7 +981,10 @@ textarea:invalid{
 	height: auto;
 }
 
-/*КНОПКА "ЗАКРЫТЬ" МОДАЛЬНОЕ ОКНО*/
+/*
+	КНОПКА "ЗАКРЫТЬ" МОДАЛЬНОЕ ОКНО
+*/
+
 .feedback-modal-close, 
 .map-modal-close{
 	position: absolute;
@@ -949,7 +1028,10 @@ textarea:invalid{
 	opacity: 0.3;
 }
 
-/*КАТАЛОГ_ХЛЕБНЫЕ-КРОШКИ*/
+/*
+	КАТАЛОГ_ХЛЕБНЫЕ-КРОШКИ
+*/
+
 .catalog-nav-section h2{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 47px;
@@ -990,7 +1072,10 @@ textarea:invalid{
 	position: relative;
 }
 
-/*ФИЛЬТРЫ*/
+/*
+	ФИЛЬТРЫ
+*/
+
 .filter-form-wrapper{
 	background-color: rgba(238,238,238,1);
 	
@@ -1027,7 +1112,10 @@ textarea:invalid{
 	letter-spacing: 0.18px;
 }
 
-/*ФИЛЬТР СТОИМОСТИ*/
+/*
+	ФИЛЬТР СТОИМОСТИ
+*/
+
 .filter-price {
 	position: relative;
 }
@@ -1045,9 +1133,9 @@ textarea:invalid{
 	padding-right: 64px;
 }
 .scale .range{
-  width: 70%;
-  height: 2px;
-  
+	width: 70%;
+	height: 2px;
+
 	background: rgba(201, 224, 162, 1);
 }
 
@@ -1079,7 +1167,10 @@ textarea:invalid{
 	top: 20px;
 }
 
-/*ФИЛЬТР ЦВЕТА*/
+/*
+	ФИЛЬТР ЦВЕТА
+*/
+
 .filter-option{
 	position: relative;
 	
@@ -1119,7 +1210,10 @@ textarea:invalid{
 	left: -35px;
 }
 
-/*ФИЛЬТР BLUETOOTH*/
+/*
+	ФИЛЬТР BLUETOOTH
+*/
+
 .filter-option-radio:checked + label::before{
 	content: url(../img/svg/radio-on.svg);
 	
@@ -1160,7 +1254,10 @@ textarea:invalid{
 	border: none;
 }		
 
-/*КНОПКИ СОРТИРОКИ*/
+/*
+	КНОПКИ СОРТИРОКИ
+*/
+
 .sort-wrapper{
 	background-color: rgba(235,235,235,0.92); 
 }
@@ -1223,7 +1320,10 @@ textarea:invalid{
 	opacity: 1;
 }
 
-/*КАТАЛОГ*/
+/*
+	КАТАЛОГ
+*/
+
 .catalog-holder{
 	margin-top: 69px;
 	margin-left: 72px;
@@ -1239,7 +1339,10 @@ textarea:invalid{
 	cursor: pointer;
 }
 
-/*КОРЗИНА-СРАВНЕНИЕ*/
+/*
+	КОРЗИНА-СРАВНЕНИЕ
+*/
+
 .item-holder-active{
 	position: absolute;
 	
@@ -1284,7 +1387,10 @@ a.add-to-compare:active{
 	opacity: 0.2;
 }
 
-/*ОПИСАНИЕ ТОВАРОВ*/
+/*
+	ОПИСАНИЕ ТОВАРОВ
+*/
+
 .description-holder a{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 18px;
@@ -1300,7 +1406,10 @@ a.add-to-compare:active{
 	letter-spacing: 0.16px;
 }
 
-/*КНОПКИ СТРАНИЦ*/
+/*
+	КНОПКИ СТРАНИЦ
+*/
+
 .catalog-navigation{
 	background-color: rgba(235,235,235,0.92);
 }

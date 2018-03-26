@@ -57,6 +57,8 @@ a:link{
 	padding: 10px;
 	
 	z-index: 1;
+	
+	transform: all .3s ease;
 }
 .line-feature::before{
 	content: "";

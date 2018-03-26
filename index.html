@@ -34,7 +34,7 @@
 
 	<!--НАВИГАЦИЯ-->			
 				<section class="main-nav-section">
-					<h2 class="visually-hidden">Навигация</h2>			
+					<h2 class="visually-hidden">Навигация</h2>	
 					<nav class="navigation" aria-label="Навигация по сайту">	
 						<ul class="nav-menu">
 							<li class="nav"><a class="nav-catalog current-page" href="#">Каталог товаров</a>
@@ -59,7 +59,7 @@
 									</li>
 								</ul>
 							</li>
-							<li class=" current-page nav nav-delivery"><a href="#">Доставка</a></li>
+							<li class="current-page nav nav-delivery"><a href="#">Доставка</a></li>
 							<li class="current-page nav nav-warranty"><a href="#">Гарантии</a></li>
 							<li class="current-page nav nav-contacts"><a href="#">Контакты</a></li>
 						</ul>
@@ -198,7 +198,7 @@
 								<p class="description">Виртуальная реальность</p>
 							</div>
 						</a>
-						<a href="#">
+						<a href="catalog.html">
 							<div class="popular-item">
 								<div class="popular-img-wrapper monopod"> 
 									<img src="img/svg/popular-2.svg" alt="Моноподы для селфи" width="86" height="117">
@@ -296,25 +296,26 @@
 					<div class="brands-logotypes">
 						<a href="#" class="logotypes dji">
 							<img  src="img/logo-1c.jpg" width="260" height="100" alt="Dji">
-							<img  src="img/logo-1wb.jpg" width="260" height="100" alt="Dji">
+							<img class="black-and-white" src="img/logo-1wb.jpg" width="260" height="100" alt="Dji">
 						</a>
 						<a href="#" class="logotypes spgadgets"> 
 							<img  src="img/logo-2c.jpg" width="260" height="100" alt="SpGadgets">
-							<img  src="img/logo-2wb.jpg" width="260" height="100" alt="SpGadgets">
+							<img class="black-and-white" src="img/logo-2wb.jpg" width="260" height="100" alt="SpGadgets">
 						</a>
 						<a href="#" class="logotypes gopro">
 							<img  src="img/logo-3c.jpg" width="260" height="100" alt="GoPro">
-							<img  src="img/logo-3wb.jpg" width="260" height="100" alt="GoPro">
+							<img class="black-and-white" src="img/logo-3wb.jpg" width="260" height="100" alt="GoPro">
 						</a>
 						<a href="#" class="logotypes vive">
 							<img  src="img/logo-4c.jpg" width="260" height="100" alt="Vive">
-							<img  src="img/logo-4wb.jpg" width="260" height="100" alt="Vive">
+							<img class="black-and-white" src="img/logo-4wb.jpg" width="260" height="100" alt="Vive">
 						</a>
 					</div>	
 				</div>
 			</section>
 			
-<!--О НАС-->					
+<!--О НАС-->		
+		<div class="info-contact">			
 			<section class="info-section">
 				<div class="container">
 					<h2>О нас</h2>
@@ -342,10 +343,11 @@
 					<p>
 						Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 					</p>
-					<a class="map-btn" href="#"><img src="img/map.png" width="560" height="222" alt="Открытие модального окна"></a>
+					<a class="map-btn big-map" href="#"><img src="img/map.png" width="560" height="222" alt="Открытие модального окна"></a>
 					<a href="#" class="line-feature">Напишите нам</a>	
 				</div>
 			</section>	
+			</div>
 		</main>
 		
 <!--ПОДВАЛ-->		
@@ -394,19 +396,21 @@
 		</footer>
 		
 <!--ФОРМА ОБРАТНОЙ СВЯЗИ-->			
-			<section class="feedback">
+			<section class="modal feedback">
 				<h2 class="visually-hidden">Форма обратной связи</h2>
 				<form class="feedback-form" action="#" method="post">
 					<button class="feedback-modal-close" aria-label="Закрыть форму обратной связи" type="button"></button>
-					<div class="feedback-form-group form-group-left">
-						<label><b>Ваше имя:</b>
-							<input class="form-group-fio" type="text" name="fullname" placeholder="Имя Фамилия"  aria-label="Введите ваше имя" required>
-						</label>
-					</div>
-					<div class="feedback-form-group form-group-right">
-						<label><b>Ваш e-mail:</b>
-							<input class="form-group-email" type="email" name="email" placeholder="email@example.com" aria-label="Введите ваш email" required>
-						</label>
+					<div class="feedback-group">
+						<div class="feedback-form-group form-group-left">
+							<label><b>Ваше имя:</b>
+								<input class="form-group-fio" type="text" name="fullname" placeholder="Имя Фамилия"  aria-label="Введите ваше имя" required>
+							</label>
+						</div>
+						<div class="feedback-form-group form-group-right">
+							<label><b>Ваш e-mail:</b>
+								<input class="form-group-email" type="email" name="email" placeholder="email@example.com" aria-label="Введите ваш email" required>
+							</label>
+						</div>
 					</div>
 					<div class="feedback-form-group">
 						<label><b>Текст письма:</b>
@@ -418,7 +422,7 @@
 			</section>
 			
 <!--КАРТА-->			
-			<section class="map-popular">
+			<section class="modal map-popular">
 				<h2 class="visually-hidden">Карта</h2>
 				<button class="map-modal-close" aria-label="Закрыть модальное окно с картой" type="button"></button>
 				<p>

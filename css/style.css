@@ -57,13 +57,11 @@ a:link{
 	padding: 10px;
 	
 	z-index: 1;
-	
-	transform: all .3s ease;
 }
 .line-feature::before{
 	content: "";
-	position: absolute;
 	
+	position: absolute;
 	left: 0;
 	right: 0;
 	top: calc(50% - 4px);
@@ -72,13 +70,32 @@ a:link{
 	background-color: rgba(240,197,46,1);
 	
 	z-index: -1;
+		
+	transition: all 0.3s ease;
 }
 .line-feature:hover::before{
 	top: 0;
 	bottom: 0;
+		
+	transition: all 0.3s ease;
 }
 .line-feature:active{
 	color: rgba(0,0,0,0.3);
+}
+.line::before{
+	content: "";
+	position: absolute;
+	width: 81px;
+	height: 7px;
+	background: #000;
+}
+.line.slider-description::before{
+	background: #000;
+}
+.line.footer-socials::before{
+	margin-top: 20px;
+	
+	background-color: rgba(240,197,46,1);
 }
 
 /*ГОЛОВА*/
@@ -485,6 +502,7 @@ a:link{
 	
 	display: flex;
 	justify-content: space-between;
+	
 	height: 502px;
 	
 	margin: 0 60px;
@@ -684,6 +702,8 @@ a:link{
 .services-wrapper{
 	position: relative;
 	padding: 0;
+	
+	max-height: 288px;
 
 }
 .services-in-box{
@@ -821,14 +841,17 @@ display: flex;
 /*О НАС*/
 
 .info-section{
-	width: 560px;
+	width: 470px;
+	
+	position: relative;
 	
 	padding-left: 120px;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-content: center;
+	
+	background-color: rgba(100,200,50,0.2); 
 }
 .info-section .line-feature {
 	padding: 12px 23px;
@@ -872,39 +895,35 @@ display: flex;
 /*КОНТАКТЫ*/
 
 .contact-section{
-	width: 580px;
+	width: 570px;
 	
+	margin: 0;
+	padding: 0;
 	padding-right: 120px;
 	
 	display: flex;
 	flex-direction: column;
-	justify-content:stretch;
-	align-content: stretch;
+	justify-content: space-between;
+	
+	background-color: rgba(100,200,50,0.2);
 }
 
 .contact-section .map-btn{
 	display: inline-block;
-	vertical-align: top;
-	
-	padding: 0;
-	margin: 0;
-	padding-top: 15px;
-	padding-bottom: 82px;
 }
 .contact-section .line-feature{
+	margin-left: 20px;
 	padding: 12px 41px;
 }   
 .contact-section h2{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 47px;
 	line-height: 48px;
-
 }
 .contact-section p{
 	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
-
 }
 
 /*ПОДВАЛ*/
@@ -957,6 +976,7 @@ display: flex;
 
 .footer-conditions{
 	margin-top: 35px;
+	
 	display: flex;
 	justify-content: space-between;
 }
@@ -983,12 +1003,10 @@ display: flex;
 }
 
 .footer-site-nav{
-	display: flex;
-	align-content: center;
-	flex-direction: row;
-	flex-wrap: wrap;
+	padding: 0;
 	
-	padding-right: 0px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .footer-site-nav .footer-nav{
 	font-family: "Gilroy ExtraBold", sans-serif;

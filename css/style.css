@@ -22,7 +22,6 @@
 }*/
 
 /*ГЛОБАЛЬНО*/
-
 a{
 	text-decoration: none;
 	
@@ -452,6 +451,7 @@ a:link{
 
 .dropdown-menu{
 	display: flex;
+	position: absolute;
 	
 	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
@@ -462,10 +462,10 @@ a:link{
 	padding: 0;
 	padding-left: 35px;
 	padding-top: 25px;
-	margin-left: -76px;
+	margin-left: -75px;
 	
-	height: 127px;
-	width: 1126px;
+	height: 136px;
+	width: 1125px;
 	
 	display: none;
 	
@@ -749,7 +749,7 @@ a:link{
 	top: 0px;
 	bottom: 0;
 	
-	width: 290px;
+	width: 284px;
 
 	background: #000;
 }

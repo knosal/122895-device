@@ -320,7 +320,7 @@
 				</div>
 			</section>
 			
-<!--О НАС-->		
+<!--О НАС / КОНТАКТЫ-->		
 		<div class="info-contact">			
 			<section class="info-section">
 				<div class=" band info container">
@@ -352,7 +352,7 @@
 					<a class="map-btn big-map" href="#"><img src="img/map.png" width="560" height="222" alt="Открытие модального окна"></a>
 				</div>
 				<div class="contact-holder">
-					<a href="#" class="line-feature">Напишите нам</a>	
+					<a href="#" class="line-feature modal-link">Напишите нам</a>	
 				</div>
 			</section>	
 			</div>
@@ -433,9 +433,97 @@
 			<section class="modal map-popular">
 				<h2 class="visually-hidden">Карта</h2>
 				<button class="map-modal-close" aria-label="Закрыть модальное окно с картой" type="button"></button>
+			 	<iframe src="https://yandex.ru/map-widget/v1/-/CBexy-DNkB" width="960" height="559" frameborder="0"></iframe>
 				<p>
-					<img src="img/map-big.png" width="960" height="559" alt="Как до нас добраться">
+					<img src="img/map-big.png" href="" width="960" height="559" alt="Как до нас добраться">
 				</p>	
-			</section>		
+			</section>	
+				
+<!--СКРИПТ ФОРМЫ-->
+	<!--	<script>
+			var link = document.querySelector(".modal-link");
+
+			var popup = document.querySelector(".feedback");
+			var close = popup.querySelector(".feedback-modal-close");
+
+			var form = popup.querySelector("form");
+			var fullname = popup.querySelector("[name=fullname]");
+			var email = popup.querySelector("[name=email]");
+
+			var isStorageSupport = true;
+			var storage = "";
+
+			try {
+				storage = localStorage.getItem("fullname");
+			} catch (err) {
+				isStorageSupport = false;
+			}
+
+			link.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				popup.classList.add("modal-show");
+
+				if (storage) {
+					fullname.value = storage;
+					email.focus();
+				} else {
+					fullname.focus();
+				}
+			});
+
+			close.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				popup.classList.remove("modal-show");
+				popup.classList.remove("modal-error");
+			});
+
+			form.addEventListener("submit", function (evt) {
+				if (!fullname.value || !email.value) {
+					evt.preventDefault();
+					popup.classList.remove("modal-error");
+					popup.offsetWidth = popup.offsetWidth;
+					popup.classList.add("modal-error");
+				} else {
+					if (isStorageSupport) {
+						localStorage.setItem("fullname", fullname.value);
+					}
+				}
+			});
+
+			window.addEventListener("keydown", function (evt) {
+				if (evt.keyCode === 27) {
+					evt.preventDefault();
+					if (popup.classList.contains("modal-show")) {
+						popup.classList.remove("modal-show");
+						popup.classList.remove("modal-error");
+					}
+				}
+			});
+			
+	//СКРИПТ КАРТЫ		
+			var mapLink = document.querySelector(".big-map");
+
+			var mapPopup = document.querySelector(".map-popular");
+			var mapClose = mapPopup.querySelector(".map-modal-close");
+			
+			mapLink.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				mapPopup.classList.add("modal-show");
+			});
+
+			mapClose.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				mapPopup.classList.remove("modal-show");
+			});
+
+			window.addEventListener("keydown", function (evt) {
+				evt.preventDefault();
+				if (evt.keyCode === 27) {
+					if (mapPopup.classList.contains("modal-show")) {
+						mapPopup.classList.remove("modal-show");
+					}
+				}
+			});			
+		</script>-->
 	</body>
 </html>

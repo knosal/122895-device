@@ -129,7 +129,6 @@ a:link{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	flex-wrap: wrap;
 	align-items: baseline;
 	
 	padding: 0;
@@ -162,7 +161,7 @@ a:link{
 
 .user-search{
 	position: relative;
-	
+		
 	outline: none;
 	border: none;
 	border-bottom: 2px solid transparent;
@@ -199,7 +198,7 @@ a:link{
 
 .user-section form{
 	width: 440px;
-	flex-basis: 52%;
+	flex-basis: calc(50% - 40px);
 }
 
 .btn-search{
@@ -398,8 +397,7 @@ a:link{
 .user-nav{
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
-	flex-basis: 48%;
+	flex-basis: calc(50% - 20px);
 }
 .user-nav .compare{
 	padding-right: 40px;
@@ -433,16 +431,21 @@ a:link{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	flex-basis: 50%;
+}
+.nav-menu > li:first-child{
+	flex-basis: calc(50% - 80px);
+}
+.current-page.nav{
+	padding: 0;
+	margin: 0;
+	
+	flex-basis: calc(50% - 410px);
 }
 .nav-menu .nav-delivery{
 	padding-left: 65px;
 }
 .nav-menu .nav-warranty{
 	padding-right: 65px;
-}
-.nav-menu > li:first-child{
-	width: 440px;
 }
 .nav-menu > li.nav{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
@@ -481,7 +484,7 @@ a:link{
 	padding-top: 25px;
 	margin-left: -60px;
 	
-	height: 136px;
+	height: 140px;
 	width: 1140px;
 	
 	display: none;
@@ -1038,16 +1041,14 @@ a:link{
 	margin: 0 auto;
 	max-width: 1440px;
 }
-.main-footer .container{
-
-}
 .main-footer a{
 	color: #ffffff;
 }
 .main-footer li{
 	font-family: "Open Sans Light", "Arial", sans-serif;
-	
+
 	list-style: none;
+	padding: 0;
 }
 
 .footer-user{
@@ -1068,8 +1069,8 @@ a:link{
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 0.15px;
-	
-	padding-left: 19px;
+
+	margin-left: 19px;
 }
 .footer-user-nav .username{
 	color:  rgba(255,255,255,0.6);
@@ -1083,6 +1084,7 @@ a:link{
 	
 	display: flex;
 	justify-content: space-between;
+
 }
 .footer-address,
 .footer-phone{
@@ -1120,7 +1122,6 @@ a:link{
 	text-transform: uppercase;
 	
 	padding-right: 40px;
-
 }
 .footer-site-nav a:hover{
 	opacity: 0.6;
@@ -1132,7 +1133,7 @@ a:link{
 /*СОЦСЕТИ*/
 
 .footer-socials{
-	position: relative;
+	position: relative;	
 }
 .socials-buttons{
 	display: flex;
@@ -1448,28 +1449,31 @@ textarea:invalid{
 	margin: 0 auto;
 	max-width: 1440px;
 }
-
 .filter-form-wrapper{
 	background-color: rgba(238,238,238,1);
 	
 	max-width: 471px;
 	padding: 0;
 }
+.filter-form-holder{
+	width: 465px;
+	height: 68px;
+
+	background-color: rgba(220,220,220,1);
+}
+
 .filter-form-wrapper h2{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 3.2px;
 	
-	text-transform: uppercase;
-	
 	margin: 0;
-	margin-bottom: 79px;
-	padding: 22px 0;
-	padding-left: 200px;
-	padding-right: 180px;
+	margin-left: 200px;
+	padding: 0;
+	padding-top: 22px;
 	
-	background-color: rgba(220,220,220,1);
+	text-transform: uppercase;
 }
 .filter-form-wrapper form{
 	margin-left: 180px;
@@ -1498,6 +1502,8 @@ textarea:invalid{
 	position: relative;
 	
 	padding: 0;
+	margin: 0;
+	margin-top: 79px;
 }
 .filter-price::after {
 	content: "";

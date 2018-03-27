@@ -84,7 +84,8 @@ a:link{
 	color: rgba(0,0,0,0.3);
 }
 
-.band::before{	/*ПОЛОСА*/
+/*ПОЛОСА*/
+.band::before{	
 	content: "";
 	position: absolute;
 	width: 80px;
@@ -414,7 +415,6 @@ a:link{
 .user-nav a:active{
 	opacity: 0.3;
 }
-
 .user-nav-login .logout{
 	opacity: 0.3;
 }
@@ -1208,8 +1208,6 @@ a.social-icon:active{
 
 /*ФОРМА ОБРАТНОЙ СВЯЗИ*/
 
-
-
 .modal{
 	position: fixed;
 	display: none;
@@ -1489,11 +1487,27 @@ a.social-icon:active{
 	z-index: -1;
 }
 .catalog-nav-section li::after{
-	content: url(../img/svg/nav-arrow.svg);
+/*	content: url(../img/svg/nav-arrow.svg);
 	
 	position: absolute;
 	
 	padding-left: 17px;
+	*/
+	
+	content: "";
+	
+	position: absolute;
+	top: 9px;
+	left: 70px;
+	
+	background-image: url("../img/svg/nav-arrow.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	
+	width: 20px;
+	height: 20px;
+}
+.catalog-nav-section li::after{
 }
 .catalog-nav-section li:last-child::after{
 	display: none;

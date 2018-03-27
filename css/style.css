@@ -39,6 +39,8 @@ a:link{
 	padding: 0 20px;
 }
 
+/*--------------------------ГЛАВНАЯ СТРАНИЦА--------------------------*/
+
 /*КНОПКИ ПРИ НАВЕДЕНИИ*/
 
 .line-feature{
@@ -98,7 +100,7 @@ a:link{
 	background: #fff;
 }
 .band.footer-socials::before{
-	margin-top: 20px;
+	margin-top: 15px;
 	
 	background-color: rgba(240,197,46,1);
 }
@@ -901,25 +903,21 @@ a:link{
 	visibility: visible;
 }
 
+/*О НАС*/
+
 .info-contact{
 	display: flex;
-	justify-content: space-between;
-	
 	flex-wrap: wrap;
 
 	max-width: 1160px;
 	
 	margin: 0 auto;
 	padding-bottom: 74px;
-
 }
-
-/*О НАС*/
 
 .info-section{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	flex-grow: 1;
 	
 	position: relative;
@@ -929,7 +927,7 @@ a:link{
 	margin-left: -20px;
 	margin-right: 100px;
 	
-	width: 460px;
+	width: 495px;
 }
 .info-section h2{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
@@ -939,7 +937,8 @@ a:link{
 	
 	padding: 0;
 	margin: 0;
-	margin: 50px 0;
+	margin-top: 50px;
+	margin-bottom: 46px;
 }
 .info-section p:not(:last-child), 
 .info-list{
@@ -956,14 +955,16 @@ a:link{
 .info-section .info-list{
 	list-style-type: circle;	
 	
-	margin-top: 38px;
-	margin-left: 27px;
-	padding-bottom: 50px;
+	
+	margin-top: 70px;
+	margin-left: 25px;
+	margin-bottom: 47px;
 	
 	color: rgba(229,229,229,1);
 }
 .info-list li{
 	padding-bottom: 10px;
+		
 }
 .info-item span{
 	font-family: "Open Sans Light", "Arial", sans-serif;
@@ -989,7 +990,7 @@ a:link{
 	
 	margin: 0;
 	padding: 0;
-	margin-left: 20px;
+	margin-left: -14px;
 }
 
 .contact-section h2{
@@ -999,7 +1000,8 @@ a:link{
 	
 	padding: 0;
 	margin: 0;
-	margin: 50px 0;
+	margin-top: 50px;
+	margin-bottom: 46px;
 }
 .contact-section p{
 	font-family: "Open Sans Light", "Arial", sans-serif;
@@ -1008,7 +1010,7 @@ a:link{
 	
 	margin: 0;
 	padding: 0;
-	padding-bottom: 30px;
+	padding-bottom: 35px;
 }
 
 .contact-section .map-btn{
@@ -1019,9 +1021,11 @@ a:link{
 	height: 222px;
 }
 .contact-section .line-feature{
+	
 	margin-left: 20px;
 	padding: 12px 41px;
 }   
+
 /*ПОДВАЛ*/
 
 .main-footer{
@@ -1046,7 +1050,7 @@ a:link{
 	display: flex;
 	justify-content: space-between;
 			
-	padding-top: 60px
+	padding-top: 70px
 }
 .footer-user-nav{
 	display: flex;
@@ -1061,7 +1065,7 @@ a:link{
 	line-height: 30px;
 	letter-spacing: 0.15px;
 	
-	padding-left: 35px;
+	padding-left: 19px;
 }
 .footer-user-nav .username{
 	color:  rgba(255,255,255,0.6);
@@ -1071,7 +1075,7 @@ a:link{
 }
 
 .footer-conditions{
-	margin-top: 35px;
+	margin-top: 16px;
 	
 	display: flex;
 	justify-content: space-between;
@@ -1124,10 +1128,6 @@ a:link{
 /*СОЦСЕТИ*/
 
 .footer-socials{
-	max-width: 1160px;
-	
-	margin: 0 auto;
-	
 	position: relative;
 }
 .socials-buttons{
@@ -1135,7 +1135,7 @@ a:link{
 	justify-content: center;
 	
 	margin: 0;
-	margin-top: 60px;
+	margin-top: 45px;
 	padding-bottom: 60px;
 }
 .socials-buttons::before{
@@ -1150,17 +1150,20 @@ a:link{
 	width: 35px;
 	height: 35px;
 	
-	padding-left: 22px;
+	padding-left: 20px;
 }
 
 .social-btn-facebook{
 	background: url(../img/svg/fb.svg) no-repeat;
+	background-position: 0 0;
 }
 .social-btn-instagram{
 	background: url(../img/svg/instagram.svg) no-repeat;
+	background-position: 0 0;
 }
 .social-btn-twitter{
 	background: url(../img/svg/twitter.svg) no-repeat;
+	background-position: 0 0;
 }
  
 a.social-icon{
@@ -1181,12 +1184,12 @@ a.social-icon:active{
 	content: "";
 	position: absolute;
 	
-	bottom: 50px;
+	bottom: 46px;
 	right: 0;
 	
 	background-image: url("../img/svg/logo-html.svg");
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: 12px 0;
 	
 	width: 40px;
 	height: 50px;
@@ -1366,7 +1369,10 @@ textarea:invalid{
 	opacity: 0.3;
 }
 
-/*КАТАЛОГ_ХЛЕБНЫЕ-КРОШКИ*/
+
+/*--------------------------СТРАНИЦА КАТАЛОГ--------------------------*/
+
+/*ХЛЕБНЫЕ-КРОШКИ*/
 
 .catalog-nav-section h2{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
@@ -1437,11 +1443,6 @@ textarea:invalid{
 	
 	margin: 0 auto;
 	max-width: 1440px;
-/*	display: flex;*/
-}
-.main-nav-section{
-	padding: 0;
-	margin: 0;
 }
 
 .filter-form-wrapper{
@@ -1449,11 +1450,6 @@ textarea:invalid{
 	
 	max-width: 471px;
 	padding: 0;
-}
-.filter-form-wrapper form{
-	margin-left: 100px;
-	padding: 0;
-
 }
 .filter-form-wrapper h2{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
@@ -1463,20 +1459,25 @@ textarea:invalid{
 	
 	text-transform: uppercase;
 	
-	margin-top: 0;
+	margin: 0;
 	margin-bottom: 79px;
-	padding: 27px 140px;
+	padding: 27px 0;
+	padding-left: 200px;
+	padding-right: 170px;
 	
 	background-color: rgba(220,220,220,1);
 }
-
+.filter-form-wrapper form{
+	margin-left: 180px;
+}
 .filter-form fieldset{
+	position: relative;
+	
 	border: none;
 	
 	max-width: 207px;
 	
 	padding: 0;
-	padding-left: 20px;
 }
 .filter-price legend, 
 .filter-color legend, 
@@ -1494,12 +1495,24 @@ textarea:invalid{
 	
 	padding: 0;
 }
+.filter-price::after {
+	content: "";
+	
+	position: absolute;
+	left: 0px;
+	top: -10px;
+	
+	width: 201px;
+	height: 2px;
+	
+	background-color: #000;
+}
 .filter-price .scale {
 	height: 2px;
-	width: 196px;
+	width: 201px;
 	
 	margin: 41px 0;
-	margin-bottom: 70px;
+	margin-bottom: 80px;
 	
 	background: rgba(0, 0, 0, 0.3);
 }
@@ -1518,16 +1531,16 @@ textarea:invalid{
 .filter-price .filter-price-min{
 	padding-right: 64px;
 }
+
 .scale .range{
 	width: 110px;
 	height: 2px;
 
 	background: rgba(201, 224, 162, 1);
 }
-
 .range-toggle {
 	position: absolute;
-	margin-left: 10px;
+	margin-left: 30px;
 	top: 56px;
 	
 	width: 4px;
@@ -1557,6 +1570,19 @@ textarea:invalid{
 .filter-color{
 	margin-bottom: 30px;
 }
+.filter-color::after {
+	content: "";
+	
+	position: absolute;
+	left: 0px;
+	top: -10px;
+	
+	width: 201px;
+	height: 2px;
+	
+	background-color: #000;
+}
+
 .filter-option{
 	position: relative;
 	
@@ -1598,6 +1624,18 @@ textarea:invalid{
 
 /*ФИЛЬТР BLUETOOTH*/
 
+.filter-bluetooth::after {
+	content: "";
+	
+	position: absolute;
+	left: 0px;
+	top: -10px;
+	
+	width: 201px;
+	height: 2px;
+	
+	background-color: #000;
+}
 .filter-option-radio:checked + label::before{
 	content: url(../img/svg/radio-on.svg);
 	
@@ -1624,6 +1662,7 @@ textarea:invalid{
 .filter-option-radio + label:active::before{
 	opacity: 1;
 }
+
 .filter-form button{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 18px;
@@ -1649,13 +1688,12 @@ textarea:invalid{
 	margin: 0;
 	padding: 0;
 	
-	padding-left: 10px;
-	padding-right: 141px;
+	padding-left: 25px;
+	padding-right: 150px;
 	
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	align-content: center;
 	
 	height: 78px;
 	
@@ -1669,14 +1707,19 @@ textarea:invalid{
 	
 	margin: 0;
 	padding: 0;
-	margin-top: 0;
 	margin-left: 60px;
 	
 	text-transform: uppercase;
 }
 .sort-item-holder ul{
 	display: flex;
-	justify-content: center;
+	
+	padding: 0;
+	margin-left: -100px;	
+}
+
+.sort-item-holder ul li{
+	margin-right: 10px;
 }
 .sort-item-holder .sort-item{
 	font-family: "Open Sans Regular", "Arial", sans-serif;
@@ -1734,17 +1777,18 @@ textarea:invalid{
 
 .catalog-holder{
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
-	
-		
+			
 	max-width: 850px;
+
 	padding-top: 70px;
-	padding-left: 70px;
+	padding-left: 30px;
 }
 .catalog-holder .item{
 	padding: 0;
 	margin: 0;
+	
+	margin-left: 50px;
 }
 .item-holder{
 	position: relative;
@@ -1838,7 +1882,7 @@ a.add-to-compare:active{
 	display: flex;
 	justify-content: space-between;
 	
-	max-width: 760px;
+	max-width: 780px;
 	margin-left: 70px;
 
 	height: 70px;

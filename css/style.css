@@ -703,8 +703,7 @@ a:link{
 	position: relative;
 	padding: 0;
 	
-	max-height: 288px;
-
+	height: 288px;
 }
 .services-in-box{
 	font-family: "Open Sans Light", "Arial", sans-serif;
@@ -715,15 +714,16 @@ a:link{
 
 /*СЕРВИСЫ-КНОПКИ*/
 .services-box{
-display: flex;
+	display: flex;
+	justify-content: space-between;
 }
 .services-in-box{
 	display: none;
+	
 }
 .slider-point{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	
 	max-width: 180px;
 	
@@ -1333,6 +1333,8 @@ textarea:invalid{
 /*ФИЛЬТРЫ*/
 
 .main-filter-section{
+	display: flex;
+	
 	margin: 0 auto;
 	max-width: 1440px;
 /*	display: flex;*/
@@ -1368,7 +1370,6 @@ textarea:invalid{
 	margin-top: 0;
 	margin-bottom: 79px;
 	padding: 27px 140px;
-	
 	
 	background-color: rgba(220,220,220,1);
 }
@@ -1416,7 +1417,6 @@ textarea:invalid{
 	
 	margin-top: 12px;
 
-	
 	opacity: 0.2;
 }
 .filter-price .filter-price-min{
@@ -1531,7 +1531,6 @@ textarea:invalid{
 .filter-form button{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 18px;
-	line-height: auto;
 	letter-spacing: 3.6px;
 	
 	padding-left: 43px;
@@ -1551,12 +1550,16 @@ textarea:invalid{
 }
 
 .sort-wrapper{
+	margin: 0;
+	padding: 0;
+	
 	padding-left: 10px;
-	padding-right: 60px;
+	padding-right: 141px;
 	
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
+	align-content: center;
 	
 	height: 78px;
 	
@@ -1568,13 +1571,16 @@ textarea:invalid{
 	line-height: 24px;
 	letter-spacing: 3.2px;
 	
+	margin: 0;
+	padding: 0;
 	margin-top: 0;
+	margin-left: 60px;
 	
 	text-transform: uppercase;
 }
 .sort-item-holder ul{
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 }
 .sort-item-holder .sort-item{
 	font-family: "Open Sans Regular", "Arial", sans-serif;
@@ -1582,6 +1588,7 @@ textarea:invalid{
 	line-height: 18px;
 	
 	list-style: none;
+	padding-right: 25px;
 }
 .sort-item > input[type="radio"]{
 	display: none;
@@ -1632,11 +1639,14 @@ textarea:invalid{
 .catalog-holder{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	max-width: 810px;
 	padding-top: 70px;
 	padding-left: 70px;
 }
 .catalog-holder .item{
-	padding-right: 40px;
+	padding-right: 45px;
 }
 .item-holder{
 	position: relative;
@@ -1728,7 +1738,6 @@ a.add-to-compare:active{
 	
 	max-width: 760px;
 	margin-left: 70px;
-	box-sizing: border-box;
 
 	height: 70px;
 	

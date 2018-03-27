@@ -71,7 +71,7 @@ a:link{
 	
 	z-index: -1;
 		
-	transition: all 0.3s ease;
+	transition: top 0.3s, bottom 0.3s ease;
 }
 .line-feature:hover::before{
 	top: 0;
@@ -110,6 +110,9 @@ a:link{
 	top: 40px;
 	
 	background-color: rgba(247,226,150,1);
+}
+.head{
+	height: 186px;
 }
 .main-header .container{
 	display: flex;
@@ -182,6 +185,7 @@ a:link{
 .user-search:focus ~ .btn-search,
 .user-search:active ~ .btn-search{
 	visibility: visible;
+	opacity: 1;
 }
 
 .user-section form{
@@ -407,7 +411,7 @@ a:link{
 .nav-menu{
 	margin: 0;
 	padding: 0;
-	margin-top: 46px;
+	margin-top: 25px;
 	
 	display: flex;
 	justify-content: space-between;
@@ -469,16 +473,20 @@ a:link{
 	letter-spacing: -1px;
 		
 	margin: 0;
+	margin-left: -76px;
 	
+	height: 120px;
 	min-width: 1120px;
 	
 	display: none;
 	
-	background-color: rgba(247,226,150,1);
+	background-color: rgba(247,226,250,1);
 }
 
 .dropdown-menu 
 .sub-menu-item:hover{
+	display: flex;
+	
 	opacity: 0.6;
 }
 .dropdown-menu 
@@ -507,8 +515,6 @@ a:link{
 	
 	margin: 0 60px;
 	margin-top: 130px;
-	
-	z-index: 1;
 }
 .slider-image{
 	flex-basis:50%;
@@ -571,8 +577,6 @@ a:link{
 	margin-top: -50px;
 	
 	color: #000;
-	
-	z-index: 1;
 }
 .slider-item a{
 	padding: 12px 49px;
@@ -1668,6 +1672,7 @@ textarea:invalid{
 	left: 0px;
 	
 	visibility: hidden;
+	opacity: 1;
 }
 .item-holder:hover .item-holder-active{
 	visibility: visible;

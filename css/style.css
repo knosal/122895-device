@@ -92,6 +92,9 @@ a:link{
 .line.slider-description::before{
 	background: #000;
 }
+.line.slider-description::before{
+	background: #fff;
+}
 .line.footer-socials::before{
 	margin-top: 20px;
 	
@@ -101,15 +104,15 @@ a:link{
 /*ГОЛОВА*/
 
 .main-header{
-	position: relative;
-		
 	max-width: 1160px;
 	height: 299px;
 	
 	margin: 0 auto;
-	top: 40px;
+	margin-top: 40px;
 	
 	background-color: rgba(247,226,150,1);
+	
+	z-index: -1;
 }
 .head{
 	height: 186px;
@@ -125,7 +128,9 @@ a:link{
 	flex-wrap: wrap;
 	align-items: baseline;
 	
-	margin-top: 53px;
+	padding: 0;
+	margin: 0;
+	margin-top: 40px;
 	
 	position: relative;
 	
@@ -220,6 +225,7 @@ a:link{
 	color: rgba(255,255,255,0.3);
 
 	visibility: visible;
+	opacity: 1;
 }
 
 /*ИКОНКИ*/
@@ -405,7 +411,7 @@ a:link{
 }
 
 .nav:hover .dropdown-menu{
-	display: block;
+	display: flex;
 }
 
 .nav-menu{
@@ -418,18 +424,6 @@ a:link{
 	flex-wrap: wrap;
 	flex-basis: 50%;
 }
-/*	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;*/
-/*.nav-menu .nav-delivery{
-	padding-left: 58px;
-}
-.nav-menu .nav-warranty{
-	padding-left: 40px;
-}
-.nav-menu .nav-contacts{
-	padding-left: 110px;
-}*/
 
 .nav-menu > li:first-child{
 	width: 440px;
@@ -457,15 +451,7 @@ a:link{
 /*ПОДМЕНЮ*/
 
 .dropdown-menu{
-/*
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-*/
-
-
-	top: 200px;
-	left: 0;
 	
 	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
@@ -473,20 +459,23 @@ a:link{
 	letter-spacing: -1px;
 		
 	margin: 0;
+	padding: 0;
+	padding-left: 35px;
+	padding-top: 25px;
 	margin-left: -76px;
 	
-	height: 120px;
-	min-width: 1120px;
+	height: 127px;
+	width: 1126px;
 	
 	display: none;
 	
-	background-color: rgba(247,226,250,1);
+	background-color: rgba(247,226,150,1);
+	
+	z-index: 5;
 }
 
 .dropdown-menu 
 .sub-menu-item:hover{
-	display: flex;
-	
 	opacity: 0.6;
 }
 .dropdown-menu 
@@ -497,8 +486,8 @@ a:link{
 /*ВЕРХНИЙ СЛАЙДЕР*/
 
 .main-slider-section{
-	position: relative;
 	max-width: 1440px;
+	
 	margin: 0 auto;
 }
 .main-slider-box{
@@ -510,21 +499,24 @@ a:link{
 	
 	display: flex;
 	justify-content: space-between;
-	
+	flex-wrap: wrap;
+
 	height: 502px;
 	
-	margin: 0 60px;
-	margin-top: 130px;
+	margin-right: 60px;
+	margin-left: 30px;
+	margin-top: -75px;
+	
+	z-index: 0;
 }
 .slider-image{
-	flex-basis:50%;
+	flex-basis:49%;
 	
 	text-align: center;
-	
-	margin-right: 10px;
+	margin-right: 5px;
 }
 .slider-description{
-	flex-basis: 50%;
+	flex-basis: 49%;
 }
 
 .product{
@@ -576,7 +568,9 @@ a:link{
 	
 	margin-top: -50px;
 	
-	color: #000;
+	color: #fff;
+	
+	z-index: -1;
 }
 .slider-item a{
 	padding: 12px 49px;
@@ -585,7 +579,7 @@ a:link{
 .slider-wrapper{
 	position: relative;
 	
-	margin: 60px 0
+	margin: 60px 0;
 }
 .slides {
 	position: absolute;
@@ -704,6 +698,7 @@ a:link{
 	margin: 0 auto;
 }
 .services-wrapper{
+	
 	position: relative;
 	padding: 0;
 	
@@ -717,19 +712,22 @@ a:link{
 }
 
 /*СЕРВИСЫ-КНОПКИ*/
-.services-box{
+
+.services-in-box{
+	position: absolute;
+	
+	visibility: hidden;
+	opacity: 0;
+	
 	display: flex;
 	justify-content: space-between;
-}
-.services-in-box{
-	display: none;
-	
 }
 .slider-point{
 	display: flex;
 	flex-direction: column;
+	flex-basis: 15%;
 	
-	max-width: 180px;
+	width: 180px;
 	
 	margin-top: -40px;
 	
@@ -761,24 +759,23 @@ a:link{
 
 /*СЕРВИСЫ-ОПИСАНИЕ*/
 
-.services[title="delivery"]::after{
-	content: url(../img/svg/delivery.svg);
-}
-.services[title="warranty"]::after{
-	content: url(../img/svg/warranty.svg);
-}
-.services[title="credit"]::after{
-	content: url(../img/svg/credit.svg);
-}
-
 #delivery:checked ~ .services[title="delivery"] {
-	display: block;
+	position: relative;
+	
+	visibility: visible;
+	opacity: 1;
 }
 #warranty:checked ~ .services[title="warranty"] {
-	display: block;
+	position: relative;
+	
+	visibility: visible;
+	opacity: 1;
 }
 #credit:checked ~ .services[title="credit"] {
-	display: block;
+	position: relative;
+	
+	visibility: visible;
+	opacity: 1;
 }
 
 .slider-point::after{
@@ -795,10 +792,61 @@ a:link{
 	background-color: #000;
 }
 
+.slider-services{
+	padding: 0;
+	margin: 0;
+	margin-left: 240px;
+	margin-right: 320px;
+	
+	max-width: 440px;
+}
 .services-section h3{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 47px;
 	line-height: 48px;
+	
+	margin-top: -30px;
+}
+
+.services[title="delivery"]::after{
+	content: "";
+	
+	position: absolute;
+	top: -40px;
+	right: 45px;	
+	
+	background-image: url("../img/svg/delivery.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 140px;
+	height: 180px;
+}
+
+.services[title="warranty"]::after{
+	content: "";
+	
+	position: absolute;
+	top: -40px;
+	right: 45px;	
+	
+	background-image: url("../img/svg/warranty.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 180px;
+	height: 200px;
+}
+.services[title="credit"]::after{
+	content: "";
+	
+	position: absolute;
+	top: -40px;
+	right: 45px;	
+	
+	background-image: url("../img/svg/credit.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 180px;
+	height: 190px;
 }
 
 /*СПОНСОРЫ*/
@@ -834,9 +882,10 @@ a:link{
 .info-contact{
 	display: flex;
 	justify-content: space-between;
-/*	flex-wrap: wrap;*/
+	
+	flex-wrap: wrap;
 
-	max-width: 1440px;
+	max-width: 1160px;
 	
 	margin: 0 auto;
 	padding-bottom: 74px;
@@ -845,20 +894,28 @@ a:link{
 /*О НАС*/
 
 .info-section{
-	width: 470px;
-	
-	position: relative;
-	
-	padding-left: 120px;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	flex-grow: 1;
 	
-	background-color: rgba(100,200,50,0.2); 
+	position: relative;
+	
+	padding: 0;
+	margin: 0;
+	margin-right: 100px;
+	
+	width: 460px;
 }
-.info-section .line-feature {
-	padding: 12px 23px;
+.info-section h2{
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+	letter-spacing: 0.47px;
+	
+	padding: 0;
+	margin: 0;
+	margin: 50px 0;
 }
 .info-section p:not(:last-child), 
 .info-list{
@@ -870,66 +927,72 @@ a:link{
 	margin: 0;
 }
 .info-section .container p:nth-child(3){
-	padding-top: 20px;
-}
-.info-section h2{
-	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
-	font-size: 47px;
-	line-height: 48px;
-	letter-spacing: 0.47px;
-
+	padding-top: 30px;
 }
 .info-section .info-list{
 	list-style-type: circle;	
 	
-	margin-top: 56px;
+	margin-top: 70px;
+	margin-left: 27px;
 	padding-bottom: 94px;
 	
 	color: rgba(229,229,229,1);
 }
 .info-item span{
 	font-family: "Open Sans Light", "Arial", sans-serif;
-	font-weight: 600;
+	font-weight: 800;
 	
 	color: #000;
-
 	padding-left: 15px;
+}
+.info-section .line-feature {
+	padding: 12px 23px;
 }
 
 /*КОНТАКТЫ*/
 
 .contact-section{
-	width: 570px;
-	
-	margin: 0;
-	padding: 0;
-	padding-right: 120px;
-	
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	flex-grow: 1;
 	
-	background-color: rgba(100,200,50,0.2);
+	width: 560px;
+	
+	margin: 0;
+	padding: 0;
 }
 
-.contact-section .map-btn{
-	display: inline-block;
-}
-.contact-section .line-feature{
-	margin-left: 20px;
-	padding: 12px 41px;
-}   
 .contact-section h2{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 47px;
 	line-height: 48px;
+	
+	padding: 0;
+	margin: 0;
+	margin: 50px 0;
 }
 .contact-section p{
 	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
+	
+	margin: 0;
+	padding: 0;
+	padding-bottom: 30px;
 }
-
+.contact-section img{
+	width: 560px;
+	height: 222px;
+}
+.contact-section .map-btn{
+	display: inline-block;
+	vertical-align: top;
+}
+.contact-section .line-feature{
+	margin-left: 20px;
+	padding: 12px 41px;
+}   
 /*ПОДВАЛ*/
 
 .main-footer{
@@ -1282,9 +1345,11 @@ textarea:invalid{
 	line-height: 56px;
 	letter-spacing: 0.47px;
 
+	padding: 0;
 	margin: 0;
-	margin: 44px;
-	margin-left: 55px;
+	margin-top: 80px;
+	margin-bottom: 30px;
+	margin-left: 72px;
 }
 .catalog-nav-section .breadcrumbs{
 	display: flex;
@@ -1293,6 +1358,7 @@ textarea:invalid{
 	
 	padding: 0;
 	margin: 0;
+	margin-left: 72px;
 	
 	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 14px;
@@ -1304,8 +1370,7 @@ textarea:invalid{
 	position: relative;
 	
 	margin-bottom: 50px;
-	margin-right: 42px;
-	margin-left: 53px;
+	padding-right: 40px;
 	
 	list-style: none;	
 }
@@ -1322,13 +1387,15 @@ textarea:invalid{
 
 .catalog-nav-section{
 	position: relative;
+	
+	z-index: -1;
 }
 .catalog-nav-section li::after{
 	content: url(../img/svg/nav-arrow.svg);
 	
 	position: absolute;
 	
-	padding: 0 17px;
+	padding-left: 17px;
 }
 .catalog-nav-section li:last-child::after{
 	display: none;

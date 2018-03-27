@@ -257,6 +257,10 @@ a:link{
 	
 	padding-left: 20px;
 }
+.logout{
+	padding-right: 22px;
+	padding-left: 15px;
+}
 .compare{
 	padding-right: 30px;
 }
@@ -1382,9 +1386,9 @@ textarea:invalid{
 
 	padding: 0;
 	margin: 0;
-	margin-top: 80px;
-	margin-bottom: 30px;
-	margin-left: 72px;
+	margin-top: 33px;
+	margin-bottom: 20px;
+	margin-left: 60px;
 }
 .catalog-nav-section .breadcrumbs{
 	display: flex;
@@ -1393,7 +1397,7 @@ textarea:invalid{
 	
 	padding: 0;
 	margin: 0;
-	margin-left: 72px;
+	margin-left: 60px;
 	
 	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 14px;
@@ -1461,9 +1465,9 @@ textarea:invalid{
 	
 	margin: 0;
 	margin-bottom: 79px;
-	padding: 27px 0;
+	padding: 22px 0;
 	padding-left: 200px;
-	padding-right: 170px;
+	padding-right: 180px;
 	
 	background-color: rgba(220,220,220,1);
 }
@@ -1508,11 +1512,11 @@ textarea:invalid{
 	background-color: #000;
 }
 .filter-price .scale {
-	height: 2px;
+	height: 3px;
 	width: 201px;
 	
 	margin: 41px 0;
-	margin-bottom: 80px;
+	margin-bottom: 75px;
 	
 	background: rgba(0, 0, 0, 0.3);
 }
@@ -1534,9 +1538,9 @@ textarea:invalid{
 
 .scale .range{
 	width: 110px;
-	height: 2px;
+	height: 3px;
 
-	background: rgba(201, 224, 162, 1);
+	background: rgba(145, 201, 47, 1);
 }
 .range-toggle {
 	position: absolute;
@@ -1559,23 +1563,23 @@ textarea:invalid{
 	transform: scale(1.2);
 }
 .range-toggle-min {
-	left: -10px;
+	left: -30px;
 }
 .range-toggle-max {
-	left: 100px;
+	left: 70px;
 }
 
 /*ФИЛЬТР ЦВЕТА*/
 
 .filter-color{
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 .filter-color::after {
 	content: "";
 	
 	position: absolute;
 	left: 0px;
-	top: -10px;
+	top: -12px;
 	
 	width: 201px;
 	height: 2px;
@@ -1612,14 +1616,14 @@ textarea:invalid{
 	
 	position: absolute;
 	top:5px;
-	left: -35px;
+	left: -40px;
 }
 .filter-option-input:checked + label::before{
 	content: url(../img/svg/checkbox-on.svg);
 	
 	position: absolute;
 	top:5px;
-	left: -35px;
+	left: -40px;
 }
 
 /*ФИЛЬТР BLUETOOTH*/
@@ -1641,14 +1645,14 @@ textarea:invalid{
 	
 	position: absolute;
 	top:5px;
-	left: -35px;
+	left: -40px;
 }
 .filter-option-radio + label::before{
 	content: url(../img/svg/radio-off.svg);
 	
 	position: absolute;
 	top:5px;
-	left: -35px;
+	left: -40px;
 }
 .filter-option-radio + label{
 	cursor: pointer;
@@ -1670,6 +1674,7 @@ textarea:invalid{
 	
 	padding-left: 43px;
 	padding-right: 43px;
+	margin-top: 20px;
 	
 	background-color: transparent;
 	
@@ -1688,14 +1693,14 @@ textarea:invalid{
 	margin: 0;
 	padding: 0;
 	
-	padding-left: 25px;
-	padding-right: 150px;
+	padding-left: 15px;
+	padding-right: 135px;
 	
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	
-	height: 78px;
+	height: 68px;
 	
 	background-color: rgba(235,235,235,0.92); 
 }
@@ -1715,7 +1720,7 @@ textarea:invalid{
 	display: flex;
 	
 	padding: 0;
-	margin-left: -100px;	
+	margin-left: -130px;	
 }
 
 .sort-item-holder ul li{
@@ -1782,13 +1787,13 @@ textarea:invalid{
 	max-width: 850px;
 
 	padding-top: 70px;
-	padding-left: 30px;
+	padding-left: 25px;
 }
 .catalog-holder .item{
 	padding: 0;
 	margin: 0;
 	
-	margin-left: 50px;
+	margin-left: 45px;
 }
 .item-holder{
 	position: relative;
@@ -1796,7 +1801,7 @@ textarea:invalid{
 	margin: 0;
 	padding: 0;
 	
-	margin-bottom: 37px;
+	margin-bottom: 25px;
 	
 	cursor: pointer;
 }
@@ -1850,7 +1855,7 @@ a.add-to-compare:active{
 /*ОПИСАНИЕ ТОВАРОВ*/
 
 .description-holder .product-name{
-	max-width: 260px;
+	max-width: 270px;
 }
 .description-holder {
 	display: flex;
@@ -1864,7 +1869,7 @@ a.add-to-compare:active{
 	
 	padding: 0;
 	margin: 0;
-	margin-bottom: 35px;
+	margin-bottom: 40px;
 }
 .description-holder .item-price{
 	font-family: "Gilroy Light", "Arial", sans-serif;
@@ -1882,10 +1887,11 @@ a.add-to-compare:active{
 	display: flex;
 	justify-content: space-between;
 	
-	max-width: 780px;
-	margin-left: 70px;
-
+	max-width: 765px;
 	height: 70px;
+	
+	margin-left: 70px;
+	margin-bottom: 75px;
 	
 	background-color: rgba(235,235,235,0.92);
 }

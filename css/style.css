@@ -103,6 +103,9 @@ a:link{
 .band.slider-description::before{
 	width: 100px;
 	
+	margin-top: 1px;
+	margin-left: 2px;
+	
 	background: rgba(255,255,255,1);
 }
 .band.footer-socials::before{
@@ -139,7 +142,7 @@ a:link{
 	
 	padding: 0;
 	margin: 0;
-	margin-top: 36px;
+	margin-top: 34px;
 	
 	position: relative;
 	
@@ -364,7 +367,10 @@ a:link{
 	flex-basis: calc(50% - 20px);
 }
 .user-nav .compare{
-	padding-right: 40px;
+	padding-right: 39px;
+}
+.user-nav-login .login{
+	padding-left: 26px;
 }
 .user-nav a{
 	font-family: "Open Sans Light", "Arial", sans-serif;
@@ -393,7 +399,7 @@ a:link{
 	
 	margin: 0;
 	padding: 0;
-	margin-top: 26px;
+	margin-top: 27px;
 }
 .nav-menu > li:first-child{
 	flex-basis: calc(50% - 80px);
@@ -408,7 +414,10 @@ a:link{
 	padding-left: 65px;
 }
 .nav-menu .nav-warranty{
-	padding-right: 65px;
+	padding-right: 67px;
+}
+.nav-menu .nav-contacts{
+	margin-right: -1px;
 }
 .nav-menu > li.nav{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
@@ -488,7 +497,7 @@ a:link{
 	
 	margin-right: 60px;
 	margin-left: 30px;
-	margin-top: -75px;
+	margin-top: -77px;
 	
 	z-index: 0;
 }
@@ -537,7 +546,7 @@ a:link{
 	
 	position: absolute;
 	top: 0px;
-	right: -15px;
+	right: -12px;
 	
 	margin-top: -50px;
 	
@@ -548,7 +557,6 @@ a:link{
 
 .slider-description{
 	flex-basis: 47%;
-	margin-left: 0px;
 }
 .slider-description .lead{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
@@ -559,6 +567,7 @@ a:link{
 	margin: 0;
 	padding: 0;
 	margin-top: 45px;
+	margin-left: 4px;
 	margin-bottom: 20px;
 }
 .item-description{
@@ -569,12 +578,14 @@ a:link{
 	
 	padding: 0;
 	margin: 0;
+	margin-left: 2px;
 }
 .hidden-radio{
 	display: none;
 }
 .slider-item a{
 	padding: 12px 42px;
+	margin-left: 4px;
 }
 .slider-button{
 	position: absolute;
@@ -618,6 +629,8 @@ a:link{
 	font-family: "Gilroy Light", "Arial", sans-serif;
 	line-height: 48px;
 	font-size: 36px;
+	
+	margin-left: 3px;
 }
 .description td{
 	font-family: "Open Sans Light", "Arial", sans-serif;
@@ -625,7 +638,8 @@ a:link{
 	line-height: 20px;
 	letter-spacing: 0.13px;
 	
-	padding-right: 78px;
+	padding-right: 80px;
+	padding-top: 6px;
 }
 
 /*АССОРТИМЕНТ*/
@@ -654,8 +668,9 @@ a:link{
 	line-height: 24px;
 	letter-spacing: 0.18px;
 	
-	margin-top: 35px;
+	margin-top: 34px;
 	margin-bottom: 70px;
+	margin-left: 2px;
 	max-width: 160px;
 	}
 
@@ -790,7 +805,8 @@ a:link{
 	line-height: 48px;
 	
 	padding: 0;
-	margin-top: -30px;
+	margin-top: -28px;
+	margin-left: 2px;
 }
 .slider-services p{
 	padding: 0;
@@ -903,8 +919,9 @@ a:link{
 	
 	padding: 0;
 	margin: 0;
-	margin-top: 50px;
+	margin-top: 53px;
 	margin-bottom: 46px;
+	margin-left: -1px;
 }
 .info-section p:not(:last-child), 
 .info-list{
@@ -967,8 +984,9 @@ a:link{
 	
 	padding: 0;
 	margin: 0;
-	margin-top: 50px;
+	margin-top: 53px;
 	margin-bottom: 46px;
+	margin-left: -1px;
 }
 .contact-section p{
 	font-family: "Open Sans Light", "Arial", sans-serif;
@@ -1034,7 +1052,7 @@ a:link{
 	line-height: 30px;
 	letter-spacing: 0.15px;
 
-	margin-left: 19px;
+	margin-left: 20px;
 }
 .footer-user-nav .username{
 	color:  rgba(255,255,255,0.6);
@@ -1057,6 +1075,8 @@ a:link{
 
 	flex-basis: 25%;
 	
+	margin-top: -2px;
+	
 	color:  rgba(255,255,255,0.7);
 }
 .footer-phone{
@@ -1068,8 +1088,10 @@ a:link{
 	
 	padding: 0;
 	margin: 0;
+	margin-top: -2px;
 	
-	flex-basis: 25%;
+
+	
 	text-align: right;
 }
 .login-link a, 
@@ -1088,11 +1110,11 @@ a:link{
 .footer-site-nav{
 	padding: 0;
 
-	
 	display: flex;
 	flex-wrap: wrap;
-	flex-basis: 40%;
-	justify-content: space-around;
+	flex-basis: 50%;
+	
+	margin-left: 30px;
 
 }
 .footer-site-nav .footer-nav{
@@ -1102,7 +1124,7 @@ a:link{
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	
-	padding-right: 40px;
+	padding-right: 46px;
 }
 .footer-site-nav a:hover{
 	opacity: 0.6;
@@ -1124,6 +1146,7 @@ a:link{
 	margin: 0;
 	margin-top: 45px;
 	padding-bottom: 60px;
+	margin-left: 80px;
 }
 .socials-buttons::before{
 	display: block;
@@ -1137,8 +1160,8 @@ a:link{
 	width: 35px;
 	height: 35px;
 	
-	margin-left: -20px;
-	margin-right: 50px;
+	margin-left: -50px;
+	margin-right: 70px;
 }
 
 .social-btn-facebook{
@@ -1170,8 +1193,8 @@ a.social-icon:active{
 	content: "";
 	position: absolute;
 	
-	bottom: 46px;
-	right: 0;
+	bottom: 45px;
+	right: -15px;
 	
 	background: #464646 url("../img/svg/logo-html.svg") no-repeat 0 0;
 	
@@ -1242,7 +1265,6 @@ a.social-icon:active{
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
-	font: inherit;
 	
 	box-sizing: border-box;
 	
@@ -1393,7 +1415,7 @@ a.social-icon:active{
 	top: 0px;
 	left: 0px;	
 	
-	background: #fff url("../img/svg/modal-close.svg") no-repeat 0 0;
+	background: rgba(247,226,150,0.2) url("../img/svg/modal-close.svg") no-repeat 0 0;
 
 	width: 60px;
 	

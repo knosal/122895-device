@@ -1530,7 +1530,7 @@ a.social-icon:active{
 .filter-form-wrapper{
 	display: flex;
 	
-	background: linear-gradient(to right, rgb(220,220,220) 400px, rgb(235,235,235) 100px);
+	background: linear-gradient(to right, rgb(219,219,219) 50%, rgb(235,235,235) 50%);
 }
 .filter-form-holder{
 	display: flex;
@@ -1540,16 +1540,21 @@ a.social-icon:active{
 .filter-form-caption{
 	margin: 0;
 	padding: 0;
-
-	width: 320px;
+	
+	padding-left: 30px;
+	padding-right: 210px;
+	
+/*	background-color: rgba(00,44,111, 0.3);*/
 }
 .sort-wrapper{
 	display: flex;
+
 	justify-content: space-between;
 	align-items: center;
-	flex-grow: 1;
 	
-	width: 834px;
+	width: 800px;
+	
+/*	background-color: rgba(200,44,11, 0.2);*/
 }
 .filter-form-wrapper h2{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
@@ -1650,7 +1655,7 @@ a.social-icon:active{
 	
 	margin-bottom: 5px;
 	
-	background: linear-gradient(to right, rgb(235,235,235) 400px, rgb(255,255,255) 100px);
+	background: linear-gradient(to right, rgb(238,238,238) 50%, rgb(255,255,255) 50%);
 }
 .catalog-holder-container{
 	margin: 0 auto;
@@ -1662,17 +1667,23 @@ a.social-icon:active{
 	margin: 0;
 	padding: 0;
 	
-	max-width: 350px;
-
-	margin-left: 80px;
+	width: 329px;
+	
+	padding-left: 0px;
+	
+	
+	background-color: rgba(2,244,111, 0.2);
 }
-
+.filter-form{
+	padding-left: 60px;
+}
 .filter-form fieldset{
 	position: relative;
 	
 	border: none;
 	
 	padding: 0;
+
 }
 .filter-price legend, 
 .filter-color legend, 
@@ -1884,16 +1895,9 @@ a.social-icon:active{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	
-	padding: 0;
-	margin: 0;
-/*	background-color: #fff;*/
 }
 .catalog-holder .item{
-	padding: 0;
-	margin: 0;
-	
-	margin-left: 65px;
+	margin-left: 55px;
 }
 .item-holder{
 	position: relative;
@@ -2016,11 +2020,13 @@ a.add-to-compare:active{
 	display: flex;
 	flex-direction: column;
 	
-	padding: 0;
-	margin: 0;
-	max-width: 850px;
 	padding-top: 70px;
-	margin-left: 70px;
+
+	max-width: 830px;
+
+	background-color: rgba(200,244,111, 0.4);
+	
+/*	background-color: #fff;*/
 }
 
 .catalog-navigation{

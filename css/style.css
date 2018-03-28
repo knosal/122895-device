@@ -1,6 +1,6 @@
 /*ШРИФТЫ*/
 
-/*@font-face {
+@font-face {
 	font-family: "Gilroy ExtraBold";
 	src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
 			 url("../fonts/gilroyextrabold.woff") format("woff"); 
@@ -19,7 +19,7 @@
 	font-family: "Open Sans";
 	src: url("../fonts/opensans.woff2") format("woff2"),
 			 url("../fonts/opensans.woff") format("woff"); 
-}*/
+}
 
 /*ГЛОБАЛЬНО*/
 a{
@@ -520,7 +520,7 @@ a:link{
 
 .slider-image{
 	flex-basis: 49%;
-	
+
 	text-align: center;
 	
 	margin-top: -35px;
@@ -770,7 +770,7 @@ a:link{
 	bottom: 0px;
 	right: -124px;
 	
-	height: 319px;
+	min-height: 319px;
 	width: 7px;
 	
 	background-color: rgba(0,0,0,1);
@@ -993,6 +993,9 @@ a:link{
 	margin-left: 20px;
 	padding: 12px 41px;
 }   
+.contact-section .modal-link::active{
+	display: block;
+}
 
 /*ПОДВАЛ*/
 
@@ -1134,8 +1137,8 @@ a:link{
 	width: 35px;
 	height: 35px;
 	
-	margin-left: -30px;
-	padding-left: 50px;
+	margin-left: -20px;
+	margin-right: 50px;
 }
 
 .social-btn-facebook{
@@ -1181,6 +1184,8 @@ a.social-icon:active{
 .footer-copyright .logo-html:active::before{
 	opacity: 0.3;
 }
+
+/*--------------------------МОДАЛЬНЫЕ ОКНА--------------------------*/
 
 /*ФОРМА ОБРАТНОЙ СВЯЗИ*/
 
@@ -1234,7 +1239,7 @@ a.social-icon:active{
 	
 	width: 100%;
 	
-	font-family: "Open Sans Regular", "Arial", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	font: inherit;
@@ -1291,7 +1296,6 @@ a.social-icon:active{
 	background-color: rgba(246,218,218,0.5);
 }
 
-/*
 @keyframes bounce {
 	0% {
 		transform: translateY(-2000px);
@@ -1330,7 +1334,6 @@ a.social-icon:active{
 		transform: translateX(10px);
 	}
 }
-*/
 
 /*МОДАЛЬНЯ КАРТА*/
 

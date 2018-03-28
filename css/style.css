@@ -436,6 +436,7 @@ a:link{
 	display: flex;
 	position: absolute;
 	
+	
 	display: none;
 	
 	font-family: "Open Sans Light", "Arial", sans-serif;
@@ -449,7 +450,7 @@ a:link{
 	padding-top: 25px;
 	margin-left: -60px;
 	
-	height: 140px;
+	min-height: 140px;
 	width: 1140px;
 	
 	background-color: rgba(247,226,150,1);
@@ -483,7 +484,7 @@ a:link{
 	justify-content: space-between;
 	flex-wrap: wrap;
 
-	height: 502px;
+	min-height: 502px;
 	
 	margin-right: 60px;
 	margin-left: 30px;
@@ -655,8 +656,8 @@ a:link{
 	
 	margin-top: 35px;
 	margin-bottom: 70px;
-	width: 160px;
-}
+	max-width: 160px;
+	}
 
 .popular-img-wrapper{
 	display: flex;
@@ -686,7 +687,7 @@ a:link{
 	position: relative;
 	padding: 0;
 	
-	height: 288px;
+	min-height: 288px;
 }
 .services-in-box{
 	font-family: "Open Sans Light", "Arial", sans-serif;
@@ -710,7 +711,7 @@ a:link{
 	display: flex;
 	flex-direction: column;
 
-	width: 160px;
+	min-width: 160px;
 	
 	margin-top: -39px;
 	
@@ -1046,15 +1047,28 @@ a:link{
 	justify-content: space-between;
 
 }
-.footer-address,
-.footer-phone{
+.footer-address{
 	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 
+	flex-basis: 25%;
+	
 	color:  rgba(255,255,255,0.7);
 }
-
+.footer-phone{
+	font-family: "Open Sans Light", "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	
+	color:  rgba(255,255,255,0.7);
+	
+	padding: 0;
+	margin: 0;
+	
+	flex-basis: 25%;
+	text-align: right;
+}
 .login-link a, 
 .user-nav-link a{
 	opacity: 0.7;
@@ -1070,9 +1084,13 @@ a:link{
 
 .footer-site-nav{
 	padding: 0;
+
 	
 	display: flex;
 	flex-wrap: wrap;
+	flex-basis: 40%;
+	justify-content: space-around;
+
 }
 .footer-site-nav .footer-nav{
 	font-family: "Gilroy ExtraBold", sans-serif;
@@ -1098,7 +1116,8 @@ a:link{
 .socials-buttons{
 	display: flex;
 	justify-content: center;
-	
+	flex-wrap: wrap;
+		
 	margin: 0;
 	margin-top: 45px;
 	padding-bottom: 60px;
@@ -1115,7 +1134,8 @@ a:link{
 	width: 35px;
 	height: 35px;
 	
-	padding-left: 20px;
+	margin-left: -30px;
+	padding-left: 50px;
 }
 
 .social-btn-facebook{
@@ -1465,7 +1485,6 @@ a.social-icon:active{
 .catalog-nav-section li:last-child::after{
 	display: none;
 }
-
 /*ФИЛЬТРЫ*/
 
 .main-filter-section{
@@ -1921,7 +1940,7 @@ a.add-to-compare:active{
 	justify-content: space-between;
 	
 	max-width: 765px;
-	height: 70px;
+	min-height: 70px;
 	
 	margin-left: 70px;
 	margin-bottom: 75px;
@@ -1931,6 +1950,7 @@ a.add-to-compare:active{
 .pagination-list{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 		
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 16px;

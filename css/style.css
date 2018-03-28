@@ -32,6 +32,11 @@ a:link{
 		color: rgba(0,0,0);
 }
 
+img{
+	max-width: 100%;
+	height: auto;
+}
+
 .container{
 	max-width: 1160px;
 	
@@ -819,7 +824,7 @@ a:link{
 	top: -18px;
 	right: 60px;	
 	
-/*	background-color: linear-gradient(to top, #fff 10%, #e5e5e5  90%);*/
+/
 	
 	background: url("../img/svg/delivery.svg") no-repeat 0 0;
 	
@@ -1437,7 +1442,11 @@ a.social-icon:active{
 /*--------------------------СТРАНИЦА КАТАЛОГ--------------------------*/
 
 /*ХЛЕБНЫЕ-КРОШКИ*/
-
+ .breadcrumbs-container-wrapper{
+	margin: 0;
+	padding: 0;
+	
+}
 .catalog-nav-section h2{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 47px;
@@ -1518,26 +1527,27 @@ a.social-icon:active{
 	display: flex;
 	flex-direction: column;
 	
+	
+	background: linear-gradient(to right, rgb(2,220,220) 400px, rgb(235,235,235) 100px);
+	
 }
 .filter-form-wrapper{
 	display: flex;
 	
-	background-color: rgba(238,238,238,1);
+/*	background-color: rgba(238,238,238,1);*/
 }
 .filter-form-holder{
 	display: flex;
 		
 	margin: 0 auto;
 
-	background-color: rgba(220,220,220,1);
+/*	background-color: rgba(220,220,220,1);*/
 }
 .filter-form-caption{
 	margin: 0;
 	padding: 0;
-	
+
 	width: 320px;
-	
-	display: flex;
 }
 .sort-wrapper{
 	display: flex;
@@ -1547,7 +1557,7 @@ a.social-icon:active{
 	
 	width: 834px;
 	
-	background-color: rgba(235,235,235,1); 
+/*	background-color: rgba(235,235,235,1); */
 }
 .filter-form-wrapper h2{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
@@ -1556,7 +1566,7 @@ a.social-icon:active{
 	letter-spacing: 3.2px;
 	
 	margin: 0;
-	margin-left: 82px;
+	margin-left: 42px;
 	padding: 0;
 	padding-top: 15px;
 	
@@ -1652,7 +1662,7 @@ a.social-icon:active{
 	margin: 0 auto;
 	padding: 0;
 	
-		display: flex;
+	display: flex;
 
 }
 .catalog-holder-container .container{
@@ -1882,8 +1892,10 @@ a.social-icon:active{
 	
 	max-width: 837px;
 
-	margin-top: 70px;
-	margin-left: 70px;
+	padding-top: 70px;
+	padding-left: 70px;
+	
+	background-color: #fff;
 }
 .catalog-holder .item{
 	padding: 0;
@@ -2011,6 +2023,11 @@ a.add-to-compare:active{
 
 .catalog-navigation{
 	display: flex;
+	justify-content: space-between;
+	
+	width: 760px;
+	
+
 	
 	max-width: 765px;
 	min-height: 70px;

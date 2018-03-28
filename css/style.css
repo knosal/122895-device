@@ -1526,22 +1526,16 @@ a.social-icon:active{
 .main-filter-section{
 	display: flex;
 	flex-direction: column;
-	
-	
-	background: linear-gradient(to right, rgb(2,220,220) 400px, rgb(235,235,235) 100px);
-	
 }
 .filter-form-wrapper{
 	display: flex;
 	
-/*	background-color: rgba(238,238,238,1);*/
+	background: linear-gradient(to right, rgb(220,220,220) 400px, rgb(235,235,235) 100px);
 }
 .filter-form-holder{
 	display: flex;
 		
 	margin: 0 auto;
-
-/*	background-color: rgba(220,220,220,1);*/
 }
 .filter-form-caption{
 	margin: 0;
@@ -1556,8 +1550,6 @@ a.social-icon:active{
 	flex-grow: 1;
 	
 	width: 834px;
-	
-/*	background-color: rgba(235,235,235,1); */
 }
 .filter-form-wrapper h2{
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
@@ -1657,19 +1649,22 @@ a.social-icon:active{
 	display: flex;
 	
 	margin-bottom: 5px;
+	
+	background: linear-gradient(to right, rgb(235,235,235) 400px, rgb(255,255,255) 100px);
 }
 .catalog-holder-container{
 	margin: 0 auto;
 	padding: 0;
 	
 	display: flex;
-
 }
 .catalog-holder-container .container{
 	margin: 0;
 	padding: 0;
 	
-	margin-left: 30px;
+	max-width: 350px;
+
+	margin-left: 80px;
 }
 
 .filter-form fieldset{
@@ -1890,18 +1885,15 @@ a.social-icon:active{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	
-	max-width: 837px;
-
-	padding-top: 70px;
-	padding-left: 70px;
-	
-	background-color: #fff;
+	padding: 0;
+	margin: 0;
+/*	background-color: #fff;*/
 }
 .catalog-holder .item{
 	padding: 0;
 	margin: 0;
 	
-	margin-left: 45px;
+	margin-left: 65px;
 }
 .item-holder{
 	position: relative;
@@ -2020,14 +2012,21 @@ a.add-to-compare:active{
 }
 
 /*КНОПКИ СТРАНИЦ*/
+.catalog-navigation-container{
+	display: flex;
+	flex-direction: column;
+	
+	padding: 0;
+	margin: 0;
+	max-width: 850px;
+	padding-top: 70px;
+	margin-left: 70px;
+}
 
 .catalog-navigation{
 	display: flex;
+	
 	justify-content: space-between;
-	
-	width: 760px;
-	
-
 	
 	max-width: 765px;
 	min-height: 70px;

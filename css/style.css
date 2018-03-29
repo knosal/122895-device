@@ -96,6 +96,7 @@ img{
 }
 
 /*ПОЛОСА*/
+
 .band::before{	
 	content: "";
 	
@@ -269,6 +270,9 @@ img{
 	
 	padding-left: 20px;
 }
+.user{
+	padding-left: 30px;
+}
 .logout{
 	padding-right: 22px;
 	padding-left: 15px;
@@ -357,12 +361,6 @@ img{
 .main-header .container{
 	margin: 0 40px;
 }
-.navigation li{
-	list-style: none;
-}
-.current-page{
-	position: relative;
-}
 .nav > a{
 	text-transform: uppercase;
 }
@@ -370,6 +368,7 @@ img{
 	display: flex;
 	justify-content: space-between;
 	flex-basis: calc(50% - 20px);
+	
 }
 .user-nav .compare{
 	padding-right: 39px;
@@ -406,10 +405,20 @@ img{
 	padding: 0;
 	margin-top: 27px;
 }
+.navigation li{
+	list-style: none;
+}
+.navigation{
+	
+}
+.nav-catalog{
+	position: relative; 
+}
 .nav-menu > li:first-child{
 	flex-basis: calc(50% - 80px);
 }
 .nav-menu .nav-delivery{
+	padding: 0;
 	padding-left: 65px;
 }
 .nav-menu .nav-warranty{
@@ -810,6 +819,8 @@ img{
 .slider-services p{
 	padding: 0;
 	margin-top: -15px;
+	
+	max-width: 450px;
 }
 .services[title="delivery"]::after{
 	content: "";
@@ -1442,7 +1453,6 @@ a.social-icon:active{
 
 /*ХЛЕБНЫЕ-КРОШКИ*/
 .catalog-nav-section .container{
-
 	padding: 0;
 }
 .catalog-nav-section h2{
@@ -1453,7 +1463,7 @@ a.social-icon:active{
 
 	margin-top: 33px;
 	margin-bottom: 20px;
-	margin-left: 60px;
+	margin-left: 58px;
 }
 .catalog-nav-section .breadcrumbs{
 	display: flex;
@@ -1462,7 +1472,7 @@ a.social-icon:active{
 	
 	padding: 0;
 	margin: 0;
-	margin-left: 60px;
+	margin-left: 58px;
 	
 	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 14px;
@@ -1473,7 +1483,7 @@ a.social-icon:active{
 .catalog-nav-section li{
 	position: relative;
 	
-	margin-bottom: 50px;
+	margin-bottom: 46px;
 	padding-right: 40px;
 	
 	list-style: none;	
@@ -1533,16 +1543,18 @@ a.social-icon:active{
 	display: flex;
 	align-items: center;
 	
-	margin-left: 60px;
-	padding-right: 180px;
-	
+	padding-right: 0;
+	width: 330px;
+	padding-left: 60px;
+	margin-left: 0px;
 }
 .sort-wrapper{
 	display: flex;
 	align-items: center;
+	flex-grow: 1;
 	
 	padding-left: 70px;
-	margin-right: 243px;
+	margin-right: 0px;
 	
 	background-color: rgb(235,235,235);
 }
@@ -1552,17 +1564,8 @@ a.social-icon:active{
 	line-height: 24px;
 	letter-spacing: 3.2px;
 	
-	text-transform: uppercase;
-}
-
-.sort-wrapper h2{
 	margin: 0;
 	padding: 0;
-	
-	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
-	font-size: 16px;
-	line-height: 24px;
-	letter-spacing: 3.2px;
 	
 	text-transform: uppercase;
 }
@@ -1570,7 +1573,7 @@ a.social-icon:active{
 	display: flex;
 	
 	padding: 0;
-	padding-left: 40px;
+	padding-left: 60px;
 }
 
 .sort-item-holder ul li{
@@ -1613,7 +1616,7 @@ a.social-icon:active{
 .arrow{
 	font-size: 0px;
 	
-	margin-right: 8px;
+	margin-right: 12px;
 }
 .arrow-up::before{
 	content: url(../img/svg/icon-up-dir.svg);
@@ -1648,18 +1651,16 @@ a.social-icon:active{
 	display: flex;
 	
 	margin: 0 auto;
-	padding: 0;
-	
+
+	max-width: 1160px;
 }
 .catalog-holder-container .container{
 	margin: 0;
 	padding: 0;
 	
-	width: 330px;
+	min-width: 330px;
 	
 	padding-left: 0px;
-	
-/*	background-color: rgba(2,244,111, 0.2);*/
 }
 .filter-form{
 	padding-left: 60px;
@@ -1708,7 +1709,7 @@ a.social-icon:active{
 	width: 201px;
 	
 	margin: 41px 0;
-	margin-bottom: 75px;
+	margin-bottom: 79px;
 	
 	background: rgba(0, 0, 0, 0.3);
 }
@@ -1731,8 +1732,9 @@ a.social-icon:active{
 }
 
 .scale .range{
+	
 	width: 110px;
-	height: 3px;
+	height: 2px;
 
 	background: rgba(145, 201, 47, 1);
 }
@@ -1741,12 +1743,12 @@ a.social-icon:active{
 	margin-left: 30px;
 	top: 56px;
 	
-	width: 4px;
-	height: 4px;
+	width: 20px;
+	height: 20px;
 	
 	background: #ababab;
 	
-	border: 8px solid rgba(255,255,255,1);
+	border: 8px solid #fff;
 	border-radius: 50%;
 	
 	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
@@ -1773,7 +1775,7 @@ a.social-icon:active{
 	
 	position: absolute;
 	left: 0px;
-	top: -12px;
+	top: -11px;
 	
 	width: 201px;
 	height: 2px;
@@ -1809,15 +1811,15 @@ a.social-icon:active{
 	content: url(../img/svg/checkbox-off.svg);
 	
 	position: absolute;
-	top:5px;
-	left: -40px;
+	top: 8px;
+	left: -44px;
 }
 .filter-option-input:checked + label::before{
 	content: url(../img/svg/checkbox-on.svg);
 	
 	position: absolute;
-	top:5px;
-	left: -40px;
+	top: 8px;
+	left: -44px;
 }
 
 /*ФИЛЬТР BLUETOOTH*/
@@ -1838,15 +1840,15 @@ a.social-icon:active{
 	content: url(../img/svg/radio-on.svg);
 	
 	position: absolute;
-	top:5px;
-	left: -40px;
+	top: 8px;
+	left: -44px;
 }
 .filter-option-radio + label::before{
 	content: url(../img/svg/radio-off.svg);
 	
 	position: absolute;
-	top:5px;
-	left: -40px;
+	top:8px;
+	left: -44px;
 }
 .filter-option-radio + label{
 	cursor: pointer;
@@ -1866,7 +1868,7 @@ a.social-icon:active{
 	font-size: 18px;
 	letter-spacing: 3.6px;
 	
-	padding-left: 43px;
+	padding-left: 42px;
 	padding-right: 43px;
 	margin-top: 20px;
 	
@@ -1887,15 +1889,12 @@ a.social-icon:active{
 .catalog-holder .item{
 	margin-left: 0px;
 }
-.catalog-holder .item:nth-child(2n){
-	
-}
 .item-holder{
 	position: relative;
 	
 	margin: 0;
 	padding: 0;
-	margin-bottom: 25px;
+	margin-bottom: 23px;
 	
 	cursor: pointer;
 }
@@ -1904,13 +1903,12 @@ a.social-icon:active{
 	content: "NEW";
 	
 	position: absolute;
-	top: 50px;
+	top: 43px;
 	right: 40px;
 	
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
-	letter-spacing: 2px;
 	
 	color: rgba(214,214,214,1);
 }
@@ -1918,11 +1916,11 @@ a.social-icon:active{
 	content: "";
 	
 	position: absolute;
-	top: 30px;
+	top: 25px;
 	right: 30px;
 	
-	width: 60px;
-	height: 60px;
+	width: 55px;
+	height: 55px;
 	
 	border: 2px solid rgba(214,214,214,1);
 	border-radius: 50%;
@@ -1993,7 +1991,9 @@ a.add-to-compare:active{
 	
 	padding: 0;
 	margin: 0;
-	margin-bottom: 40px;
+	
+	margin-top: 27px;
+	margin-bottom: 50px;
 }
 .description-holder .item-price{
 	font-family: "Gilroy Light", "Arial", sans-serif;
@@ -2012,8 +2012,6 @@ a.add-to-compare:active{
 	
 	padding-top: 70px;
 	padding-left: 70px;
-	
-	max-width: 830px;
 
 	background-color: #fff;
 }
@@ -2024,7 +2022,8 @@ a.add-to-compare:active{
 	justify-content: space-between;
 	
 	margin-left: 0px;
-	margin-bottom: 75px;
+	margin-top: -10px;
+	margin-bottom: 67px;
 	
 	background-color: rgba(235,235,235,0.92);
 }

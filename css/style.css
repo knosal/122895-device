@@ -1,5 +1,5 @@
 /*ШРИФТЫ*/
-/*
+
 @font-face {
 	font-family: "Gilroy ExtraBold";
 	src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
@@ -19,7 +19,7 @@
 	font-family: "Open Sans";
 	src: url("../fonts/opensans.woff2") format("woff2"),
 			 url("../fonts/opensans.woff") format("woff"); 
-}*/
+}
 
 /*ГЛОБАЛЬНО*/
 a{
@@ -313,7 +313,7 @@ img{
 	top: 4px;
 	left: 0px;
 	
-	background: #f7e296 url("../img/svg/cart.svg") no-repeat 0 0;
+	background: url("../img/svg/cart.svg") no-repeat 0 0;
 
 	width: 20px;
 	height: 20px;
@@ -652,6 +652,7 @@ img{
 }
 
 /*АССОРТИМЕНТ*/
+
 .popular-section{
 	margin: 0 auto;
 }
@@ -1178,14 +1179,14 @@ img{
 }
 
 .social-btn-facebook{
-	background: #464646 url(../img/svg/fb.svg) no-repeat 0 0;
+	background: url(../img/svg/fb.svg) no-repeat 0 0;
 }
 .social-btn-instagram{
-	background: #464646 url(../img/svg/instagram.svg) no-repeat 0 0;
+	background: url(../img/svg/instagram.svg) no-repeat 0 0;
 
 }
 .social-btn-twitter{
-	background: #464646 url(../img/svg/twitter.svg) no-repeat 0 0;
+	background: url(../img/svg/twitter.svg) no-repeat 0 0;
 }
  
 a.social-icon{
@@ -1209,7 +1210,7 @@ a.social-icon:active{
 	bottom: 45px;
 	right: -15px;
 	
-	background: #464646 url("../img/svg/logo-html.svg") no-repeat 0 0;
+	background: url("../img/svg/logo-html.svg") no-repeat 0 0;
 	
 	width: 40px;
 	height: 50px;
@@ -1380,9 +1381,7 @@ a.social-icon:active{
 	margin-left: -480px;
 
 	box-shadow: 0 0 20px rgba(0,0,0,0.5);
-	
 
-	
 	z-index: 1;
 }
 .map-popular p{
@@ -1447,7 +1446,6 @@ a.social-icon:active{
 .map-modal-close:active::before{
 	opacity: 0.3;
 }
-
 
 /*--------------------------СТРАНИЦА КАТАЛОГ--------------------------*/
 
@@ -1578,7 +1576,6 @@ a.social-icon:active{
 
 .sort-item-holder ul li{
 	margin-right: 10px;
-
 }
 .sort-item-holder .sort-item{
 	font-family: "Open Sans Regular", "Arial", sans-serif;
@@ -1672,7 +1669,6 @@ a.social-icon:active{
 	border: none;
 	
 	padding: 0;
-
 }
 .filter-price legend, 
 .filter-color legend, 
@@ -1847,7 +1843,7 @@ a.social-icon:active{
 	content: url(../img/svg/radio-off.svg);
 	
 	position: absolute;
-	top:8px;
+	top: 8px;
 	left: -44px;
 }
 .filter-option-radio + label{

@@ -55,7 +55,6 @@
 							transform: translateY(0);
 	}
 }
-
 @keyframes bounce
 {
 	0%
@@ -743,7 +742,7 @@ img
 
 	opacity: 0;
 }
-#monopod:checked ~ .slides[title='Монопод']
+.monopod:checked ~ .slides[title='Монопод']
 {
 	position: relative;
 
@@ -751,7 +750,7 @@ img
 
 	opacity: 1;
 }
-#fitbracelet:checked ~ .slides[title='Фитнес-браслет']
+.fitbracelet:checked ~ .slides[title='Фитнес-браслет']
 {
 	position: relative;
 
@@ -759,7 +758,7 @@ img
 
 	opacity: 1;
 }
-#quadrocopter:checked ~ .slides[title='Квадрокоптер']
+.quadrocopter:checked ~ .slides[title='Квадрокоптер']
 {
 	position: relative;
 
@@ -1071,7 +1070,7 @@ img
 
 /*СЕРВИСЫ-ОПИСАНИЕ*/
 
-#delivery:checked ~ .services[title='delivery']
+.delivery:checked ~ .services[title='delivery']
 {
 	position: relative;
 
@@ -1079,7 +1078,7 @@ img
 
 	opacity: 1;
 }
-#warranty:checked ~ .services[title='warranty']
+.warranty:checked ~ .services[title='warranty']
 {
 	position: relative;
 
@@ -1087,7 +1086,7 @@ img
 
 	opacity: 1;
 }
-#credit:checked ~ .services[title='credit']
+.credit:checked ~ .services[title='credit']
 {
 	position: relative;
 

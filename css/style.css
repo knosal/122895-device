@@ -255,7 +255,8 @@ img
 
 .main-header
 {
-	z-index: -1;
+
+	position: relative;
 
 	max-width: 1160px;
 	height: 299px;
@@ -673,7 +674,7 @@ img
 
 	display: none;
 
-	width: 1160px;
+	width: 100%;
 	min-height: 165px;
 	margin: 0;
 	margin-left: -60px;

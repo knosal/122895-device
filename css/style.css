@@ -1932,7 +1932,7 @@ a.social-icon:active
 {
 	position: relative;
 
-	margin-bottom: 46px;
+	margin-bottom: 43px;
 	padding-right: 40px;
 
 	list-style: none;
@@ -2045,6 +2045,7 @@ a.social-icon:active
 	display: flex;
 
 	margin-right: 0;
+	padding-bottom: 4px;
 	padding-left: 70px;
 
 	background-color: rgb(235,235,235);
@@ -2057,8 +2058,6 @@ a.social-icon:active
 	-webkit-box-flex: 1;
 			-ms-flex-positive: 1;
 					flex-grow: 1;
-	
-	
 }
 .filter-form-wrapper h2
 {
@@ -2068,8 +2067,9 @@ a.social-icon:active
 
 	margin: 0;
 	padding: 0;
+	padding-left: 3px;
 
-	letter-spacing: 3.2px;
+	letter-spacing: 3.1px;
 	text-transform: uppercase;
 }
 .sort-item-holder ul
@@ -2079,12 +2079,12 @@ a.social-icon:active
 	display: flex;
 
 	padding: 0;
-	padding-left: 60px;
+	padding-left: 55px;
 }
 
 .sort-item-list li
 {
-	margin-right: 10px;
+	margin-right: 4px;
 }
 .sort-item-holder .sort-item
 {
@@ -2167,7 +2167,7 @@ a.social-icon:active
 	display: -ms-flexbox;
 	display: flex;
 
-	margin-bottom: 3px;
+	margin-bottom: 5px;
 
 	background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgb(238,238,238)), color-stop(50%, rgb(255,255,255)));
 
@@ -2241,12 +2241,7 @@ a.social-icon:active
 
 	background-color: rgba(0,0,0,1);
 }
-@-moz-document url-prefix() { 
-.filter-price::after { 
-top: -30px; 
-} 
-	
-}
+
 .filter-price .scale
 {
 	width: 201px;
@@ -2302,12 +2297,6 @@ top: -30px;
 	-webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, .2);
 					box-shadow: 0 2px 1px 0 rgba(0, 1, 1, .2);
 }
-/*
-@-moz-document url-prefix() { 
-.range-toggle{ 
-top: 25px; 
-} 
-*/
 
 .range-toggle:active
 {
@@ -2329,6 +2318,7 @@ top: 25px;
 .filter-color
 {
 	margin-bottom: 26px;
+	margin-left: -2px;
 }
 .filter-color legend{
 	padding-top: 2px;
@@ -2338,7 +2328,7 @@ top: 25px;
 {
 	position: absolute;
 	top: -11px;
-	left: 0;
+	left: 0px;
 
 	width: 201px;
 	height: 2px;
@@ -2347,10 +2337,6 @@ top: 25px;
 
 	background-color: rgba(0,0,0,1);
 }
-/*@-moz-document url-prefix() { 
-.filter-color::after { 
-top: -30px; 
-} */
 
 .filter-option
 {
@@ -2387,7 +2373,7 @@ top: -30px;
 {
 	position: absolute;
 	top: 5px;
-	left: -43px;
+	left: -40px;
 
 	content: url(../img/svg/checkbox-off.svg);
 }
@@ -2395,21 +2381,24 @@ top: -30px;
 {
 	position: absolute;
 	top: 5px;
-	left: -43px;
+	left: -40px;
 
 	content: url(../img/svg/checkbox-on.svg);
 }
 
 /*ФИЛЬТР BLUETOOTH*/
-
+.filter-bluetooth {
+	margin-left: -1px;
+}
 .filter-bluetooth legend{
 	padding-bottom: 4px;
+	
 }
 .filter-bluetooth::after
 {
 	position: absolute;
-	top: -10px;
-	left: 0;
+	top: -12px;
+	left: -3px;
 
 	width: 201px;
 	height: 2px;
@@ -2418,24 +2407,20 @@ top: -30px;
 
 	background-color: rgba(0,0,0,1);
 }
-/*	@-moz-document url-prefix() { 
-.filter-bluetooth::after { 
-top: -30px; 
-} */
 	
 .filter-option-radio:checked + label::before
 {
 	position: absolute;
-	top: 6px;
-	left: -44px;
+	top: 4px;
+	left: -42px;
 
 	content: url(../img/svg/radio-on.svg);
 }
 .filter-option-radio + label::before
 {
 	position: absolute;
-	top: 8px;
-	left: -44px;
+	top: 6px;
+	left: -42px;
 
 	content: url(../img/svg/radio-off.svg);
 }
@@ -2461,9 +2446,9 @@ top: -30px;
 	font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
 	font-size: 18px;
 
-	margin-top: 16px;
-	padding-right: 43px;
-	padding-left: 42px;
+	margin-top: 13px;
+	padding-right: 40px;
+	padding-left: 40px;
 
 	cursor: pointer;
 	letter-spacing: 3.6px;
@@ -2483,11 +2468,13 @@ top: -30px;
 	-ms-flex-wrap: wrap;
 			flex-wrap: wrap;
 	
+	width: 100%;
+	
 	-webkit-box-pack: justify;
 			-ms-flex-pack: justify;
 					justify-content: space-between;
 }
-		
+
 .catalog-holder .item
 {
 	margin-left: 0;
@@ -2502,7 +2489,10 @@ top: -30px;
 
 	cursor: pointer;
 }
-
+.catalog-holder .item:last-child{
+	margin-bottom: -6px;
+	
+}
 .item-holder.new::before
 {
 	font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
@@ -2645,17 +2635,18 @@ a.add-to-compare:active
 
 	padding-top: 70px;
 	padding-left: 70px;
+	padding-bottom: 10px;
 
 	background-color: #fff;
+	
+	max-width: 830px;
 }
 		
-_:-ms-fullscreen, :root .catalog-navigation-container{
+/*_:-ms-fullscreen, :root .catalog-navigation-container{
 /*	flex-basis: 100;*/
 /*	max-width: 852px;*/
-	background-color: red;
-}
-
-
+	/*background-color: red;
+}*/
 
 .catalog-navigation
 {
@@ -2666,6 +2657,8 @@ _:-ms-fullscreen, :root .catalog-navigation-container{
 	margin-top: -11px;
 	margin-bottom: 57px;
 	margin-left: 0;
+	
+	width: 100%;
 
 	background-color: rgba(235,235,235,.92);
 
@@ -2711,7 +2704,7 @@ _:-ms-fullscreen, :root .catalog-navigation-container{
 }
 .pagination-item
 {
-	padding-left: 31px;
+	padding-left: 27px;
 }
 
 .btn-control .button

@@ -2057,6 +2057,8 @@ a.social-icon:active
 	-webkit-box-flex: 1;
 			-ms-flex-positive: 1;
 					flex-grow: 1;
+	
+	
 }
 .filter-form-wrapper h2
 {
@@ -2175,6 +2177,7 @@ a.social-icon:active
 
 	background: linear-gradient(to right, rgb(238,238,238) 50%, rgb(255,255,255) 50%);
 }
+
 .catalog-holder-container
 {
 	display: -webkit-box;
@@ -2228,7 +2231,6 @@ a.social-icon:active
 .filter-price::after
 {
 	position: absolute;
-	-moz-top: -30px;
 	top: -10px;
 	left: 0;
 
@@ -2238,6 +2240,12 @@ a.social-icon:active
 	content: '';
 
 	background-color: rgba(0,0,0,1);
+}
+/*@-moz-document url-prefix() { 
+.filter-price::after { 
+top: -30px; 
+} */
+	
 }
 .filter-price .scale
 {
@@ -2294,6 +2302,11 @@ a.social-icon:active
 	-webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, .2);
 					box-shadow: 0 2px 1px 0 rgba(0, 1, 1, .2);
 }
+@-moz-document url-prefix() { 
+.range-toggle{ 
+top: 25px; 
+} 
+
 .range-toggle:active
 {
 	-webkit-transform: scale(1.2);
@@ -2399,6 +2412,8 @@ a.social-icon:active
 
 	background-color: rgba(0,0,0,1);
 }
+
+	
 .filter-option-radio:checked + label::before
 {
 	position: absolute;
@@ -2457,12 +2472,13 @@ a.social-icon:active
 	display: flex;
 
 	-ms-flex-wrap: wrap;
-
 			flex-wrap: wrap;
+	
 	-webkit-box-pack: justify;
 			-ms-flex-pack: justify;
 					justify-content: space-between;
 }
+		
 .catalog-holder .item
 {
 	margin-left: 0;
@@ -2623,6 +2639,13 @@ a.add-to-compare:active
 
 	background-color: #fff;
 }
+_:-ms-fullscreen, :root .catalog-navigation-container{
+/*	flex-basis: 100;*/
+/*	max-width: 852px;*/
+	background-color: red;
+}
+
+
 
 .catalog-navigation
 {
@@ -2631,7 +2654,7 @@ a.add-to-compare:active
 	display: flex;
 
 	margin-top: -11px;
-	margin-bottom: 62px;
+	margin-bottom: 57px;
 	margin-left: 0;
 
 	background-color: rgba(235,235,235,.92);
@@ -2727,6 +2750,16 @@ a.add-to-compare:active
 {
 	color: rgba(0,0,0,1);
 }
+	
+	@-moz-document url-prefix() { 
+.filter-color::after { 
+top: -30px; 
+} 
+
+		@-moz-document url-prefix() { 
+.filter-bluetooth::after { 
+top: -30px; 
+} 
 
 .visually-hidden
 {

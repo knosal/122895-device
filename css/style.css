@@ -1433,7 +1433,7 @@ img
 
 	-webkit-box-pack: justify;
 
-			-ms-flex-pack: justify;
+			-ms-flex-pack: left;
 
 					justify-content: space-between;
 }
@@ -2642,12 +2642,6 @@ a.add-to-compare:active
 	max-width: 830px;
 }
 		
-/*_:-ms-fullscreen, :root .catalog-navigation-container{
-/*	flex-basis: 100;*/
-/*	max-width: 852px;*/
-	/*background-color: red;
-}*/
-
 .catalog-navigation
 {
 	display: -webkit-box;

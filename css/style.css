@@ -1433,7 +1433,7 @@ img
 
 	-webkit-box-pack: justify;
 
-			-ms-flex-pack: left;
+			-ms-flex-pack: justify;
 
 					justify-content: space-between;
 }
@@ -2216,6 +2216,8 @@ a.social-icon:active
 	line-height: 24px;
 
 	letter-spacing: .18px;
+	
+	height: 0;
 }
 
 /*ФИЛЬТР СТОИМОСТИ*/
@@ -2231,7 +2233,7 @@ a.social-icon:active
 .filter-price::after
 {
 	position: absolute;
-	top: -10px;
+	top: -11px;
 	left: 0;
 
 	width: 201px;
@@ -2247,8 +2249,8 @@ a.social-icon:active
 	width: 201px;
 	height: 2px;
 
-	margin: 36px 0;
-	margin-bottom: 77px;
+	margin: 60px 0;
+	margin-bottom: 80px;
 
 	background: rgba(0, 0, 0, .3);
 }
@@ -2387,6 +2389,7 @@ a.social-icon:active
 }
 
 /*ФИЛЬТР BLUETOOTH*/
+
 .filter-bluetooth {
 	margin-left: -1px;
 }

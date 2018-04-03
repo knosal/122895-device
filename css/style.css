@@ -2282,6 +2282,8 @@ a.social-icon:active {
 	list-style: none;
 
 	letter-spacing: .14px;
+	
+
 }
 
 .filter-option-input + label {
@@ -2324,9 +2326,8 @@ a.social-icon:active {
 	margin-left: -1px;
 }
 
-.filter-bluetooth .filter-legend {
+.filter-bluetooth .end {
 	padding-bottom: 4px;
-
 }
 
 .filter-bluetooth::after {
@@ -2408,6 +2409,7 @@ a.social-icon:active {
 
 .catalog-holder .item {
 	margin-left: 0;
+	
 }
 
 .item-holder {
@@ -2424,21 +2426,26 @@ a.social-icon:active {
 	margin-bottom: -6px;
 }
 
-.item-holder.new::before {
+.item{
+		position: relative;
+}
+
+.new::after {
 	font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 
 	position: absolute;
+	z-index: 1;
 	top: 43px;
 	right: 40px;
 
 	content: 'NEW';
-
+	
 	color: rgba(214, 214, 214, 1);
 }
 
-.item-holder.new::after {
+.new::before {
 	position: absolute;
 	z-index: 1;
 	top: 25px;

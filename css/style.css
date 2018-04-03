@@ -2207,9 +2207,8 @@ a.social-icon:active
 
 	border: none;
 }
-.filter-price legend,
-.filter-color legend,
-.filter-bluetooth legend
+
+.filter-lagend
 {
 	font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
 	font-size: 18px;
@@ -2217,7 +2216,7 @@ a.social-icon:active
 
 	letter-spacing: .18px;
 	
-	height: 0;
+	height: 24px;
 }
 
 /*ФИЛЬТР СТОИМОСТИ*/
@@ -2229,6 +2228,8 @@ a.social-icon:active
 	margin: 0;
 	margin-top: 79px;
 	padding: 0;
+	
+	
 }
 .filter-price::after
 {
@@ -2324,7 +2325,7 @@ a.social-icon:active
 	margin-bottom: 26px;
 	margin-left: -2px;
 }
-.filter-color legend{
+.filter-color .filter-legend{
 	padding-top: 2px;
 	padding-bottom: 3px;
 }
@@ -2395,7 +2396,7 @@ a.social-icon:active
 .filter-bluetooth {
 	margin-left: -1px;
 }
-.filter-bluetooth legend{
+.filter-bluetooth .filter-legend{
 	padding-bottom: 4px;
 	
 }
@@ -2646,7 +2647,7 @@ a.add-to-compare:active
 	
 	max-width: 830px;
 }
-		
+
 .catalog-navigation
 {
 	display: -webkit-box;
@@ -2701,6 +2702,7 @@ a.add-to-compare:active
 	-ms-flex-wrap: wrap;
 			flex-wrap: wrap;
 }
+
 .pagination-item
 {
 	padding-left: 27px;

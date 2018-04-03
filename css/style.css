@@ -2217,22 +2217,7 @@ a.social-icon:active
 
 	letter-spacing: .18px;
 	
-/*	height: 0;*/
-}
-.filter-wrapper .delimiter
-{
-	position: relative;
-	top: 60px;
-}
-.delimiter
-{
-	top: 10px;
-	left: 0;
-
-	width: 201px;
-	height: 2px;
-
-	background-color: rgba(0,0,0,1);
+	height: 0;
 }
 
 /*ФИЛЬТР СТОИМОСТИ*/
@@ -2245,7 +2230,7 @@ a.social-icon:active
 	margin-top: 79px;
 	padding: 0;
 }
-/*.filter-price::after
+.filter-price::after
 {
 	position: absolute;
 	top: -11px;
@@ -2257,14 +2242,16 @@ a.social-icon:active
 	content: '';
 
 	background-color: rgba(0,0,0,1);
-}*/
+}
 
 .filter-price .scale
 {
+	position: relative;
+	
 	width: 201px;
 	height: 2px;
 
-	margin: 35px 0;
+	margin: 60px 0;
 	margin-bottom: 80px;
 
 	background: rgba(0, 0, 0, .3);
@@ -2299,7 +2286,7 @@ a.social-icon:active
 .range-toggle
 {
 	position: absolute;
-	top: 50px;
+	top: -10px;
 
 	width: 20px;
 	height: 20px;
@@ -2341,7 +2328,7 @@ a.social-icon:active
 	padding-top: 2px;
 	padding-bottom: 3px;
 }
-/*.filter-color::after
+.filter-color::after
 {
 	position: absolute;
 	top: -11px;
@@ -2353,7 +2340,7 @@ a.social-icon:active
 	content: '';
 
 	background-color: rgba(0,0,0,1);
-}*/
+}
 
 .filter-option
 {
@@ -2412,7 +2399,7 @@ a.social-icon:active
 	padding-bottom: 4px;
 	
 }
-/*.filter-bluetooth::after
+.filter-bluetooth::after
 {
 	position: absolute;
 	top: -12px;
@@ -2424,7 +2411,7 @@ a.social-icon:active
 	content: '';
 
 	background-color: rgba(0,0,0,1);
-}*/
+}
 	
 .filter-option-radio:checked + label::before
 {

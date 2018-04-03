@@ -517,12 +517,19 @@ img
 	top: 4px;
 	right: 55px;
 }
+
 .compare svg
 {
 	position: absolute;
 	top: 4px;
 	left: 0;
 }
+.liken svg{
+	position: absolute;
+	top: 4px;
+	left: 15px;
+}
+
 .cart svg
 {
 	position: absolute;
@@ -1241,7 +1248,7 @@ img
 
 	max-width: 1160px;
 	margin: 0 auto;
-	padding-bottom: 74px;
+	padding-bottom: 78px;
 
 	-ms-flex-wrap: wrap;
 
@@ -1455,7 +1462,10 @@ img
 	padding-left: 505px;
 }
 .footer-user-nav .footer-login{
-	padding-left: 185px;
+	padding-left: 165px;
+}
+.footer-compare{
+	padding-left: 15px;
 }
 
 .footer-user-nav .login-link,

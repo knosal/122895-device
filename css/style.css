@@ -718,6 +718,14 @@ img {
 	opacity: 1;
 }
 
+
+/*
+.monopod:checked ~ .pseudo-radio {
+	outline: 3px dashed red;
+	outline-offset: 2px;
+}
+*/
+
 .fitbracelet:checked ~ .slides[title='Фитнес-браслет'] {
 	position: relative;
 
@@ -801,10 +809,10 @@ img {
 	letter-spacing: .36px;
 }
 
-.hidden-radio {
+/*.hidden-radio {
 	display: none;
-}
-
+}*/
+	
 .slider-item a {
 	margin-left: 4px;
 	padding: 12px 42px;
@@ -986,6 +994,11 @@ img {
 	justify-content: space-between;
 }
 
+/*.services-item:focus ~ label.slider-point::before{
+	outline: 1px dashed red;
+	outline-offset: 2px;
+}*/
+
 .slider-point {
 	font-size: 18px;
 	line-height: 24px;
@@ -1053,6 +1066,17 @@ img {
 	visibility: visible;
 
 	opacity: 1;
+}
+
+.delivery:checked ~ label::before{
+	outline: 1px dashed red;
+	outline-offset: 2px;
+}
+.warranty:checked ~ label::before{
+	outline: 2pz solid red;
+}
+.credit:checked ~ label::before{
+	outline: 2pz solid red;
 }
 
 .slider-point::after {
@@ -1780,7 +1804,7 @@ a.social-icon:active {
 	border: none;
 }
 
-/*КНОПКА "ЗАКРЫТЬ" МОДАЛЬНОЕ ОКНО*/
+/*КНОПКА 'ЗАКРЫТЬ' МОДАЛЬНОЕ ОКНО*/
 
 .feedback-modal-close,
 .map-modal-close {
@@ -2134,6 +2158,7 @@ a.social-icon:active {
 
 .filter-form {
 	padding-left: 60px;
+	
 }
 
 .filter-form fieldset {
@@ -2249,6 +2274,11 @@ a.social-icon:active {
 
 /*ФИЛЬТР ЦВЕТА*/
 
+.filter-color-checkboxes, 
+.filter-bluetooth-radio {
+	padding: 0;
+}
+
 .filter-color {
 	margin-bottom: 26px;
 	margin-left: -2px;
@@ -2282,12 +2312,11 @@ a.social-icon:active {
 	list-style: none;
 
 	letter-spacing: .14px;
-	
-
 }
 
 .filter-option-input + label {
 	cursor: pointer;
+	padding-left: 40px;
 }
 
 .filter-option-input:disabled + label {
@@ -2304,20 +2333,35 @@ a.social-icon:active {
 	opacity: 1;
 }
 
-.filter-option-input + label::before {
-	position: absolute;
-	top: 5px;
-	left: -40px;
+.filter-option-input:focus + label::before {
+	outline: 4px dashed #6bbbe3;
+	outline-offset: 2px;
+}
 
-	content: url(../img/svg/checkbox-off.svg);
+.filter-option-input + label::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 25px;
+	height: 23px;
+
+	background-image: url('../img/svg/checkbox-off.svg');
+	background-repeat: no-repeat;
 }
 
 .filter-option-input:checked + label::before {
+	content: '';
 	position: absolute;
-	top: 5px;
-	left: -40px;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 25px;
+	height: 23px;
 
-	content: url(../img/svg/checkbox-on.svg);
+	background-image: url('../img/svg/checkbox-on.svg');
+	background-repeat: no-repeat;
 }
 
 /*ФИЛЬТР BLUETOOTH*/
@@ -2344,22 +2388,33 @@ a.social-icon:active {
 }
 
 .filter-option-radio:checked + label::before {
-	position: absolute;
-	top: 4px;
-	left: -42px;
-
-	content: url(../img/svg/radio-on.svg);
+	content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 27px;
+	
+  background-image: url('../img/svg/radio-on.svg');
+  background-repeat: no-repeat;
 }
 
 .filter-option-radio + label::before {
-	position: absolute;
-	top: 6px;
-	left: -42px;
-
-	content: url(../img/svg/radio-off.svg);
+	content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 27px;
+	
+  background-image: url('../img/svg/radio-off.svg');
+  background-repeat: no-repeat;
 }
 
 .filter-option-radio + label {
+	padding-left: 40px;
 	cursor: pointer;
 }
 
@@ -2373,6 +2428,11 @@ a.social-icon:active {
 
 .filter-option-radio + label:active::before {
 	opacity: 1;
+}
+
+.filter-option-radio:focus + label::before {
+	outline: 4px dashed #6bbbe3;
+	outline-offset: 2px;
 }
 
 .filter-form button {

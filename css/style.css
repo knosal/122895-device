@@ -2316,9 +2316,7 @@ a.social-icon:active {
 	position: absolute;
 	left: 0;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
-	    -ms-transform: translateY(-50%);
-	        transform: translateY(-50%);
+	transform: translateY(-50%);
 	width: 25px;
 	height: 23px;
 
@@ -2331,9 +2329,7 @@ a.social-icon:active {
 	position: absolute;
 	left: 0;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
-	    -ms-transform: translateY(-50%);
-	        transform: translateY(-50%);
+	transform: translateY(-50%);
 	width: 25px;
 	height: 23px;
 
@@ -2369,9 +2365,7 @@ a.social-icon:active {
   position: absolute;
   left: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 26px;
   height: 27px;
 	
@@ -2384,9 +2378,7 @@ a.social-icon:active {
   position: absolute;
   left: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 26px;
   height: 27px;
 	
